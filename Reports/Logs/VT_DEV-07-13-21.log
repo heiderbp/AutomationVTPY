@@ -1,0 +1,536 @@
+2021-07-13 07:59:13,498:	   INFO:	  ====== WebDriver manager ======
+2021-07-13 07:59:13,580:	   INFO:	  Current google-chrome version is 91.0.4472
+2021-07-13 07:59:13,581:	   INFO:	  Get LATEST driver version for 91.0.4472
+2021-07-13 07:59:14,057:	   INFO:	  Get LATEST driver version for 91.0.4472
+2021-07-13 07:59:14,339:	   INFO:	  Trying to download new driver from https://chromedriver.storage.googleapis.com/91.0.4472.101/chromedriver_win32.zip
+2021-07-13 07:59:16,178:	   INFO:	  Driver has been saved in cache [C:\Users\Dev\.wdm\drivers\chromedriver\win32\91.0.4472.101]
+2021-07-13 07:59:18,666:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-07-13 07:59:18,668:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-07-13 07:59:30,562:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-07-13 07:59:30,845:	   INFO:	  Login Page: It was written in the userName text field.
+2021-07-13 07:59:30,859:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-07-13 07:59:31,375:	   INFO:	  Login Page: It was written in the password text field.
+2021-07-13 07:59:31,387:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-07-13 07:59:31,578:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-07-13 07:59:31,579:	   INFO:	  Login Page: The user, password and merchant fields were complete
+2021-07-13 07:59:31,709:	   INFO:	  Login Page: Clicked successfully.
+2021-07-13 07:59:31,710:	   INFO:	  Login Page: login was clicked
+2021-07-13 07:59:37,088:	   INFO:	  Merchant Parameters test page: The 'Click Search textbox' test passed
+2021-07-13 07:59:37,126:	   INFO:	  Merchant Parameters test page: The 'Click Search textbox' test data was saved
+2021-07-13 08:00:37,494:	   INFO:	  ====== WebDriver manager ======
+2021-07-13 08:00:37,564:	   INFO:	  Current google-chrome version is 91.0.4472
+2021-07-13 08:00:37,565:	   INFO:	  Get LATEST driver version for 91.0.4472
+2021-07-13 08:00:37,877:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\91.0.4472.101\chromedriver.exe] found in cache
+2021-07-13 08:00:39,729:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-07-13 08:00:39,730:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-07-13 08:00:42,879:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-07-13 08:00:43,175:	   INFO:	  Login Page: It was written in the userName text field.
+2021-07-13 08:00:43,189:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-07-13 08:00:43,699:	   INFO:	  Login Page: It was written in the password text field.
+2021-07-13 08:00:43,709:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-07-13 08:00:43,908:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-07-13 08:00:43,909:	   INFO:	  Login Page: The user, password and merchant fields were complete
+2021-07-13 08:00:44,069:	   INFO:	  Login Page: Clicked successfully.
+2021-07-13 08:00:44,069:	   INFO:	  Login Page: login was clicked
+2021-07-13 08:00:46,019:	   INFO:	  Dashboard Page: Items Obtained
+2021-07-13 08:00:46,127:	   INFO:	  Dashboard Page: Clicked successfully.
+2021-07-13 08:00:46,127:	   INFO:	  Dashboard Page: Administration is clicked correctly
+2021-07-13 08:00:46,128:	   INFO:	  Roles Actions Page: Role Menu was loads correctly.
+2021-07-13 08:00:46,557:	   INFO:	  Administration Page: Clicked successfully.
+2021-07-13 08:00:46,558:	   INFO:	  Administration Page: Successfully clicked on Roles
+2021-07-13 08:00:46,558:	   INFO:	  Roles Actions Page: Submenu Roles -> ok.
+2021-07-13 08:00:52,402:	   ERROR:	  Roles Page: Could not get the Search input text item: Message: 
+2021-07-13 08:00:57,818:	   ERROR:	  Roles Page: Could not get the Search input text item: Message: 
+2021-07-13 08:01:03,109:	   ERROR:	  Roles Page: Could not get the Search input text item: Message: 
+2021-07-13 08:01:08,424:	   ERROR:	  Roles Page: Could not get the Search input text item: Message: 
+2021-07-13 08:01:13,741:	   ERROR:	  Roles Page: Could not get the Search input text item: Message: 
+2021-07-13 08:01:19,113:	   ERROR:	  Roles Page: Could not get the Search input text item: Message: 
+2021-07-13 08:01:24,315:	   ERROR:	  Roles Page: Could not get the Search input text item: Message: 
+2021-07-13 08:01:24,316:	   INFO:	  Merchant Parameters test page: The 'Click Search textbox' test passed
+2021-07-13 08:01:24,347:	   INFO:	  Merchant Parameters test page: The 'Click Search textbox' test data was saved
+2021-07-13 08:05:09,827:	   INFO:	  ====== WebDriver manager ======
+2021-07-13 08:05:09,884:	   INFO:	  Current google-chrome version is 91.0.4472
+2021-07-13 08:05:09,885:	   INFO:	  Get LATEST driver version for 91.0.4472
+2021-07-13 08:05:10,270:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\91.0.4472.101\chromedriver.exe] found in cache
+2021-07-13 08:05:12,084:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-07-13 08:05:12,085:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-07-13 08:05:14,895:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-07-13 08:05:15,208:	   INFO:	  Login Page: It was written in the userName text field.
+2021-07-13 08:05:15,222:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-07-13 08:05:15,721:	   INFO:	  Login Page: It was written in the password text field.
+2021-07-13 08:05:15,731:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-07-13 08:05:15,921:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-07-13 08:05:15,922:	   INFO:	  Login Page: The user, password and merchant fields were complete
+2021-07-13 08:05:16,048:	   INFO:	  Login Page: Clicked successfully.
+2021-07-13 08:05:16,049:	   INFO:	  Login Page: login was clicked
+2021-07-13 08:05:17,855:	   INFO:	  Dashboard Page: Items Obtained
+2021-07-13 08:05:17,953:	   INFO:	  Dashboard Page: Clicked successfully.
+2021-07-13 08:05:17,954:	   INFO:	  Dashboard Page: Administration is clicked correctly
+2021-07-13 08:05:17,954:	   INFO:	  Roles Actions Page: Role Menu was loads correctly.
+2021-07-13 08:05:18,367:	   INFO:	  Administration Page: Clicked successfully.
+2021-07-13 08:05:18,368:	   INFO:	  Administration Page: Successfully clicked on Roles
+2021-07-13 08:05:18,368:	   INFO:	  Roles Actions Page: Submenu Roles -> ok.
+2021-07-13 08:05:24,289:	   ERROR:	  Roles Page: Could not get the Search input text item: Message: 
+2021-07-13 08:05:29,618:	   ERROR:	  Roles Page: Could not get the Search input text item: Message: 
+2021-07-13 08:05:34,922:	   ERROR:	  Roles Page: Could not get the Search input text item: Message: 
+2021-07-13 08:05:40,237:	   ERROR:	  Roles Page: Could not get the Search input text item: Message: 
+2021-07-13 08:05:45,523:	   ERROR:	  Roles Page: Could not get the Search input text item: Message: 
+2021-07-13 08:05:50,807:	   ERROR:	  Roles Page: Could not get the Search input text item: Message: 
+2021-07-13 08:05:56,229:	   ERROR:	  Roles Page: Could not get the Search input text item: Message: 
+2021-07-13 08:05:56,230:	   INFO:	  Merchant Parameters test page: The 'Click Search textbox' test passed
+2021-07-13 08:05:56,258:	   INFO:	  Merchant Parameters test page: The 'Click Search textbox' test data was saved
+2021-07-13 08:08:26,024:	   INFO:	  ====== WebDriver manager ======
+2021-07-13 08:08:26,065:	   INFO:	  Current google-chrome version is 91.0.4472
+2021-07-13 08:08:26,066:	   INFO:	  Get LATEST driver version for 91.0.4472
+2021-07-13 08:08:26,371:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\91.0.4472.101\chromedriver.exe] found in cache
+2021-07-13 08:08:28,164:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-07-13 08:08:28,166:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-07-13 08:08:30,897:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-07-13 08:08:31,199:	   INFO:	  Login Page: It was written in the userName text field.
+2021-07-13 08:08:31,214:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-07-13 08:08:31,707:	   INFO:	  Login Page: It was written in the password text field.
+2021-07-13 08:08:31,717:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-07-13 08:08:31,970:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-07-13 08:08:31,971:	   INFO:	  Login Page: The user, password and merchant fields were complete
+2021-07-13 08:08:32,135:	   INFO:	  Login Page: Clicked successfully.
+2021-07-13 08:08:32,135:	   INFO:	  Login Page: login was clicked
+2021-07-13 08:08:33,917:	   INFO:	  Dashboard Page: Items Obtained
+2021-07-13 08:08:34,014:	   INFO:	  Dashboard Page: Clicked successfully.
+2021-07-13 08:08:34,014:	   INFO:	  Dashboard Page: Administration is clicked correctly
+2021-07-13 08:08:34,014:	   INFO:	  Roles Actions Page: Role Menu was loads correctly.
+2021-07-13 08:08:34,421:	   INFO:	  Administration Page: Clicked successfully.
+2021-07-13 08:08:34,422:	   INFO:	  Administration Page: Successfully clicked on Roles
+2021-07-13 08:08:34,422:	   INFO:	  Roles Actions Page: Submenu Roles -> ok.
+2021-07-13 08:08:40,296:	   ERROR:	  Roles Page: Could not get the Search input text item: Message: 
+2021-07-13 08:08:45,702:	   ERROR:	  Roles Page: Could not get the Search input text item: Message: 
+2021-07-13 08:08:50,993:	   ERROR:	  Roles Page: Could not get the Search input text item: Message: 
+2021-07-13 08:08:56,271:	   ERROR:	  Roles Page: Could not get the Search input text item: Message: 
+2021-07-13 08:09:01,529:	   ERROR:	  Roles Page: Could not get the Search input text item: Message: 
+2021-07-13 08:09:06,867:	   ERROR:	  Roles Page: Could not get the Search input text item: Message: 
+2021-07-13 08:09:12,176:	   ERROR:	  Roles Page: Could not get the Search input text item: Message: 
+2021-07-13 08:09:12,317:	   INFO:	  Roles Page: Clicked successfully.
+2021-07-13 08:09:12,317:	   INFO:	  Roles Page: The search textbox is clicked correctly
+2021-07-13 08:09:14,331:	   INFO:	  Merchant Parameters test page: Click Search textbox Search
+2021-07-13 08:09:19,333:	   INFO:	  Merchant Parameters test page: The 'Click Search textbox' test passed
+2021-07-13 08:09:19,359:	   INFO:	  Merchant Parameters test page: The 'Click Search textbox' test data was saved
+2021-07-13 08:18:10,637:	   INFO:	  ====== WebDriver manager ======
+2021-07-13 08:18:10,730:	   INFO:	  Current google-chrome version is 91.0.4472
+2021-07-13 08:18:10,730:	   INFO:	  Get LATEST driver version for 91.0.4472
+2021-07-13 08:18:11,103:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\91.0.4472.101\chromedriver.exe] found in cache
+2021-07-13 08:18:12,990:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-07-13 08:18:12,992:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-07-13 08:18:16,612:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-07-13 08:18:16,939:	   INFO:	  Login Page: It was written in the userName text field.
+2021-07-13 08:18:16,954:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-07-13 08:18:17,549:	   INFO:	  Login Page: It was written in the password text field.
+2021-07-13 08:18:17,560:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-07-13 08:18:17,792:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-07-13 08:18:17,792:	   INFO:	  Login Page: The user, password and merchant fields were complete
+2021-07-13 08:18:17,971:	   INFO:	  Login Page: Clicked successfully.
+2021-07-13 08:18:17,971:	   INFO:	  Login Page: login was clicked
+2021-07-13 08:18:20,058:	   INFO:	  Dashboard Page: Items Obtained
+2021-07-13 08:18:20,169:	   INFO:	  Dashboard Page: Clicked successfully.
+2021-07-13 08:18:20,169:	   INFO:	  Dashboard Page: Administration is clicked correctly
+2021-07-13 08:18:20,170:	   INFO:	  Users Actions Page: User Menu was loads correctly.
+2021-07-13 08:18:20,675:	   INFO:	  Administration Page: Clicked successfully.
+2021-07-13 08:18:20,676:	   INFO:	  Administration Page: Successfully clicked on Users
+2021-07-13 08:18:20,676:	   INFO:	  Users Actions Page: Submenu Users -> ok.
+2021-07-13 08:18:22,897:	   INFO:	  Users Page: Clicked successfully.
+2021-07-13 08:18:22,898:	   INFO:	  Users Page: The search textbox is clicked correctly
+2021-07-13 08:18:24,908:	   INFO:	  Users test page: Click Search textbox Search
+2021-07-13 08:18:29,915:	   INFO:	  Users test page: The 'Click Search textbox' test passed
+2021-07-13 08:18:29,949:	   INFO:	  Users test page: The 'Click Search textbox' test data was saved
+2021-07-13 08:19:27,902:	   INFO:	  ====== WebDriver manager ======
+2021-07-13 08:19:27,950:	   INFO:	  Current google-chrome version is 91.0.4472
+2021-07-13 08:19:27,950:	   INFO:	  Get LATEST driver version for 91.0.4472
+2021-07-13 08:19:28,260:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\91.0.4472.101\chromedriver.exe] found in cache
+2021-07-13 08:19:30,110:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-07-13 08:19:30,112:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-07-13 08:19:33,132:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-07-13 08:19:33,445:	   INFO:	  Login Page: It was written in the userName text field.
+2021-07-13 08:19:33,458:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-07-13 08:19:33,960:	   INFO:	  Login Page: It was written in the password text field.
+2021-07-13 08:19:33,971:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-07-13 08:19:34,166:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-07-13 08:19:34,166:	   INFO:	  Login Page: The user, password and merchant fields were complete
+2021-07-13 08:19:34,305:	   INFO:	  Login Page: Clicked successfully.
+2021-07-13 08:19:34,306:	   INFO:	  Login Page: login was clicked
+2021-07-13 08:19:36,064:	   INFO:	  Dashboard Page: Items Obtained
+2021-07-13 08:19:36,167:	   INFO:	  Dashboard Page: Clicked successfully.
+2021-07-13 08:19:36,167:	   INFO:	  Dashboard Page: Administration is clicked correctly
+2021-07-13 08:19:36,167:	   INFO:	  Users Actions Page: User Menu was loads correctly.
+2021-07-13 08:19:36,666:	   INFO:	  Administration Page: Clicked successfully.
+2021-07-13 08:19:36,666:	   INFO:	  Administration Page: Successfully clicked on Users
+2021-07-13 08:19:36,666:	   INFO:	  Users Actions Page: Submenu Users -> ok.
+2021-07-13 08:19:38,968:	   INFO:	  Users Page: Clicked successfully.
+2021-07-13 08:19:38,969:	   INFO:	  Users Page: The search textbox is clicked correctly
+2021-07-13 08:19:40,985:	   INFO:	  Users test page: Click Search textbox Search
+2021-07-13 08:19:45,995:	   INFO:	  Users test page: The 'Click Search textbox' test passed
+2021-07-13 08:19:46,036:	   INFO:	  Users test page: The 'Click Search textbox' test data was saved
+2021-07-13 08:27:32,462:	   INFO:	  ====== WebDriver manager ======
+2021-07-13 08:27:32,509:	   INFO:	  Current google-chrome version is 91.0.4472
+2021-07-13 08:27:32,510:	   INFO:	  Get LATEST driver version for 91.0.4472
+2021-07-13 08:27:32,905:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\91.0.4472.101\chromedriver.exe] found in cache
+2021-07-13 08:27:34,881:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-07-13 08:27:34,882:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-07-13 08:27:37,868:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-07-13 08:27:38,226:	   INFO:	  Login Page: It was written in the userName text field.
+2021-07-13 08:27:38,240:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-07-13 08:27:38,756:	   INFO:	  Login Page: It was written in the password text field.
+2021-07-13 08:27:38,767:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-07-13 08:27:38,961:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-07-13 08:27:38,961:	   INFO:	  Login Page: The user, password and merchant fields were complete
+2021-07-13 08:27:39,114:	   INFO:	  Login Page: Clicked successfully.
+2021-07-13 08:27:39,114:	   INFO:	  Login Page: login was clicked
+2021-07-13 08:27:40,852:	   INFO:	  Dashboard Page: Items Obtained
+2021-07-13 08:27:40,976:	   INFO:	  Dashboard Page: Clicked successfully.
+2021-07-13 08:27:40,977:	   INFO:	  Dashboard Page: Administration is clicked correctly
+2021-07-13 08:27:40,977:	   INFO:	  Merchant Parameters Actions Page: Administration Menu was loads correctly.
+2021-07-13 08:27:41,433:	   INFO:	  Administration Page: Clicked successfully.
+2021-07-13 08:27:41,433:	   INFO:	  Administration Page: Successfully clicked on Merchant
+2021-07-13 08:27:41,433:	   INFO:	  Merchant Parameters Actions Page: Submenu Merchant Parameters is ok.
+2021-07-13 08:27:48,440:	   ERROR:	  Merchant Page: Could not get the Input Text Auto Close Batch Hour item: Message: 
+2021-07-13 08:27:53,738:	   ERROR:	  Merchant Page: Could not get the Input Text Auto Close Batch Minutes item: Message: 
+2021-07-13 08:27:59,043:	   ERROR:	  Merchant Page: Could not get the Input Text Industry item: Message: 
+2021-07-13 08:28:04,342:	   ERROR:	  Merchant Page: Could not get the CheckBox Invoice Detail item: Message: 
+2021-07-13 08:28:09,659:	   ERROR:	  Merchant Page: Could not get the CheckBox Multi ClientID/Same Cards item: Message: 
+2021-07-13 08:28:14,950:	   ERROR:	  Merchant Page: Could not get the CheckBox Force Management item: Message: 
+2021-07-13 08:28:20,219:	   ERROR:	  Merchant Page: Could not get the ComboBox Fleet Cards Data item: Message: 
+2021-07-13 08:28:25,524:	   ERROR:	  Merchant Page: Could not get the CheckBox Fleet Cards Data Send Email Alert item: Message: 
+2021-07-13 08:28:30,850:	   ERROR:	  Merchant Page: Could not get the ComboBox Level II Data item: Message: 
+2021-07-13 08:28:36,226:	   ERROR:	  Merchant Page: Could not get the CheckBox Level II Data Send Email Alert item: Message: 
+2021-07-13 08:28:41,521:	   ERROR:	  Merchant Page: Could not get the ComboBox Level III Data item: Message: 
+2021-07-13 08:28:46,829:	   ERROR:	  Merchant Page: Could not get the CheckBox Level III Data Send Email Alert item: Message: 
+2021-07-13 08:28:52,194:	   ERROR:	  Merchant Page: Could not get the CheckBox ContactlessEmv item: Message: 
+2021-07-13 08:28:57,502:	   ERROR:	  Merchant Page: Could not get the CheckBox Disable Signature item: Message: 
+2021-07-13 08:29:02,805:	   ERROR:	  Merchant Page: Could not get the CheckBox Validated P2PE item: Message: 
+2021-07-13 08:29:08,080:	   ERROR:	  Merchant Page: Could not get the CheckBox Donations item: Message: 
+2021-07-13 08:29:13,373:	   ERROR:	  Merchant Page: Could not get the CheckBox Virtual Keyboard item: Message: 
+2021-07-13 08:29:18,667:	   ERROR:	  Merchant Page: Could not get the CheckBox Context Change item: Message: 
+2021-07-13 08:29:23,935:	   ERROR:	  Merchant Page: Could not get the CheckBox MultiMerchant/Single User item: Message: 
+2021-07-13 08:29:29,227:	   ERROR:	  Merchant Page: Could not get the CheckBox GeoLocation item: Message: 
+2021-07-13 08:29:34,508:	   ERROR:	  Merchant Page: Could not get the CheckBox IPVerification item: Message: 
+2021-07-13 08:29:39,787:	   ERROR:	  Merchant Page: Could not get the Input Text Receipt Footer item: Message: 
+2021-07-13 08:29:45,075:	   ERROR:	  Merchant Page: Could not get the Input Text Title Custom item: Message: 
+2021-07-13 08:29:50,382:	   ERROR:	  Merchant Page: Could not get the Aditional Data, Field 1 tab item: Message: 
+2021-07-13 08:29:55,685:	   ERROR:	  Merchant Page: Could not get the Additional Data, Field 1 tab, Input Text Label Field item: Message: 
+2021-07-13 08:30:00,963:	   ERROR:	  Merchant Page: Could not get the Additional Data, Field 1 tab, Input Text Tool tip item: Message: 
+2021-07-13 08:30:06,219:	   ERROR:	  Merchant Page: Could not get the Additional Data, Field 1 tab, Input Text Min Length item: Message: 
+2021-07-13 08:30:11,589:	   ERROR:	  Merchant Page: Could not get the Additional Data, Field 1 tab, Input Text Max Length item: Message: 
+2021-07-13 08:30:16,867:	   ERROR:	  Merchant Page: Could not get the Additional Data, Field 1 tab, ComboBox Validator item: Message: 
+2021-07-13 08:30:22,158:	   ERROR:	  Merchant Page: Could not get the Additional Data, Field 1 tab, CheckBox Required item: Message: 
+2021-07-13 08:30:27,455:	   ERROR:	  Merchant Page: Could not get the Additional Data, Field 1 tab, CheckBox Enable item: Message: 
+2021-07-13 08:30:32,744:	   ERROR:	  Merchant Page: Could not get the Additional Data, Field 1 tab, CheckBox Visible item: Message: 
+2021-07-13 08:30:38,059:	   ERROR:	  Merchant Page: Could not get the Field 2 tab item: Message: 
+2021-07-13 08:30:43,326:	   ERROR:	  Merchant Page: Could not get the Additional Data, Field 2 tab, Input Text Label Field item: Message: 
+2021-07-13 08:30:48,646:	   ERROR:	  Merchant Page: Could not get the Additional Data, Field 2 tab, Input Text Tool tip item: Message: 
+2021-07-13 08:30:53,926:	   ERROR:	  Merchant Page: Could not get the Additional Data, Field 2 tab, Input Text Min Length item: Message: 
+2021-07-13 08:30:59,239:	   ERROR:	  Merchant Page: Could not get the Additional Data, Field 1 tab, Input Text Max Length item: Message: 
+2021-07-13 08:31:04,545:	   ERROR:	  Merchant Page: Could not get the Additional Data, Field 2 tab, ComboBox Validator item: Message: 
+2021-07-13 08:31:09,812:	   ERROR:	  Merchant Page: Could not get the Additional Data, Field 2 tab, CheckBox Required item: Message: 
+2021-07-13 08:31:15,065:	   ERROR:	  Merchant Page: Could not get the Additional Data, Field 2 tab, CheckBox Enable item: Message: 
+2021-07-13 08:31:20,373:	   ERROR:	  Merchant Page: Could not get the Additional Data, Field 2 tab, CheckBox Visible item: Message: 
+2021-07-13 08:31:25,689:	   ERROR:	  Merchant Page: Could not get the Field 3 tab item: Message: 
+2021-07-13 08:31:31,002:	   ERROR:	  Merchant Page: Could not get the Additional Data, Field 3 tab, Input Text Label Field item: Message: 
+2021-07-13 08:31:36,316:	   ERROR:	  Merchant Page: Could not get the Additional Data, Field 3 tab, Input Text Tool tip item: Message: 
+2021-07-13 08:31:41,537:	   ERROR:	  Merchant Page: Could not get the Additional Data, Field 3 tab, Input Text Min Length item: Message: 
+2021-07-13 08:31:46,772:	   ERROR:	  Merchant Page: Could not get the Additional Data, Field 3 tab, Input Text Max Length item: Message: 
+2021-07-13 08:31:52,028:	   ERROR:	  Merchant Page: Could not get the Additional Data, Field 3 tab, ComboBox Validator item: Message: 
+2021-07-13 08:31:57,332:	   ERROR:	  Merchant Page: Could not get the Additional Data, Field 3 tab, CheckBox Required item: Message: 
+2021-07-13 08:32:02,612:	   ERROR:	  Merchant Page: Could not get the Additional Data, Field 3 tab, CheckBox Enable item: Message: 
+2021-07-13 08:32:07,898:	   ERROR:	  Merchant Page: Could not get the Additional Data, Field 3 tab, CheckBox Visible item: Message: 
+2021-07-13 08:32:13,195:	   ERROR:	  Merchant Page: Could not get the Field 4 tab item: Message: 
+2021-07-13 08:33:36,278:	   INFO:	  ====== WebDriver manager ======
+2021-07-13 08:33:36,328:	   INFO:	  Current google-chrome version is 91.0.4472
+2021-07-13 08:33:36,328:	   INFO:	  Get LATEST driver version for 91.0.4472
+2021-07-13 08:33:36,714:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\91.0.4472.101\chromedriver.exe] found in cache
+2021-07-13 08:33:38,514:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-07-13 08:33:38,516:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-07-13 08:33:41,649:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-07-13 08:33:42,009:	   INFO:	  Login Page: It was written in the userName text field.
+2021-07-13 08:33:42,022:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-07-13 08:33:42,546:	   INFO:	  Login Page: It was written in the password text field.
+2021-07-13 08:33:42,556:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-07-13 08:33:42,749:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-07-13 08:33:42,749:	   INFO:	  Login Page: The user, password and merchant fields were complete
+2021-07-13 08:33:42,920:	   INFO:	  Login Page: Clicked successfully.
+2021-07-13 08:33:42,920:	   INFO:	  Login Page: login was clicked
+2021-07-13 08:33:45,282:	   INFO:	  Dashboard Page: Items Obtained
+2021-07-13 08:33:45,373:	   INFO:	  Dashboard Page: Clicked successfully.
+2021-07-13 08:33:45,373:	   INFO:	  Dashboard Page: Administration is clicked correctly
+2021-07-13 08:33:45,374:	   INFO:	  Merchant Parameters Actions Page: Administration Menu was loads correctly.
+2021-07-13 08:33:45,796:	   INFO:	  Administration Page: Clicked successfully.
+2021-07-13 08:33:45,797:	   INFO:	  Administration Page: Successfully clicked on Merchant
+2021-07-13 08:33:45,797:	   INFO:	  Merchant Parameters Actions Page: Submenu Merchant Parameters is ok.
+2021-07-13 08:33:52,824:	   ERROR:	  Merchant Page: Could not get the Input Text Auto Close Batch Hour item: Message: 
+2021-07-13 08:33:58,129:	   ERROR:	  Merchant Page: Could not get the Input Text Auto Close Batch Minutes item: Message: 
+2021-07-13 08:34:03,432:	   ERROR:	  Merchant Page: Could not get the Input Text Industry item: Message: 
+2021-07-13 08:34:08,736:	   ERROR:	  Merchant Page: Could not get the CheckBox Invoice Detail item: Message: 
+2021-07-13 08:34:14,057:	   ERROR:	  Merchant Page: Could not get the CheckBox Multi ClientID/Same Cards item: Message: 
+2021-07-13 08:34:19,357:	   ERROR:	  Merchant Page: Could not get the CheckBox Force Management item: Message: 
+2021-07-13 08:34:24,653:	   ERROR:	  Merchant Page: Could not get the ComboBox Fleet Cards Data item: Message: 
+2021-07-13 08:34:29,966:	   ERROR:	  Merchant Page: Could not get the CheckBox Fleet Cards Data Send Email Alert item: Message: 
+2021-07-13 08:34:35,198:	   ERROR:	  Merchant Page: Could not get the ComboBox Level II Data item: Message: 
+2021-07-13 08:34:40,485:	   ERROR:	  Merchant Page: Could not get the CheckBox Level II Data Send Email Alert item: Message: 
+2021-07-13 08:34:45,784:	   ERROR:	  Merchant Page: Could not get the ComboBox Level III Data item: Message: 
+2021-07-13 08:34:51,025:	   ERROR:	  Merchant Page: Could not get the CheckBox Level III Data Send Email Alert item: Message: 
+2021-07-13 08:34:56,408:	   ERROR:	  Merchant Page: Could not get the CheckBox ContactlessEmv item: Message: 
+2021-07-13 08:35:01,675:	   ERROR:	  Merchant Page: Could not get the CheckBox Disable Signature item: Message: 
+2021-07-13 08:35:06,955:	   ERROR:	  Merchant Page: Could not get the CheckBox Validated P2PE item: Message: 
+2021-07-13 08:35:12,233:	   ERROR:	  Merchant Page: Could not get the CheckBox Donations item: Message: 
+2021-07-13 08:35:17,655:	   ERROR:	  Merchant Page: Could not get the CheckBox Virtual Keyboard item: Message: 
+2021-07-13 08:35:23,074:	   ERROR:	  Merchant Page: Could not get the CheckBox Context Change item: Message: 
+2021-07-13 08:35:28,344:	   ERROR:	  Merchant Page: Could not get the CheckBox MultiMerchant/Single User item: Message: 
+2021-07-13 08:35:33,611:	   ERROR:	  Merchant Page: Could not get the CheckBox GeoLocation item: Message: 
+2021-07-13 08:35:38,901:	   ERROR:	  Merchant Page: Could not get the CheckBox IPVerification item: Message: 
+2021-07-13 08:35:44,195:	   ERROR:	  Merchant Page: Could not get the Input Text Receipt Footer item: Message: 
+2021-07-13 08:35:49,465:	   ERROR:	  Merchant Page: Could not get the Input Text Title Custom item: Message: 
+2021-07-13 08:35:54,693:	   ERROR:	  Merchant Page: Could not get the Aditional Data, Field 1 tab item: Message: 
+2021-07-13 08:35:59,958:	   ERROR:	  Merchant Page: Could not get the Additional Data, Field 1 tab, Input Text Label Field item: Message: 
+2021-07-13 08:36:05,203:	   ERROR:	  Merchant Page: Could not get the Additional Data, Field 1 tab, Input Text Tool tip item: Message: 
+2021-07-13 08:36:10,401:	   ERROR:	  Merchant Page: Could not get the Additional Data, Field 1 tab, Input Text Min Length item: Message: 
+2021-07-13 08:36:15,743:	   ERROR:	  Merchant Page: Could not get the Additional Data, Field 1 tab, Input Text Max Length item: Message: 
+2021-07-13 08:36:26,091:	   INFO:	  ====== WebDriver manager ======
+2021-07-13 08:36:26,133:	   INFO:	  Current google-chrome version is 91.0.4472
+2021-07-13 08:36:26,133:	   INFO:	  Get LATEST driver version for 91.0.4472
+2021-07-13 08:36:26,414:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\91.0.4472.101\chromedriver.exe] found in cache
+2021-07-13 08:36:28,287:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-07-13 08:36:28,289:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-07-13 08:36:31,326:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-07-13 08:36:31,648:	   INFO:	  Login Page: It was written in the userName text field.
+2021-07-13 08:36:31,659:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-07-13 08:36:32,189:	   INFO:	  Login Page: It was written in the password text field.
+2021-07-13 08:36:32,199:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-07-13 08:36:32,393:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-07-13 08:36:32,393:	   INFO:	  Login Page: The user, password and merchant fields were complete
+2021-07-13 08:36:32,571:	   INFO:	  Login Page: Clicked successfully.
+2021-07-13 08:36:32,571:	   INFO:	  Login Page: login was clicked
+2021-07-13 08:36:34,943:	   INFO:	  Dashboard Page: Items Obtained
+2021-07-13 08:36:35,030:	   INFO:	  Dashboard Page: Clicked successfully.
+2021-07-13 08:36:35,030:	   INFO:	  Dashboard Page: Administration is clicked correctly
+2021-07-13 08:36:35,031:	   INFO:	  Merchant Actions Page: Administration Menu was loads correctly.
+2021-07-13 08:36:35,480:	   INFO:	  Administration Page: Clicked successfully.
+2021-07-13 08:36:35,480:	   INFO:	  Administration Page: Successfully clicked on Merchant
+2021-07-13 08:36:35,481:	   INFO:	  Merchant Actions Page: Submenu Merchant is ok.
+2021-07-13 08:36:42,446:	   ERROR:	  Merchant Page: Could not get the Input Text Auto Close Batch Hour item: Message: 
+2021-07-13 08:36:47,751:	   ERROR:	  Merchant Page: Could not get the Input Text Auto Close Batch Minutes item: Message: 
+2021-07-13 08:36:53,053:	   ERROR:	  Merchant Page: Could not get the Input Text Industry item: Message: 
+2021-07-13 08:36:58,406:	   ERROR:	  Merchant Page: Could not get the CheckBox Invoice Detail item: Message: 
+2021-07-13 08:37:03,683:	   ERROR:	  Merchant Page: Could not get the CheckBox Multi ClientID/Same Cards item: Message: 
+2021-07-13 08:37:08,977:	   ERROR:	  Merchant Page: Could not get the CheckBox Force Management item: Message: 
+2021-07-13 08:37:14,274:	   ERROR:	  Merchant Page: Could not get the ComboBox Fleet Cards Data item: Message: 
+2021-07-13 08:37:19,540:	   ERROR:	  Merchant Page: Could not get the CheckBox Fleet Cards Data Send Email Alert item: Message: 
+2021-07-13 08:37:24,816:	   ERROR:	  Merchant Page: Could not get the ComboBox Level II Data item: Message: 
+2021-07-13 08:37:30,122:	   ERROR:	  Merchant Page: Could not get the CheckBox Level II Data Send Email Alert item: Message: 
+2021-07-13 08:37:35,413:	   ERROR:	  Merchant Page: Could not get the ComboBox Level III Data item: Message: 
+2021-07-13 08:37:40,647:	   ERROR:	  Merchant Page: Could not get the CheckBox Level III Data Send Email Alert item: Message: 
+2021-07-13 08:37:46,038:	   ERROR:	  Merchant Page: Could not get the CheckBox ContactlessEmv item: Message: 
+2021-07-13 08:37:51,305:	   ERROR:	  Merchant Page: Could not get the CheckBox Disable Signature item: Message: 
+2021-07-13 08:37:56,561:	   ERROR:	  Merchant Page: Could not get the CheckBox Validated P2PE item: Message: 
+2021-07-13 08:38:01,827:	   ERROR:	  Merchant Page: Could not get the CheckBox Donations item: Message: 
+2021-07-13 08:38:07,097:	   ERROR:	  Merchant Page: Could not get the CheckBox Virtual Keyboard item: Message: 
+2021-07-13 08:38:12,398:	   ERROR:	  Merchant Page: Could not get the CheckBox Context Change item: Message: 
+2021-07-13 08:38:17,682:	   ERROR:	  Merchant Page: Could not get the CheckBox MultiMerchant/Single User item: Message: 
+2021-07-13 08:38:23,002:	   ERROR:	  Merchant Page: Could not get the CheckBox GeoLocation item: Message: 
+2021-07-13 08:38:28,282:	   ERROR:	  Merchant Page: Could not get the CheckBox IPVerification item: Message: 
+2021-07-13 08:38:33,584:	   ERROR:	  Merchant Page: Could not get the Input Text Receipt Footer item: Message: 
+2021-07-13 08:38:38,879:	   ERROR:	  Merchant Page: Could not get the Input Text Title Custom item: Message: 
+2021-07-13 08:38:44,558:	   ERROR:	  Merchant Page: Could not get the Aditional Data, Field 1 tab item: Message: 
+2021-07-13 08:38:49,881:	   ERROR:	  Merchant Page: Could not get the Additional Data, Field 1 tab, Input Text Label Field item: Message: 
+2021-07-13 08:38:55,062:	   ERROR:	  Merchant Page: Could not get the Additional Data, Field 1 tab, Input Text Tool tip item: Message: 
+2021-07-13 08:39:00,336:	   ERROR:	  Merchant Page: Could not get the Additional Data, Field 1 tab, Input Text Min Length item: Message: 
+2021-07-13 08:39:05,604:	   ERROR:	  Merchant Page: Could not get the Additional Data, Field 1 tab, Input Text Max Length item: Message: 
+2021-07-13 08:39:10,875:	   ERROR:	  Merchant Page: Could not get the Additional Data, Field 1 tab, ComboBox Validator item: Message: 
+2021-07-13 08:39:16,179:	   ERROR:	  Merchant Page: Could not get the Additional Data, Field 1 tab, CheckBox Required item: Message: 
+2021-07-13 08:39:21,859:	   ERROR:	  Merchant Page: Could not get the Additional Data, Field 1 tab, CheckBox Enable item: Message: 
+2021-07-13 08:39:27,245:	   ERROR:	  Merchant Page: Could not get the Additional Data, Field 1 tab, CheckBox Visible item: Message: 
+2021-07-13 08:39:32,506:	   ERROR:	  Merchant Page: Could not get the Field 2 tab item: Message: 
+2021-07-13 08:39:37,558:	   ERROR:	  Merchant Page: Could not get the Additional Data, Field 2 tab, Input Text Label Field item: Message: 
+2021-07-13 08:39:46,747:	   INFO:	  ====== WebDriver manager ======
+2021-07-13 08:39:46,791:	   INFO:	  Current google-chrome version is 91.0.4472
+2021-07-13 08:39:46,791:	   INFO:	  Get LATEST driver version for 91.0.4472
+2021-07-13 08:39:47,159:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\91.0.4472.101\chromedriver.exe] found in cache
+2021-07-13 08:39:49,006:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-07-13 08:39:49,007:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-07-13 08:39:52,171:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-07-13 08:39:52,480:	   INFO:	  Login Page: It was written in the userName text field.
+2021-07-13 08:39:52,492:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-07-13 08:39:52,990:	   INFO:	  Login Page: It was written in the password text field.
+2021-07-13 08:39:53,000:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-07-13 08:39:53,196:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-07-13 08:39:53,196:	   INFO:	  Login Page: The user, password and merchant fields were complete
+2021-07-13 08:39:53,371:	   INFO:	  Login Page: Clicked successfully.
+2021-07-13 08:39:53,371:	   INFO:	  Login Page: login was clicked
+2021-07-13 08:39:55,688:	   INFO:	  Dashboard Page: Items Obtained
+2021-07-13 08:39:55,774:	   INFO:	  Dashboard Page: Clicked successfully.
+2021-07-13 08:39:55,775:	   INFO:	  Dashboard Page: Administration is clicked correctly
+2021-07-13 08:39:55,775:	   INFO:	  Merchant Actions Page: Administration Menu was loads correctly.
+2021-07-13 08:39:56,201:	   INFO:	  Administration Page: Clicked successfully.
+2021-07-13 08:39:56,202:	   INFO:	  Administration Page: Successfully clicked on Merchant
+2021-07-13 08:39:56,202:	   INFO:	  Merchant Actions Page: Submenu Merchant is ok.
+2021-07-13 08:40:03,279:	   ERROR:	  Merchant Page: Could not get the Input Text Auto Close Batch Hour item: Message: 
+2021-07-13 08:40:08,536:	   ERROR:	  Merchant Page: Could not get the Input Text Auto Close Batch Minutes item: Message: 
+2021-07-13 08:40:13,763:	   ERROR:	  Merchant Page: Could not get the Input Text Industry item: Message: 
+2021-07-13 08:40:18,999:	   ERROR:	  Merchant Page: Could not get the CheckBox Invoice Detail item: Message: 
+2021-07-13 08:40:24,205:	   ERROR:	  Merchant Page: Could not get the CheckBox Multi ClientID/Same Cards item: Message: 
+2021-07-13 08:40:29,464:	   ERROR:	  Merchant Page: Could not get the CheckBox Force Management item: Message: 
+2021-07-13 08:40:34,754:	   ERROR:	  Merchant Page: Could not get the ComboBox Fleet Cards Data item: Message: 
+2021-07-13 08:40:40,042:	   ERROR:	  Merchant Page: Could not get the CheckBox Fleet Cards Data Send Email Alert item: Message: 
+2021-07-13 08:40:45,335:	   ERROR:	  Merchant Page: Could not get the ComboBox Level II Data item: Message: 
+2021-07-13 08:40:50,614:	   ERROR:	  Merchant Page: Could not get the CheckBox Level II Data Send Email Alert item: Message: 
+2021-07-13 08:40:55,906:	   ERROR:	  Merchant Page: Could not get the ComboBox Level III Data item: Message: 
+2021-07-13 08:41:01,181:	   ERROR:	  Merchant Page: Could not get the CheckBox Level III Data Send Email Alert item: Message: 
+2021-07-13 08:41:06,546:	   ERROR:	  Merchant Page: Could not get the CheckBox ContactlessEmv item: Message: 
+2021-07-13 08:41:11,829:	   ERROR:	  Merchant Page: Could not get the CheckBox Disable Signature item: Message: 
+2021-07-13 08:41:17,128:	   ERROR:	  Merchant Page: Could not get the CheckBox Validated P2PE item: Message: 
+2021-07-13 08:41:22,350:	   ERROR:	  Merchant Page: Could not get the CheckBox Donations item: Message: 
+2021-07-13 08:41:27,597:	   ERROR:	  Merchant Page: Could not get the CheckBox Virtual Keyboard item: Message: 
+2021-07-13 08:41:32,888:	   ERROR:	  Merchant Page: Could not get the CheckBox Context Change item: Message: 
+2021-07-13 08:41:38,085:	   ERROR:	  Merchant Page: Could not get the CheckBox MultiMerchant/Single User item: Message: 
+2021-07-13 08:41:43,355:	   ERROR:	  Merchant Page: Could not get the CheckBox GeoLocation item: Message: 
+2021-07-13 08:41:49,276:	   ERROR:	  Merchant Page: Could not get the CheckBox IPVerification item: Message: 
+2021-07-13 08:41:54,584:	   ERROR:	  Merchant Page: Could not get the Input Text Receipt Footer item: Message: 
+2021-07-13 08:41:59,859:	   ERROR:	  Merchant Page: Could not get the Input Text Title Custom item: Message: 
+2021-07-13 08:42:05,147:	   ERROR:	  Merchant Page: Could not get the Aditional Data, Field 1 tab item: Message: 
+2021-07-13 08:42:10,364:	   ERROR:	  Merchant Page: Could not get the Additional Data, Field 1 tab, Input Text Label Field item: Message: 
+2021-07-13 08:42:15,577:	   ERROR:	  Merchant Page: Could not get the Additional Data, Field 1 tab, Input Text Tool tip item: Message: 
+2021-07-13 08:42:20,807:	   ERROR:	  Merchant Page: Could not get the Additional Data, Field 1 tab, Input Text Min Length item: Message: 
+2021-07-13 08:42:26,032:	   ERROR:	  Merchant Page: Could not get the Additional Data, Field 1 tab, Input Text Max Length item: Message: 
+2021-07-13 08:42:31,513:	   ERROR:	  Merchant Page: Could not get the Additional Data, Field 1 tab, ComboBox Validator item: Message: 
+2021-07-13 08:42:36,666:	   ERROR:	  Merchant Page: Could not get the Additional Data, Field 1 tab, CheckBox Required item: Message: 
+2021-07-13 08:42:41,933:	   ERROR:	  Merchant Page: Could not get the Additional Data, Field 1 tab, CheckBox Enable item: Message: 
+2021-07-13 08:42:49,596:	   INFO:	  ====== WebDriver manager ======
+2021-07-13 08:42:49,641:	   INFO:	  Current google-chrome version is 91.0.4472
+2021-07-13 08:42:49,641:	   INFO:	  Get LATEST driver version for 91.0.4472
+2021-07-13 08:42:49,942:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\91.0.4472.101\chromedriver.exe] found in cache
+2021-07-13 08:42:51,879:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-07-13 08:42:51,881:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-07-13 08:42:55,158:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-07-13 08:42:55,511:	   INFO:	  Login Page: It was written in the userName text field.
+2021-07-13 08:42:55,527:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-07-13 08:42:56,048:	   INFO:	  Login Page: It was written in the password text field.
+2021-07-13 08:42:56,059:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-07-13 08:42:56,257:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-07-13 08:42:56,258:	   INFO:	  Login Page: The user, password and merchant fields were complete
+2021-07-13 08:42:56,396:	   INFO:	  Login Page: Clicked successfully.
+2021-07-13 08:42:56,397:	   INFO:	  Login Page: login was clicked
+2021-07-13 08:42:58,723:	   INFO:	  Dashboard Page: Items Obtained
+2021-07-13 08:42:58,825:	   INFO:	  Dashboard Page: Clicked successfully.
+2021-07-13 08:42:58,825:	   INFO:	  Dashboard Page: Administration is clicked correctly
+2021-07-13 08:42:58,825:	   INFO:	  Merchant Actions Page: Administration Menu was loads correctly.
+2021-07-13 08:42:59,251:	   INFO:	  Administration Page: Clicked successfully.
+2021-07-13 08:42:59,251:	   INFO:	  Administration Page: Successfully clicked on Merchant
+2021-07-13 08:42:59,251:	   INFO:	  Merchant Actions Page: Submenu Merchant is ok.
+2021-07-13 08:43:00,326:	   INFO:	  Merchant Page: Get Elements is ok
+2021-07-13 08:43:00,746:	   INFO:	  Merchant Page: Clicked successfully.
+2021-07-13 08:43:00,746:	   INFO:	  Merchant Page: Processing Data tab clicked correctly
+2021-07-13 08:43:02,748:	   INFO:	  Merchant test page: Click Tab Merchant Data Tab
+2021-07-13 08:43:07,763:	   INFO:	  Merchant test page: The 'Click Tab Merchant Data' test passed
+2021-07-13 08:43:07,797:	   INFO:	  Merchant test page: The 'Click Tab Merchant Data' test data was saved
+2021-07-13 08:44:50,575:	   INFO:	  ====== WebDriver manager ======
+2021-07-13 08:44:50,621:	   INFO:	  Current google-chrome version is 91.0.4472
+2021-07-13 08:44:50,621:	   INFO:	  Get LATEST driver version for 91.0.4472
+2021-07-13 08:44:51,025:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\91.0.4472.101\chromedriver.exe] found in cache
+2021-07-13 08:44:52,899:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-07-13 08:44:52,901:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-07-13 08:44:55,932:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-07-13 08:44:56,236:	   INFO:	  Login Page: It was written in the userName text field.
+2021-07-13 08:44:56,251:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-07-13 08:44:56,759:	   INFO:	  Login Page: It was written in the password text field.
+2021-07-13 08:44:56,770:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-07-13 08:44:56,975:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-07-13 08:44:56,975:	   INFO:	  Login Page: The user, password and merchant fields were complete
+2021-07-13 08:44:57,138:	   INFO:	  Login Page: Clicked successfully.
+2021-07-13 08:44:57,139:	   INFO:	  Login Page: login was clicked
+2021-07-13 08:44:58,876:	   INFO:	  Dashboard Page: Items Obtained
+2021-07-13 08:44:58,983:	   INFO:	  Dashboard Page: Clicked successfully.
+2021-07-13 08:44:58,983:	   INFO:	  Dashboard Page: Administration is clicked correctly
+2021-07-13 08:44:58,984:	   INFO:	  Merchant Actions Page: Administration Menu was loads correctly.
+2021-07-13 08:44:59,406:	   INFO:	  Administration Page: Clicked successfully.
+2021-07-13 08:44:59,406:	   INFO:	  Administration Page: Successfully clicked on Merchant
+2021-07-13 08:44:59,407:	   INFO:	  Merchant Actions Page: Submenu Merchant is ok.
+2021-07-13 08:45:00,515:	   INFO:	  Merchant Page: Get Elements is ok
+2021-07-13 08:45:00,975:	   INFO:	  Merchant Page: Clicked successfully.
+2021-07-13 08:45:00,976:	   INFO:	  Merchant Page: Processing Data tab clicked correctly
+2021-07-13 08:45:02,979:	   INFO:	  Merchant test page: Click Tab Merchant Data Tab
+2021-07-13 08:45:07,993:	   INFO:	  Merchant test page: The 'Click Tab Merchant Data' test passed
+2021-07-13 08:45:08,029:	   INFO:	  Merchant test page: The 'Click Tab Merchant Data' test data was saved
+2021-07-13 09:01:16,615:	   INFO:	  ====== WebDriver manager ======
+2021-07-13 09:01:16,702:	   INFO:	  Current google-chrome version is 91.0.4472
+2021-07-13 09:01:16,703:	   INFO:	  Get LATEST driver version for 91.0.4472
+2021-07-13 09:01:17,080:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\91.0.4472.101\chromedriver.exe] found in cache
+2021-07-13 09:01:18,842:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-07-13 09:01:18,844:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-07-13 09:01:22,008:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-07-13 09:01:22,319:	   INFO:	  Login Page: It was written in the userName text field.
+2021-07-13 09:01:22,329:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-07-13 09:01:22,947:	   INFO:	  Login Page: It was written in the password text field.
+2021-07-13 09:01:22,960:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-07-13 09:01:23,190:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-07-13 09:01:23,190:	   INFO:	  Login Page: The user, password and merchant fields were complete
+2021-07-13 09:01:23,354:	   INFO:	  Login Page: Clicked successfully.
+2021-07-13 09:01:23,354:	   INFO:	  Login Page: login was clicked
+2021-07-13 09:01:25,182:	   INFO:	  Dashboard Page: Items Obtained
+2021-07-13 09:01:25,286:	   INFO:	  Dashboard Page: Clicked successfully.
+2021-07-13 09:01:25,287:	   INFO:	  Dashboard Page: Administration is clicked correctly
+2021-07-13 09:01:25,287:	   INFO:	  Access Control List Actions Page: User Menu was loads correctly.
+2021-07-13 09:01:25,706:	   INFO:	  Administration Page: Clicked successfully.
+2021-07-13 09:01:25,706:	   INFO:	  Administration Page: Successfully clicked on AccessControlList
+2021-07-13 09:01:25,707:	   INFO:	  Access Control List Actions Page: Submenu Users -> ok.
+2021-07-13 09:01:26,655:	   INFO:	  Access Control List Page: Clicked successfully.
+2021-07-13 09:01:26,656:	   INFO:	  Access Control List Page: The IpToAllowed textbox is clicked correctly
+2021-07-13 09:01:28,665:	   INFO:	  Users test page: Click Search textbox Search
+2021-07-13 09:01:33,670:	   INFO:	  Users test page: The 'Click Search textbox' test passed
+2021-07-13 09:01:33,701:	   INFO:	  Users test page: The 'Click Search textbox' test data was saved
+2021-07-13 09:14:55,327:	   INFO:	  ====== WebDriver manager ======
+2021-07-13 09:14:55,436:	   INFO:	  Current google-chrome version is 91.0.4472
+2021-07-13 09:14:55,437:	   INFO:	  Get LATEST driver version for 91.0.4472
+2021-07-13 09:14:55,867:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\91.0.4472.101\chromedriver.exe] found in cache
+2021-07-13 09:14:57,555:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-07-13 09:14:57,557:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-07-13 09:15:00,787:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-07-13 09:15:01,090:	   INFO:	  Login Page: It was written in the userName text field.
+2021-07-13 09:15:01,104:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-07-13 09:15:01,627:	   INFO:	  Login Page: It was written in the password text field.
+2021-07-13 09:15:01,637:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-07-13 09:15:01,839:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-07-13 09:15:01,839:	   INFO:	  Login Page: The user, password and merchant fields were complete
+2021-07-13 09:15:01,989:	   INFO:	  Login Page: Clicked successfully.
+2021-07-13 09:15:01,990:	   INFO:	  Login Page: login was clicked
+2021-07-13 09:15:04,800:	   INFO:	  Dashboard Page: Items Obtained
+2021-07-13 09:15:04,901:	   INFO:	  Dashboard Page: Clicked successfully.
+2021-07-13 09:15:04,901:	   INFO:	  Dashboard Page: Administration is clicked correctly
+2021-07-13 09:15:04,902:	   INFO:	  Countries Acl Actions Page: User Menu was loads correctly.
+2021-07-13 09:15:05,311:	   INFO:	  Administration Page: Clicked successfully.
+2021-07-13 09:15:05,311:	   INFO:	  Administration Page: Successfully clicked on CountriesAcl
+2021-07-13 09:15:05,311:	   INFO:	  Countries Acl Actions Page: Submenu Countries Acl -> ok.
+2021-07-13 09:15:06,165:	   INFO:	  Countries ACL Page: Clicked successfully.
+2021-07-13 09:15:06,166:	   INFO:	  Countries ACL Page: The Allowed Countries checkbox is clicked correctly
+2021-07-13 09:15:08,171:	   INFO:	  Countries Acl test page: Click checkbox Search
+2021-07-13 09:15:13,182:	   INFO:	  Countries Acl test page: The 'Click checkbox' test passed
+2021-07-13 09:15:13,213:	   INFO:	  Countries Acl test page: The 'Click checkbox' test data was saved
+2021-07-13 09:28:25,490:	   INFO:	  ====== WebDriver manager ======
+2021-07-13 09:28:25,547:	   INFO:	  Current google-chrome version is 91.0.4472
+2021-07-13 09:28:25,548:	   INFO:	  Get LATEST driver version for 91.0.4472
+2021-07-13 09:28:25,928:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\91.0.4472.101\chromedriver.exe] found in cache
+2021-07-13 09:28:27,959:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-07-13 09:28:27,961:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-07-13 09:28:31,551:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-07-13 09:28:31,972:	   INFO:	  Login Page: It was written in the userName text field.
+2021-07-13 09:28:31,997:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-07-13 09:28:32,745:	   INFO:	  Login Page: It was written in the password text field.
+2021-07-13 09:28:32,772:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-07-13 09:28:33,076:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-07-13 09:28:33,076:	   INFO:	  Login Page: The user, password and merchant fields were complete
+2021-07-13 09:28:33,295:	   INFO:	  Login Page: Clicked successfully.
+2021-07-13 09:28:33,295:	   INFO:	  Login Page: login was clicked
+2021-07-13 09:28:35,314:	   INFO:	  Dashboard Page: Items Obtained
+2021-07-13 09:28:35,437:	   INFO:	  Dashboard Page: Clicked successfully.
+2021-07-13 09:28:35,438:	   INFO:	  Dashboard Page: Administration is clicked correctly
+2021-07-13 09:28:35,438:	   INFO:	  Invoice Templates Page: User Menu was loads correctly.
+2021-07-13 09:28:36,019:	   INFO:	  Administration Page: Clicked successfully.
+2021-07-13 09:28:36,019:	   INFO:	  Administration Page: Successfully clicked on InvoiceTemplates
+2021-07-13 09:28:36,019:	   INFO:	  Invoice Templates Page: Submenu Users -> ok.
+2021-07-13 09:28:41,402:	   ERROR:	  Invoice Templates Page: Could not get the Search input text item: Message: 
+2021-07-13 09:28:41,403:	   INFO:	  Invoice Templates page: The 'Click Combobox Sale' test passed
+2021-07-13 09:28:41,421:	   INFO:	  Invoice Templates page: The 'Click Combobox Sale' test data was saved

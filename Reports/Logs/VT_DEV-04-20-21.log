@@ -1,0 +1,21 @@
+2021-04-20 18:07:35,423:	   INFO:	  ====== WebDriver manager ======
+2021-04-20 18:07:35,461:	   INFO:	  Current google-chrome version is 90.0.4430
+2021-04-20 18:07:35,461:	   INFO:	  Get LATEST driver version for 90.0.4430
+2021-04-20 18:07:35,761:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+2021-04-20 18:07:37,541:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-04-20 18:07:37,543:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-20 18:07:51,047:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-04-20 18:07:51,332:	   INFO:	  Login Page: It was written in the userName text field.
+2021-04-20 18:07:51,345:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-04-20 18:07:51,846:	   INFO:	  Login Page: It was written in the password text field.
+2021-04-20 18:07:51,855:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-04-20 18:07:52,056:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-04-20 18:07:52,056:	   INFO:	  Login Page: Los camps de usuario, password y mechant fueron completos
+2021-04-20 18:07:52,196:	   INFO:	  Login Page: Clicked successfully.
+2021-04-20 18:07:52,197:	   INFO:	  Login Page: se hizo clic en login
+2021-04-20 18:08:02,453:	   ERROR:	  Update/Modify Merchant Parameters Page: Could not get the parameter avs tab item: Message: 
+2021-04-20 18:08:07,707:	   ERROR:	  Update/Modify Merchant Parameters Page: Could not get the parameter zip tab item: Message: 
+2021-04-20 18:08:12,953:	   ERROR:	  Update/Modify Merchant Parameters Page: Could not get the parameter cvv tab item: Message: 
+2021-04-20 18:08:18,204:	   ERROR:	  Update/Modify Merchant Parameters Page: Could not get the parameter save button item: Message: 
+2021-04-20 18:08:18,204:	   INFO:	  Merchant Parameters test page: The 'Update/Modify Merchant Parameters' test passed
+2021-04-20 18:08:18,215:	   INFO:	  Merchant Parameters test page: The 'Update/Modify Merchant Parameters' test data was saved

@@ -1,0 +1,30 @@
+{
+    "json_files": {
+        "json_parameters": "Configurations/parameters.json",
+        "json_elements": "Configurations/elements.json",
+        "json_card_file": "Configurations/cards.json",
+        "json_report": "Helpers/ReportGenerator/Templates/report.json",
+        "json_error": "Helpers/ReportGenerator/Templates/errors.json",
+        "json_config_options": "Helpers/ReportGenerator/Templates/pdf_options.json",
+        "json_reference_number": "Helpers/ReferencesAndToken/References/reference.json",
+        "json_token": "Helpers/ReferencesAndToken/Token/tokens.json",
+        "json_config": "Configurations/config.json",
+        "trx": "Configurations/trx.json"
+    },
+    "report_folders": {
+        "html_template": "Helpers/ReportGenerator/Templates",
+        "report_folder": "Reports/Reports/",
+        "screenshots_folder": "Reports/Screenshots/",
+        "logs_folder": "Reports/Logs/"
+    },
+    "parameter_template": {
+        "template": "Helpers/ParameterGenerator/Template/",
+        "url": "Helpers/ParameterGenerator/Template/index.html"
+    },
+    "generator": {
+        "card": "http://localhost:8001/"
+    },
+    "server": {
+        "url": "http://18.222.110.141:8080/job/Simple_Cashiering/1/execution/node/3/ws/"
+    }
+}

@@ -1,0 +1,51 @@
+{
+	"url": "https://webtest.cenpos.net/spa/app/vt",
+	"users": {
+		"standard"			: 	"hbedoya1",
+		"blocked"			: 	"ablocked",
+		"special"			: 	"aspecial_",
+		"w_sale"			: 	"asale",
+		"w_auth"			: 	"aauth",
+		"w_cash"			: 	"acash",
+		"w_refund"			: 	"arefund",
+		"w_credit"			: 	"acredit",
+		"w_force"			: 	"aforce",
+		"w_voice"			: 	"avoice",
+		"w_ebpp"			: 	"aebpp",
+		"w_report"			: 	"areport"
+	},
+	"passwords": {
+		"standard"			:	"Cenpos@52",
+		"others"			: 	"Cenpos*2"
+	},
+	"mid": {
+		"standard"			: 	"30000720",
+		"check"				: 	"12725718"
+	},
+	"tokens": {
+		"visa"				: 	"FJRHB39Z",
+		"mastercard"		: 	"LB1WKVYF",
+		"amex"				: 	"NQIURSWJ",
+		"discover"			: 	"TX3PBZK5",
+		"check"				: 	"LSBFV1FW",
+		"edit"				: 	"EJHPQ4OQ"
+	},
+	"amount": {
+		"standard"			: 	120.56,
+		"small"				: 	1.52,
+		"declined"			:	1.00,
+		"amex"				: 	15.00,
+		"others"			: 	11.10
+	},
+	"email": {
+		"standard"			: 	"azapata@initiums.com",
+		"invalid"			: 	"a"
+	},
+	"types": [
+		"Sale", "Refund", "Authorization", "Credit", "Force", "Voice Auth", "EBPP"
+	],
+	"extras": {
+		"invoice" 			: 	"000001",
+		"customer"			: 	"albertor03"
+	}
+}

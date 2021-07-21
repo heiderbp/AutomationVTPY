@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid col-12">
+        <p class="text-right font-weight-bold">{{date}}</p>
+        <table class="table table-sm text-center">
+            <thead class="bg-primary">
+                <tr>
+                    <th scope="col">Application</th>
+                    <th scope="col">Merchant ID</th>
+                    <th scope="col">Environment</th>
+                    <th scope="col">Test Case</th>
+                    <th scope="col">Transaction</th>
+                    <th scope="col">Card Type</th>
+                    <th scope="col">Browser</th>
+                    <th scope="col">Result</th>
+                    <th scope="col">Reason</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for data in datas %}
+                <tr>
+                    <td>{{data['Application']}}</td>
+                    <td>{{data['Mid']}}</td>
+                    <td>{{data['Environment']}}</td>
+                    <td>
+                        <p class="text-left">{{data['Tests']}}</p>
+                    </td>
+                    <td>{{data['Transaction']}}</td>
+                    <td>{{data['CardType']}}</td>
+                    <td>{{data['Browser']}}</td>
+                    <td>{{data['Result']}}</td>
+                    <td>{% if data['Result'] == 'Failed' %}
+                        <a href="#{{data['Id']}}">View errors</a>
+                        {% elif data['Result'] == 'Skipped' %}
+                        {{data['Reason']}}
+                        {% endif %}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <br>
+        <div class="col-3">
+            <table class="table table-sm text-center">
+                <thead class="bg-primary">
+                    <tr>
+                        <th scope="col">Status</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Passed</td>
+                        <td>{{passed}}</td>
+                    </tr>
+                    <tr>
+                        <td>Failed</td>
+                        <td>{{failed}}</td>
+                    </tr>
+                    <tr>
+                        <td>Skipped</td>
+                        <td>{{skipped}}</td>
+                    </tr>
+                    <tr>
+                        <th>Total</th>
+                        <td>{{total}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        {% for error in datas %}
+        {% if error['Reason']|length > 0 and error['Result'] != "Skipped"%}
+        <table id="errorTable" class="table table-sm text-center">
+            <thead class="bg-primary">
+                <tr>
+                    <th colspan=3  id="{{error['Id']}}" name="{{error['Id']}}" class='text-center' scope="col">{{error['Tests']}} {{error['Transaction']}} ({{error['CardType']}})</th>
+                </tr>
+                <tr>
+                    <th scope="col">Method</th>
+                    <th scope="col">Errors</th>
+                    <th scope="col">Screenshots</th>
+                </tr>
+            </thead>
+            {% for e in error['Reason'] %}
+            <tbody>
+                <tr>
+                    <td rowspan={{e['NumbersErrors']}} class="text-left align-middle">{{e['Method']}}</td>
+                    <td><p class="text-left">{{e['Errors'][0]}}</p></td>
+                    {% for screen in e['Screenshot'] %}
+                    <td rowspan={{e['NumbersErrors']}} class="align-middle"><a href="{{screen['Url']}}" target="_blank">{{screen['Screen']}}</a></td>
+                    {% endfor %}
+                </tr>
+                {% if e['NumbersErrors'] > 1 %}
+                {% for a in e['Errors'][1:] %}
+                <tr>
+                    <td>
+                        <p class="text-left">{{a}}</p>
+                    </td>
+                </tr>
+                {% endfor %}
+                {% endif %}
+            </tbody>
+            {% endfor %}
+        </table>
+        {% endif %}
+        {% endfor %}
+    </div>
+</body>
+
+</html>

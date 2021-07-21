@@ -1,0 +1,87 @@
+2021-04-12 14:23:00,671:	   INFO:	  login test Page: Test username ok password ok MID bad.
+2021-04-12 14:23:15,316:	   INFO:	  login test Page: Test username bad password ok MID ok.
+2021-04-12 14:23:29,610:	   INFO:	  login test Page: Test username ok password bad MID ok.
+2021-04-12 14:23:43,056:	   INFO:	  login test Page: Test username bad password bad MID ok.
+2021-04-12 14:23:59,672:	   INFO:	  login test Page: Test username bad password ok MID bad.
+2021-04-12 14:24:13,561:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-12 14:43:06,806:	   ERROR:	  Load Selenium: The edge chromium webdriver failed: Message: session not created: This version of MSEdgeDriver only supports MSEdge version 87Current browser version is 89.0.774.75 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+2021-04-12 14:46:44,935:	   INFO:	  ====== WebDriver manager ======
+2021-04-12 14:46:45,002:	   INFO:	  Current google-chrome version is 89.0.4389
+2021-04-12 14:46:45,003:	   INFO:	  Get LATEST driver version for 89.0.4389
+2021-04-12 14:46:45,404:	   INFO:	  There is no [win32] chromedriver for browser 89.0.4389 in cache
+2021-04-12 14:46:45,405:	   INFO:	  Get LATEST driver version for 89.0.4389
+2021-04-12 14:46:45,694:	   INFO:	  Trying to download new driver from https://chromedriver.storage.googleapis.com/89.0.4389.23/chromedriver_win32.zip
+2021-04-12 14:46:49,830:	   INFO:	  Driver has been saved in cache [C:\Users\Dev\.wdm\drivers\chromedriver\win32\89.0.4389.23]
+2021-04-12 14:46:53,152:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-04-12 14:46:53,155:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-12 14:47:31,820:	   INFO:	  ====== WebDriver manager ======
+2021-04-12 14:47:31,865:	   INFO:	  Current google-chrome version is 89.0.4389
+2021-04-12 14:47:31,866:	   INFO:	  Get LATEST driver version for 89.0.4389
+2021-04-12 14:47:32,203:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\89.0.4389.23\chromedriver.exe] found in cache
+2021-04-12 14:47:34,493:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-04-12 14:47:34,495:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-12 14:47:41,272:	   INFO:	  login test Page: Test username ok password ok MID bad.
+2021-04-12 14:47:48,509:	   INFO:	  login test Page: Test username bad password ok MID ok.
+2021-04-12 14:47:55,863:	   INFO:	  login test Page: Test username ok password bad MID ok.
+2021-04-12 14:48:03,232:	   INFO:	  login test Page: Test username bad password bad MID ok.
+2021-04-12 14:48:10,506:	   INFO:	  login test Page: Test username bad password ok MID bad.
+2021-04-12 14:48:17,964:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-12 14:51:10,131:	   INFO:	  ====== WebDriver manager ======
+2021-04-12 14:51:10,620:	   INFO:	  There is no [win64] geckodriver for browser  in cache
+2021-04-12 14:51:10,927:	   INFO:	  Getting latest mozilla release info for v0.29.1
+2021-04-12 14:51:11,893:	   INFO:	  Trying to download new driver from https://github.com/mozilla/geckodriver/releases/download/v0.29.1/geckodriver-v0.29.1-win64.zip
+2021-04-12 14:51:13,322:	   INFO:	  Driver has been saved in cache [C:\Users\Dev\.wdm\drivers\geckodriver\win64\v0.29.1]
+2021-04-12 14:51:25,561:	   INFO:	  Load Selenium: The geckodriver loaded
+2021-04-12 14:51:25,563:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-12 14:51:33,735:	   INFO:	  login test Page: Test username ok password ok MID bad.
+2021-04-12 14:51:42,712:	   INFO:	  login test Page: Test username bad password ok MID ok.
+2021-04-12 14:51:51,735:	   INFO:	  login test Page: Test username ok password bad MID ok.
+2021-04-12 14:52:01,182:	   INFO:	  login test Page: Test username bad password bad MID ok.
+2021-04-12 14:52:10,164:	   INFO:	  login test Page: Test username bad password ok MID bad.
+2021-04-12 14:52:19,257:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-12 14:54:44,325:	   INFO:	  ====== WebDriver manager ======
+2021-04-12 14:54:44,869:	   INFO:	  There is no [win64] edgedriver for browser  in cache
+2021-04-12 14:54:45,209:	   INFO:	  Trying to download new driver from https://msedgedriver.azureedge.net/89.0.774.75/edgedriver_win64.zip
+2021-04-12 14:54:48,564:	   INFO:	  Driver has been saved in cache [C:\Users\Dev\.wdm\drivers\edgedriver\win64\89.0.774.75]
+2021-04-12 14:54:51,641:	   INFO:	  Load Selenium: The edge chromium webdriver loaded and the window was maximized
+2021-04-12 14:54:51,643:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-12 14:55:00,575:	   INFO:	  login test Page: Test username ok password ok MID bad.
+2021-04-12 14:55:29,124:	   INFO:	  ====== WebDriver manager ======
+2021-04-12 14:55:29,636:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\edgedriver\win64\89.0.774.75\msedgedriver.exe] found in cache
+2021-04-12 14:55:33,160:	   INFO:	  Load Selenium: The edge chromium webdriver loaded and the window was maximized
+2021-04-12 14:55:33,161:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-12 14:55:42,118:	   INFO:	  login test Page: Test username ok password ok MID bad.
+2021-04-12 15:13:28,009:	   INFO:	  ====== WebDriver manager ======
+2021-04-12 15:13:28,544:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\edgedriver\win64\89.0.774.75\msedgedriver.exe] found in cache
+2021-04-12 15:13:32,000:	   INFO:	  Load Selenium: The edge chromium webdriver loaded and the window was maximized
+2021-04-12 15:13:32,002:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-12 15:14:49,822:	   INFO:	  ====== WebDriver manager ======
+2021-04-12 15:14:50,326:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\edgedriver\win64\89.0.774.75\msedgedriver.exe] found in cache
+2021-04-12 15:14:54,081:	   INFO:	  Load Selenium: The edge chromium webdriver loaded and the window was maximized
+2021-04-12 15:14:54,082:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-12 15:15:18,156:	   INFO:	  ====== WebDriver manager ======
+2021-04-12 15:15:18,682:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\edgedriver\win64\89.0.774.75\msedgedriver.exe] found in cache
+2021-04-12 15:15:22,129:	   INFO:	  Load Selenium: The edge chromium webdriver loaded and the window was maximized
+2021-04-12 15:15:22,131:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-12 15:15:28,737:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-04-12 15:15:29,476:	   INFO:	  Login Page: It was written in the userName text field.
+2021-04-12 15:15:29,781:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-04-12 15:15:30,793:	   INFO:	  Login Page: It was written in the password text field.
+2021-04-12 15:15:31,141:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-04-12 15:15:31,488:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-04-12 15:15:31,488:	   INFO:	  Login Page: Los camps de usuario, password y mechant fueron completados
+2021-04-12 15:15:31,651:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-12 15:21:28,872:	   INFO:	  ====== WebDriver manager ======
+2021-04-12 15:21:29,366:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\edgedriver\win64\89.0.774.75\msedgedriver.exe] found in cache
+2021-04-12 15:21:32,644:	   INFO:	  Load Selenium: The edge chromium webdriver loaded and the window was maximized
+2021-04-12 15:21:32,646:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-12 15:21:39,046:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-04-12 15:21:39,457:	   INFO:	  Login Page: It was written in the userName text field.
+2021-04-12 15:21:39,704:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-04-12 15:21:40,581:	   INFO:	  Login Page: It was written in the password text field.
+2021-04-12 15:21:40,822:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-04-12 15:21:41,342:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-04-12 15:21:41,342:	   INFO:	  Login Page: Los camps de usuario, password y mechant fueron completados
+2021-04-12 15:21:42,020:	   INFO:	  Login Page: Clicked successfully.
+2021-04-12 15:21:42,021:	   INFO:	  Login Page: se hizo clic en login
+2021-04-12 15:21:42,021:	   INFO:	  login test Page: Test username ok password bad MID bad.

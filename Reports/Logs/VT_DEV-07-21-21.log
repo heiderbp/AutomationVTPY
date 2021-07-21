@@ -1,0 +1,212 @@
+2021-07-21 09:38:20,635:	   INFO:	  ====== WebDriver manager ======
+2021-07-21 09:38:20,705:	   INFO:	  Current google-chrome version is 91.0.4472
+2021-07-21 09:38:20,705:	   INFO:	  Get LATEST driver version for 91.0.4472
+2021-07-21 09:38:21,210:	   INFO:	  Get LATEST driver version for 91.0.4472
+2021-07-21 09:38:21,501:	   INFO:	  Trying to download new driver from https://chromedriver.storage.googleapis.com/91.0.4472.101/chromedriver_win32.zip
+2021-07-21 09:38:23,440:	   INFO:	  Driver has been saved in cache [C:\Users\Dev\.wdm\drivers\chromedriver\win32\91.0.4472.101]
+2021-07-21 09:38:26,369:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-07-21 09:38:26,371:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-07-21 09:38:33,840:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-07-21 09:38:34,232:	   INFO:	  Login Page: It was written in the userName text field.
+2021-07-21 09:38:34,256:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-07-21 09:38:34,903:	   INFO:	  Login Page: It was written in the password text field.
+2021-07-21 09:38:34,916:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-07-21 09:38:35,180:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-07-21 09:38:35,181:	   INFO:	  Login Page: The user, password and merchant fields were complete
+2021-07-21 09:38:35,398:	   INFO:	  Login Page: Clicked successfully.
+2021-07-21 09:38:35,399:	   INFO:	  Login Page: login was clicked
+2021-07-21 09:38:39,345:	   INFO:	  Dashboard Page: Items Obtained
+2021-07-21 09:38:39,444:	   INFO:	  Dashboard Page: Clicked successfully.
+2021-07-21 09:38:39,444:	   INFO:	  Dashboard Page: Administration is clicked correctly
+2021-07-21 09:38:39,445:	   INFO:	  Access Control List Actions Page: User Menu was loads correctly.
+2021-07-21 09:38:39,973:	   INFO:	  Administration Page: Clicked successfully.
+2021-07-21 09:38:39,973:	   INFO:	  Administration Page: Successfully clicked on AccessControlList
+2021-07-21 09:38:39,974:	   INFO:	  Access Control List Actions Page: Submenu Users -> ok.
+2021-07-21 09:38:45,058:	   ERROR:	  Access Control List Page: Could not get the Search input text item: Message: 
+2021-07-21 09:38:45,059:	   INFO:	  Access Control List test page: The 'Click Search textbox' test passed
+2021-07-21 09:38:45,097:	   INFO:	  Access Control List test page: The 'Click Search textbox' test data was saved
+2021-07-21 09:38:45,227:	   INFO:	  Dashboard Page: Items Obtained
+2021-07-21 09:38:45,665:	   INFO:	  Dashboard Page: Clicked successfully.
+2021-07-21 09:38:45,665:	   INFO:	  Dashboard Page: Administration is clicked correctly
+2021-07-21 09:38:45,665:	   INFO:	  Access Control List Actions Page: User Menu was loads correctly.
+2021-07-21 09:38:47,098:	   INFO:	  Administration Page: Clicked successfully.
+2021-07-21 09:38:47,098:	   INFO:	  Administration Page: Successfully clicked on AccessControlList
+2021-07-21 09:38:47,098:	   INFO:	  Access Control List Actions Page: Submenu Users -> ok.
+2021-07-21 09:38:52,475:	   ERROR:	  Access Control List Page: Could not get the Search input text item: Message: 
+2021-07-21 09:38:52,476:	   INFO:	  Access Control List test page: The 'Click Search textbox' test passed
+2021-07-21 09:38:52,523:	   INFO:	  Access Control List test page: The 'Click Search textbox' test data was saved
+2021-07-21 09:39:57,955:	   INFO:	  ====== WebDriver manager ======
+2021-07-21 09:39:57,999:	   INFO:	  Current google-chrome version is 91.0.4472
+2021-07-21 09:39:57,999:	   INFO:	  Get LATEST driver version for 91.0.4472
+2021-07-21 09:39:58,317:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\91.0.4472.101\chromedriver.exe] found in cache
+2021-07-21 09:40:00,501:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-07-21 09:40:00,505:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-07-21 09:40:03,916:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-07-21 09:40:04,336:	   INFO:	  Login Page: It was written in the userName text field.
+2021-07-21 09:40:04,356:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-07-21 09:40:05,016:	   INFO:	  Login Page: It was written in the password text field.
+2021-07-21 09:40:05,027:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-07-21 09:40:05,333:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-07-21 09:40:05,333:	   INFO:	  Login Page: The user, password and merchant fields were complete
+2021-07-21 09:40:05,534:	   INFO:	  Login Page: Clicked successfully.
+2021-07-21 09:40:05,534:	   INFO:	  Login Page: login was clicked
+2021-07-21 09:40:07,663:	   INFO:	  Dashboard Page: Items Obtained
+2021-07-21 09:40:07,781:	   INFO:	  Dashboard Page: Clicked successfully.
+2021-07-21 09:40:07,783:	   INFO:	  Dashboard Page: Administration is clicked correctly
+2021-07-21 09:40:07,783:	   INFO:	  Access Control List Actions Page: User Menu was loads correctly.
+2021-07-21 09:40:08,335:	   INFO:	  Administration Page: Clicked successfully.
+2021-07-21 09:40:08,336:	   INFO:	  Administration Page: Successfully clicked on AccessControlList
+2021-07-21 09:40:08,336:	   INFO:	  Access Control List Actions Page: Submenu Users -> ok.
+2021-07-21 09:40:08,338:	   INFO:	  Helps: The element has been taken, is: ipToAllowed
+2021-07-21 09:40:09,142:	   INFO:	  Access Control List Page: Clicked successfully.
+2021-07-21 09:40:09,142:	   INFO:	  Access Control List Page: The IpToAllowed textbox is clicked correctly
+2021-07-21 09:40:11,150:	   INFO:	  Access Control List test page: Click Search textbox Search
+2021-07-21 09:40:16,151:	   INFO:	  Access Control List test page: The 'Click Search textbox' test passed
+2021-07-21 09:40:16,183:	   INFO:	  Access Control List test page: The 'Click Search textbox' test data was saved
+2021-07-21 09:40:16,269:	   INFO:	  Dashboard Page: Items Obtained
+2021-07-21 09:40:16,653:	   INFO:	  Dashboard Page: Clicked successfully.
+2021-07-21 09:40:16,653:	   INFO:	  Dashboard Page: Administration is clicked correctly
+2021-07-21 09:40:16,653:	   INFO:	  Access Control List Actions Page: User Menu was loads correctly.
+2021-07-21 09:40:17,035:	   INFO:	  Administration Page: Clicked successfully.
+2021-07-21 09:40:17,035:	   INFO:	  Administration Page: Successfully clicked on AccessControlList
+2021-07-21 09:40:17,035:	   INFO:	  Access Control List Actions Page: Submenu Users -> ok.
+2021-07-21 09:40:17,037:	   INFO:	  Helps: The element has been taken, is: ipToAllowed
+2021-07-21 09:40:22,417:	   ERROR:	  Access Control List Page: Could not get the Search input text item: Message: 
+2021-07-21 09:40:22,418:	   INFO:	  Access Control List test page: The 'Click Search textbox' test passed
+2021-07-21 09:40:22,462:	   INFO:	  Access Control List test page: The 'Click Search textbox' test data was saved
+2021-07-21 09:45:54,234:	   INFO:	  ====== WebDriver manager ======
+2021-07-21 09:45:54,281:	   INFO:	  Current google-chrome version is 91.0.4472
+2021-07-21 09:45:54,281:	   INFO:	  Get LATEST driver version for 91.0.4472
+2021-07-21 09:45:54,719:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\91.0.4472.101\chromedriver.exe] found in cache
+2021-07-21 09:45:56,502:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-07-21 09:45:56,505:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-07-21 09:45:59,832:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-07-21 09:46:00,290:	   INFO:	  Login Page: It was written in the userName text field.
+2021-07-21 09:46:00,303:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-07-21 09:46:00,812:	   INFO:	  Login Page: It was written in the password text field.
+2021-07-21 09:46:00,824:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-07-21 09:46:01,019:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-07-21 09:46:01,019:	   INFO:	  Login Page: The user, password and merchant fields were complete
+2021-07-21 09:46:01,156:	   INFO:	  Login Page: Clicked successfully.
+2021-07-21 09:46:01,156:	   INFO:	  Login Page: login was clicked
+2021-07-21 09:46:02,921:	   INFO:	  Dashboard Page: Items Obtained
+2021-07-21 09:46:03,026:	   INFO:	  Dashboard Page: Clicked successfully.
+2021-07-21 09:46:03,026:	   INFO:	  Dashboard Page: Administration is clicked correctly
+2021-07-21 09:46:03,026:	   INFO:	  Access Control List Actions Page: User Menu was loads correctly.
+2021-07-21 09:46:03,458:	   INFO:	  Administration Page: Clicked successfully.
+2021-07-21 09:46:03,458:	   INFO:	  Administration Page: Successfully clicked on AccessControlList
+2021-07-21 09:46:03,458:	   INFO:	  Access Control List Actions Page: Submenu Users -> ok.
+2021-07-21 09:46:03,460:	   INFO:	  Helps: The element has been taken, is: ipToAllowed Leido desde el json ok
+2021-07-21 09:46:04,033:	   INFO:	  Access Control List Page: Clicked successfully.
+2021-07-21 09:46:04,034:	   INFO:	  Access Control List Page: The IpToAllowed textbox is clicked correctly
+2021-07-21 09:46:06,038:	   INFO:	  Access Control List test page: Click Search textbox Search
+2021-07-21 09:46:11,048:	   INFO:	  Access Control List test page: The 'Click Search textbox' test passed
+2021-07-21 09:46:11,083:	   INFO:	  Access Control List test page: The 'Click Search textbox' test data was saved
+2021-07-21 09:46:11,168:	   INFO:	  Dashboard Page: Items Obtained
+2021-07-21 09:46:11,483:	   INFO:	  Dashboard Page: Clicked successfully.
+2021-07-21 09:46:11,483:	   INFO:	  Dashboard Page: Administration is clicked correctly
+2021-07-21 09:46:11,483:	   INFO:	  Access Control List Actions Page: User Menu was loads correctly.
+2021-07-21 09:46:12,480:	   INFO:	  Administration Page: Clicked successfully.
+2021-07-21 09:46:12,480:	   INFO:	  Administration Page: Successfully clicked on AccessControlList
+2021-07-21 09:46:12,481:	   INFO:	  Access Control List Actions Page: Submenu Users -> ok.
+2021-07-21 09:46:12,483:	   INFO:	  Helps: The element has been taken, is: ipToAllowed Leido desde el json ok
+2021-07-21 09:46:13,200:	   INFO:	  Access Control List Page: Clicked successfully.
+2021-07-21 09:46:13,200:	   INFO:	  Access Control List Page: The IpToAllowed textbox is clicked correctly
+2021-07-21 09:46:15,207:	   INFO:	  Access Control List test page: Click Search textbox Search
+2021-07-21 09:46:20,212:	   INFO:	  Access Control List test page: The 'Click Search textbox' test passed
+2021-07-21 09:46:20,265:	   INFO:	  Access Control List test page: The 'Click Search textbox' test data was saved
+2021-07-21 10:11:12,773:	   INFO:	  ====== WebDriver manager ======
+2021-07-21 10:11:12,811:	   INFO:	  Current google-chrome version is 91.0.4472
+2021-07-21 10:11:12,811:	   INFO:	  Get LATEST driver version for 91.0.4472
+2021-07-21 10:11:13,227:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\91.0.4472.101\chromedriver.exe] found in cache
+2021-07-21 10:11:14,929:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-07-21 10:11:14,930:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-07-21 10:11:20,619:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-07-21 10:11:20,883:	   INFO:	  Login Page: It was written in the userName text field.
+2021-07-21 10:11:20,913:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-07-21 10:11:21,461:	   INFO:	  Login Page: It was written in the password text field.
+2021-07-21 10:11:21,473:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-07-21 10:11:21,675:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-07-21 10:11:21,675:	   INFO:	  Login Page: The user, password and merchant fields were complete
+2021-07-21 10:11:21,812:	   INFO:	  Login Page: Clicked successfully.
+2021-07-21 10:11:21,812:	   INFO:	  Login Page: login was clicked
+2021-07-21 10:11:25,146:	   INFO:	  Dashboard Page: Items Obtained
+2021-07-21 10:11:25,266:	   INFO:	  Dashboard Page: Clicked successfully.
+2021-07-21 10:11:25,266:	   INFO:	  Dashboard Page: Administration is clicked correctly
+2021-07-21 10:11:25,267:	   INFO:	  Access Control List Actions Page: User Menu was loads correctly.
+2021-07-21 10:11:25,643:	   INFO:	  Administration Page: Clicked successfully.
+2021-07-21 10:11:25,643:	   INFO:	  Administration Page: Successfully clicked on AccessControlList
+2021-07-21 10:11:25,643:	   INFO:	  Access Control List Actions Page: Submenu Users -> ok.
+2021-07-21 10:11:25,645:	   INFO:	  Helps: The element has been taken, is: ipToAllowed json file
+2021-07-21 10:11:27,070:	   ERROR:	  Access Control List Page: Something failed to click in the button: Message: element click intercepted: Element <input id="ipToAllowed" type="text"> is not clickable at point (330, 152). Other element would receive the click: <div data-v-86c6f0f8="" class="col-lg-6 col-12">...</div>  (Session info: chrome=91.0.4472.124)
+2021-07-21 10:11:27,334:	   INFO:	  Screenshot Method: The screenshots was saved
+2021-07-21 10:11:29,336:	   INFO:	  Access Control List test page: Click Search textbox Search
+2021-07-21 10:11:34,338:	   INFO:	  Access Control List test page: The 'Click Search textbox' test passed
+2021-07-21 10:11:34,369:	   INFO:	  Access Control List test page: The 'Click Search textbox' test data was saved
+2021-07-21 10:11:34,438:	   INFO:	  Dashboard Page: Items Obtained
+2021-07-21 10:11:34,776:	   INFO:	  Dashboard Page: Clicked successfully.
+2021-07-21 10:11:34,776:	   INFO:	  Dashboard Page: Administration is clicked correctly
+2021-07-21 10:11:34,777:	   INFO:	  Access Control List Actions Page: User Menu was loads correctly.
+2021-07-21 10:11:35,327:	   INFO:	  Administration Page: Clicked successfully.
+2021-07-21 10:11:35,327:	   INFO:	  Administration Page: Successfully clicked on AccessControlList
+2021-07-21 10:11:35,327:	   INFO:	  Access Control List Actions Page: Submenu Users -> ok.
+2021-07-21 10:11:35,329:	   INFO:	  Helps: The element has been taken, is: ipToAllowed json file
+2021-07-21 10:11:35,631:	   INFO:	  Access Control List Page: Clicked successfully.
+2021-07-21 10:11:35,631:	   INFO:	  Access Control List Page: The IpToAllowed textbox is clicked correctly
+2021-07-21 10:11:37,644:	   INFO:	  Access Control List test page: Click Search textbox Search
+2021-07-21 10:11:42,653:	   INFO:	  Access Control List test page: The 'Click Search textbox' test passed
+2021-07-21 10:11:42,669:	   INFO:	  Access Control List test page: The 'Click Search textbox' test data was saved
+2021-07-21 12:47:03,151:	   INFO:	  ====== WebDriver manager ======
+2021-07-21 12:47:03,197:	   INFO:	  Current google-chrome version is 91.0.4472
+2021-07-21 12:47:03,197:	   INFO:	  Get LATEST driver version for 91.0.4472
+2021-07-21 12:47:03,629:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\91.0.4472.101\chromedriver.exe] found in cache
+2021-07-21 12:47:05,195:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-07-21 12:47:05,197:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-07-21 12:47:08,428:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-07-21 12:47:08,731:	   INFO:	  Login Page: It was written in the userName text field.
+2021-07-21 12:47:08,744:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-07-21 12:47:09,232:	   INFO:	  Login Page: It was written in the password text field.
+2021-07-21 12:47:09,242:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-07-21 12:47:09,439:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-07-21 12:47:09,439:	   INFO:	  Login Page: The user, password and merchant fields were complete
+2021-07-21 12:47:09,593:	   INFO:	  Login Page: Clicked successfully.
+2021-07-21 12:47:09,593:	   INFO:	  Login Page: login was clicked
+2021-07-21 12:47:11,872:	   INFO:	  Dashboard Page: Items Obtained
+2021-07-21 12:47:11,976:	   INFO:	  Dashboard Page: Clicked successfully.
+2021-07-21 12:47:11,976:	   INFO:	  Dashboard Page: Cards is clicked correctly
+2021-07-21 12:47:11,977:	   INFO:	  Voice Actions Page: User Menu was loads correctly.
+2021-07-21 12:47:13,609:	   INFO:	  Cards Page: Clicked successfully.
+2021-07-21 12:47:13,610:	   INFO:	  Cards Page: Successfully clicked Voice
+2021-07-21 12:47:13,610:	   INFO:	  Voice Actions Page: Submenu Auth -> ok.
+2021-07-21 12:47:13,825:	   INFO:	  Voice Page: Clicked successfully.
+2021-07-21 12:47:13,825:	   INFO:	  Voice Page: The textbox Customer Code is clicked correctly
+2021-07-21 12:47:15,838:	   INFO:	  Reference Number page: Click Textbox Reference Number Search
+2021-07-21 12:47:20,846:	   INFO:	  Reference Number page: The 'Click Textbox Reference Number' test passed
+2021-07-21 12:47:20,877:	   INFO:	  Reference Number page: The 'Click Textbox Reference Number' test data was saved
+2021-07-21 12:55:47,644:	   INFO:	  ====== WebDriver manager ======
+2021-07-21 12:55:47,691:	   INFO:	  Current google-chrome version is 91.0.4472
+2021-07-21 12:55:47,691:	   INFO:	  Get LATEST driver version for 91.0.4472
+2021-07-21 12:55:48,091:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\91.0.4472.101\chromedriver.exe] found in cache
+2021-07-21 12:55:49,848:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-07-21 12:55:49,851:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-07-21 12:55:52,958:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-07-21 12:55:53,262:	   INFO:	  Login Page: It was written in the userName text field.
+2021-07-21 12:55:53,272:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-07-21 12:55:53,773:	   INFO:	  Login Page: It was written in the password text field.
+2021-07-21 12:55:53,782:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-07-21 12:55:53,980:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-07-21 12:55:53,981:	   INFO:	  Login Page: The user, password and merchant fields were complete
+2021-07-21 12:55:54,134:	   INFO:	  Login Page: Clicked successfully.
+2021-07-21 12:55:54,135:	   INFO:	  Login Page: login was clicked
+2021-07-21 12:55:57,052:	   INFO:	  Dashboard Page: Items Obtained
+2021-07-21 12:55:57,166:	   INFO:	  Dashboard Page: Clicked successfully.
+2021-07-21 12:55:57,166:	   INFO:	  Dashboard Page: Check is clicked correctly
+2021-07-21 12:55:57,166:	   INFO:	  Void Actions Page: User Menu was loads correctly.
+2021-07-21 12:55:57,614:	   INFO:	  Check Page: Clicked successfully.
+2021-07-21 12:55:57,614:	   INFO:	  Check Page: Successfully clicked on Void
+2021-07-21 12:55:57,614:	   INFO:	  Void Actions Page: Submenu Auth -> ok.
+2021-07-21 12:55:58,690:	   INFO:	  Void Page: Clicked successfully.
+2021-07-21 12:55:58,690:	   INFO:	  Void Page: The Combo box Data Series is clicked correctly
+2021-07-21 12:56:00,704:	   INFO:	  Void page: Click Combobox Merchant Search
+2021-07-21 12:56:05,716:	   INFO:	  Void page: The 'Click Combobox Merchant' test passed
+2021-07-21 12:56:05,748:	   INFO:	  Void page: The 'Click Combobox Merchant' test data was saved

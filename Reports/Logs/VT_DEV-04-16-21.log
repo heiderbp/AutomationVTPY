@@ -1,0 +1,584 @@
+2021-04-16 09:41:35,705:	   INFO:	  ====== WebDriver manager ======
+2021-04-16 09:41:35,790:	   INFO:	  Current google-chrome version is 90.0.4430
+2021-04-16 09:41:35,790:	   INFO:	  Get LATEST driver version for 90.0.4430
+2021-04-16 09:41:36,238:	   INFO:	  Get LATEST driver version for 90.0.4430
+2021-04-16 09:41:36,524:	   INFO:	  Trying to download new driver from https://chromedriver.storage.googleapis.com/90.0.4430.24/chromedriver_win32.zip
+2021-04-16 09:41:38,125:	   INFO:	  Driver has been saved in cache [C:\Users\Dev\.wdm\drivers\chromedriver\win32\90.0.4430.24]
+2021-04-16 09:41:40,980:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-04-16 09:41:41,031:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-16 09:41:45,285:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-04-16 09:41:45,535:	   INFO:	  Login Page: It was written in the userName text field.
+2021-04-16 09:41:45,699:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-04-16 09:41:46,129:	   INFO:	  Login Page: It was written in the password text field.
+2021-04-16 09:41:46,266:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-04-16 09:41:46,422:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-04-16 09:41:46,425:	   INFO:	  Login Page: Los camps de usuario, password y mechant fueron completados
+2021-04-16 09:41:46,568:	   INFO:	  Login Page: Clicked successfully.
+2021-04-16 09:41:46,568:	   INFO:	  Login Page: se hizo clic en login
+2021-04-16 09:41:46,568:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-16 09:41:51,580:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test passed
+2021-04-16 09:41:51,605:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test data was saved
+2021-04-16 14:24:54,504:	   INFO:	  ====== WebDriver manager ======
+2021-04-16 14:24:54,573:	   INFO:	  Current google-chrome version is 90.0.4430
+2021-04-16 14:24:54,573:	   INFO:	  Get LATEST driver version for 90.0.4430
+2021-04-16 14:24:55,042:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+2021-04-16 14:24:56,907:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-04-16 14:24:56,907:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-16 14:25:01,515:	   INFO:	  Login Page: Clicked successfully.
+2021-04-16 14:25:01,516:	   INFO:	  Login Page: se hizo clic en login
+2021-04-16 14:25:01,516:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-16 14:25:06,529:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test passed
+2021-04-16 14:25:06,536:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test data was saved
+2021-04-16 14:25:15,009:	   INFO:	  ====== WebDriver manager ======
+2021-04-16 14:25:15,056:	   INFO:	  Current google-chrome version is 90.0.4430
+2021-04-16 14:25:15,056:	   INFO:	  Get LATEST driver version for 90.0.4430
+2021-04-16 14:25:15,357:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+2021-04-16 14:25:17,236:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-04-16 14:25:17,237:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-16 14:25:21,521:	   INFO:	  Login Page: Clicked successfully.
+2021-04-16 14:25:21,521:	   INFO:	  Login Page: se hizo clic en login
+2021-04-16 14:25:21,521:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-16 14:25:26,534:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test passed
+2021-04-16 14:25:26,534:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test data was saved
+2021-04-16 14:26:04,066:	   INFO:	  ====== WebDriver manager ======
+2021-04-16 14:26:04,129:	   INFO:	  Current google-chrome version is 90.0.4430
+2021-04-16 14:26:04,129:	   INFO:	  Get LATEST driver version for 90.0.4430
+2021-04-16 14:26:04,436:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+2021-04-16 14:26:06,267:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-04-16 14:26:06,268:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-16 14:26:10,885:	   INFO:	  Login Page: Clicked successfully.
+2021-04-16 14:26:10,885:	   INFO:	  Login Page: se hizo clic en login
+2021-04-16 14:26:10,886:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-16 14:26:15,892:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test passed
+2021-04-16 14:26:15,892:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test data was saved
+2021-04-16 14:26:52,523:	   INFO:	  ====== WebDriver manager ======
+2021-04-16 14:26:52,592:	   INFO:	  Current google-chrome version is 90.0.4430
+2021-04-16 14:26:52,592:	   INFO:	  Get LATEST driver version for 90.0.4430
+2021-04-16 14:26:52,877:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+2021-04-16 14:26:54,592:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-04-16 14:26:54,595:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-16 14:26:58,558:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-04-16 14:26:58,787:	   INFO:	  Login Page: It was written in the userName text field.
+2021-04-16 14:26:58,949:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-04-16 14:26:59,369:	   INFO:	  Login Page: It was written in the password text field.
+2021-04-16 14:26:59,502:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-04-16 14:26:59,659:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-04-16 14:26:59,661:	   INFO:	  Login Page: Los camps de usuario, password y mechant fueron completados
+2021-04-16 14:26:59,799:	   INFO:	  Login Page: Clicked successfully.
+2021-04-16 14:26:59,800:	   INFO:	  Login Page: se hizo clic en login
+2021-04-16 14:26:59,800:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-16 14:27:04,810:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test passed
+2021-04-16 14:27:04,810:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test data was saved
+2021-04-16 14:28:00,979:	   INFO:	  ====== WebDriver manager ======
+2021-04-16 14:28:01,048:	   INFO:	  Current google-chrome version is 90.0.4430
+2021-04-16 14:28:01,048:	   INFO:	  Get LATEST driver version for 90.0.4430
+2021-04-16 14:28:01,333:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+2021-04-16 14:28:03,123:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-04-16 14:28:03,125:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-16 14:28:07,692:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-04-16 14:28:07,914:	   INFO:	  Login Page: It was written in the userName text field.
+2021-04-16 14:28:08,072:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-04-16 14:28:08,464:	   INFO:	  Login Page: It was written in the password text field.
+2021-04-16 14:28:08,585:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-04-16 14:28:08,806:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-04-16 14:28:08,806:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test passed
+2021-04-16 14:28:08,811:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test data was saved
+2021-04-16 14:28:31,069:	   INFO:	  ====== WebDriver manager ======
+2021-04-16 14:28:31,132:	   INFO:	  Current google-chrome version is 90.0.4430
+2021-04-16 14:28:31,132:	   INFO:	  Get LATEST driver version for 90.0.4430
+2021-04-16 14:28:31,454:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+2021-04-16 14:28:33,251:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-04-16 14:28:33,251:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-16 14:28:36,679:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-04-16 14:28:36,930:	   INFO:	  Login Page: It was written in the userName text field.
+2021-04-16 14:28:37,092:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-04-16 14:28:37,703:	   INFO:	  Login Page: It was written in the password text field.
+2021-04-16 14:28:37,911:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-04-16 14:28:38,104:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-04-16 14:28:38,252:	   INFO:	  Login Page: Clicked successfully.
+2021-04-16 14:28:38,253:	   INFO:	  Login Page: se hizo clic en login
+2021-04-16 14:28:38,253:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-16 14:28:43,257:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test passed
+2021-04-16 14:28:43,257:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test data was saved
+2021-04-16 14:30:57,755:	   INFO:	  ====== WebDriver manager ======
+2021-04-16 14:30:57,824:	   INFO:	  Current google-chrome version is 90.0.4430
+2021-04-16 14:30:57,824:	   INFO:	  Get LATEST driver version for 90.0.4430
+2021-04-16 14:30:58,224:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+2021-04-16 14:31:00,311:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-04-16 14:31:00,311:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-16 14:31:04,909:	   INFO:	  Login Page: Clicked successfully.
+2021-04-16 14:31:04,909:	   INFO:	  Login Page: se hizo clic en login
+2021-04-16 14:31:04,909:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-16 14:31:09,915:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test passed
+2021-04-16 14:31:09,915:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test data was saved
+2021-04-16 14:32:19,192:	   INFO:	  ====== WebDriver manager ======
+2021-04-16 14:32:19,260:	   INFO:	  Current google-chrome version is 90.0.4430
+2021-04-16 14:32:19,260:	   INFO:	  Get LATEST driver version for 90.0.4430
+2021-04-16 14:32:19,555:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+2021-04-16 14:32:21,362:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-04-16 14:32:21,362:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-16 14:32:24,818:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-04-16 14:32:25,115:	   INFO:	  Login Page: It was written in the userName text field.
+2021-04-16 14:32:25,115:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-04-16 14:32:25,616:	   INFO:	  Login Page: It was written in the password text field.
+2021-04-16 14:32:25,617:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-04-16 14:32:25,828:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-04-16 14:32:25,965:	   INFO:	  Login Page: Clicked successfully.
+2021-04-16 14:32:25,965:	   INFO:	  Login Page: se hizo clic en login
+2021-04-16 14:32:25,965:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-16 14:32:30,969:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test passed
+2021-04-16 14:32:30,969:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test data was saved
+2021-04-16 14:52:01,181:	   INFO:	  ====== WebDriver manager ======
+2021-04-16 14:52:01,250:	   INFO:	  Current google-chrome version is 90.0.4430
+2021-04-16 14:52:01,250:	   INFO:	  Get LATEST driver version for 90.0.4430
+2021-04-16 14:52:01,635:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+2021-04-16 14:52:03,495:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-04-16 14:52:03,496:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-16 14:52:07,153:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-04-16 14:52:07,378:	   INFO:	  Login Page: It was written in the userName text field.
+2021-04-16 14:52:07,537:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-04-16 14:52:07,948:	   INFO:	  Login Page: It was written in the password text field.
+2021-04-16 14:52:08,072:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-04-16 14:52:08,235:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-04-16 14:52:08,384:	   INFO:	  Login Page: Clicked successfully.
+2021-04-16 14:52:08,384:	   INFO:	  Login Page: se hizo clic en login
+2021-04-16 14:52:08,385:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-16 14:52:13,399:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test passed
+2021-04-16 14:52:13,399:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test data was saved
+2021-04-16 15:22:10,906:	   INFO:	  ====== WebDriver manager ======
+2021-04-16 15:22:10,983:	   INFO:	  Current google-chrome version is 90.0.4430
+2021-04-16 15:22:10,983:	   INFO:	  Get LATEST driver version for 90.0.4430
+2021-04-16 15:22:11,453:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+2021-04-16 15:22:13,228:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-04-16 15:22:13,229:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-16 15:22:16,917:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-04-16 15:22:17,151:	   INFO:	  Login Page: It was written in the userName text field.
+2021-04-16 15:22:17,329:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-04-16 15:22:17,726:	   INFO:	  Login Page: It was written in the password text field.
+2021-04-16 15:22:17,852:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-04-16 15:22:17,997:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-04-16 15:22:18,119:	   INFO:	  Login Page: Clicked successfully.
+2021-04-16 15:22:18,119:	   INFO:	  Login Page: se hizo clic en login
+2021-04-16 15:22:18,119:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-16 15:22:23,129:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test passed
+2021-04-16 15:22:23,135:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test data was saved
+2021-04-16 15:32:01,636:	   INFO:	  ====== WebDriver manager ======
+2021-04-16 15:32:01,692:	   INFO:	  Current google-chrome version is 90.0.4430
+2021-04-16 15:32:01,692:	   INFO:	  Get LATEST driver version for 90.0.4430
+2021-04-16 15:32:02,106:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+2021-04-16 15:32:03,980:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-04-16 15:32:03,981:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-16 15:32:07,762:	   ERROR:	  Login Page: Something went wrong cleaning userName text field: 'Helps' object has no attribute 'driver'
+2021-04-16 15:32:07,762:	   ERROR:	  Login Page: Something went wrong cleaning password text field: 'Helps' object has no attribute 'driver'
+2021-04-16 15:32:07,763:	   ERROR:	  Login Page: Something went wrong cleaning merchant text field: 'Helps' object has no attribute 'driver'
+2021-04-16 15:32:07,905:	   INFO:	  Login Page: Clicked successfully.
+2021-04-16 15:32:07,906:	   INFO:	  Login Page: se hizo clic en login
+2021-04-16 15:32:07,906:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-16 15:32:12,913:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test passed
+2021-04-16 15:32:12,919:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test data was saved
+2021-04-16 15:51:27,311:	   INFO:	  ====== WebDriver manager ======
+2021-04-16 15:51:27,381:	   INFO:	  Current google-chrome version is 90.0.4430
+2021-04-16 15:51:27,381:	   INFO:	  Get LATEST driver version for 90.0.4430
+2021-04-16 15:51:27,774:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+2021-04-16 15:51:29,680:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-04-16 15:51:29,682:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-16 15:51:33,710:	   ERROR:	  Login Page: Something went wrong cleaning userName text field: object of type 'WebElement' has no len()
+2021-04-16 15:51:33,710:	   ERROR:	  Login Page: Something went wrong cleaning password text field: object of type 'WebElement' has no len()
+2021-04-16 15:51:33,710:	   ERROR:	  Login Page: Something went wrong cleaning merchant text field: object of type 'WebElement' has no len()
+2021-04-16 15:51:33,859:	   INFO:	  Login Page: Clicked successfully.
+2021-04-16 15:51:33,859:	   INFO:	  Login Page: se hizo clic en login
+2021-04-16 15:51:33,859:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-16 15:51:38,863:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test passed
+2021-04-16 15:51:38,870:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test data was saved
+2021-04-16 15:55:33,422:	   INFO:	  ====== WebDriver manager ======
+2021-04-16 15:55:33,486:	   INFO:	  Current google-chrome version is 90.0.4430
+2021-04-16 15:55:33,486:	   INFO:	  Get LATEST driver version for 90.0.4430
+2021-04-16 15:55:33,803:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+2021-04-16 15:55:35,570:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-04-16 15:55:35,572:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-16 15:55:39,367:	   ERROR:	  Login Page: Something went wrong cleaning userName text field: object of type 'WebElement' has no len()
+2021-04-16 15:55:39,530:	   INFO:	  Login Page: Clicked successfully.
+2021-04-16 15:55:39,530:	   INFO:	  Login Page: se hizo clic en login
+2021-04-16 15:55:39,531:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-16 15:55:44,542:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test passed
+2021-04-16 15:55:44,549:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test data was saved
+2021-04-16 15:56:46,696:	   INFO:	  ====== WebDriver manager ======
+2021-04-16 15:56:46,746:	   INFO:	  Current google-chrome version is 90.0.4430
+2021-04-16 15:56:46,746:	   INFO:	  Get LATEST driver version for 90.0.4430
+2021-04-16 15:56:47,127:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+2021-04-16 15:56:48,939:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-04-16 15:56:48,941:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-16 15:56:52,371:	   ERROR:	  Login Page: Something went wrong cleaning userName text field: object of type 'WebElement' has no len()
+2021-04-16 15:56:52,515:	   INFO:	  Login Page: Clicked successfully.
+2021-04-16 15:56:52,516:	   INFO:	  Login Page: se hizo clic en login
+2021-04-16 15:56:52,516:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-16 15:56:57,531:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test passed
+2021-04-16 15:56:57,540:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test data was saved
+2021-04-16 16:00:26,322:	   INFO:	  ====== WebDriver manager ======
+2021-04-16 16:00:26,383:	   INFO:	  Current google-chrome version is 90.0.4430
+2021-04-16 16:00:26,383:	   INFO:	  Get LATEST driver version for 90.0.4430
+2021-04-16 16:00:26,704:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+2021-04-16 16:00:28,529:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-04-16 16:00:28,530:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-16 16:00:31,691:	   ERROR:	  Login Page: Something went wrong cleaning userName text field: object of type 'WebElement' has no len()
+2021-04-16 16:00:31,825:	   INFO:	  Login Page: Clicked successfully.
+2021-04-16 16:00:31,825:	   INFO:	  Login Page: se hizo clic en login
+2021-04-16 16:00:31,826:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-16 16:00:36,841:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test passed
+2021-04-16 16:00:36,848:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test data was saved
+2021-04-16 16:03:01,895:	   INFO:	  ====== WebDriver manager ======
+2021-04-16 16:03:01,948:	   INFO:	  Current google-chrome version is 90.0.4430
+2021-04-16 16:03:01,949:	   INFO:	  Get LATEST driver version for 90.0.4430
+2021-04-16 16:03:02,335:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+2021-04-16 16:03:04,080:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-04-16 16:03:04,082:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-16 16:03:07,775:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test passed
+2021-04-16 16:03:07,782:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test data was saved
+2021-04-16 16:04:15,415:	   INFO:	  ====== WebDriver manager ======
+2021-04-16 16:04:15,473:	   INFO:	  Current google-chrome version is 90.0.4430
+2021-04-16 16:04:15,473:	   INFO:	  Get LATEST driver version for 90.0.4430
+2021-04-16 16:04:15,779:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+2021-04-16 16:04:17,582:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-04-16 16:04:17,583:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-16 16:04:20,911:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test passed
+2021-04-16 16:04:20,920:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test data was saved
+2021-04-16 16:10:41,595:	   INFO:	  ====== WebDriver manager ======
+2021-04-16 16:10:41,650:	   INFO:	  Current google-chrome version is 90.0.4430
+2021-04-16 16:10:41,651:	   INFO:	  Get LATEST driver version for 90.0.4430
+2021-04-16 16:10:42,062:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+2021-04-16 16:10:43,655:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-04-16 16:10:43,656:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-16 16:10:47,267:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-04-16 16:10:47,494:	   INFO:	  Login Page: It was written in the userName text field.
+2021-04-16 16:10:47,655:	   INFO:	  Login Page: Clicked successfully.
+2021-04-16 16:10:47,656:	   INFO:	  Login Page: se hizo clic en login
+2021-04-16 16:10:47,656:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-16 16:10:52,670:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test passed
+2021-04-16 16:10:52,681:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test data was saved
+2021-04-16 16:12:00,950:	   INFO:	  ====== WebDriver manager ======
+2021-04-16 16:12:01,006:	   INFO:	  Current google-chrome version is 90.0.4430
+2021-04-16 16:12:01,006:	   INFO:	  Get LATEST driver version for 90.0.4430
+2021-04-16 16:12:01,299:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+2021-04-16 16:12:03,018:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-04-16 16:12:03,020:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-16 16:12:06,279:	   ERROR:	  Login Page: Something went wrong cleaning userName text field: object of type 'WebElement' has no len()
+2021-04-16 16:12:06,410:	   INFO:	  Login Page: Clicked successfully.
+2021-04-16 16:12:06,411:	   INFO:	  Login Page: se hizo clic en login
+2021-04-16 16:12:06,414:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-16 16:12:11,417:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test passed
+2021-04-16 16:12:11,425:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test data was saved
+2021-04-16 16:12:29,394:	   INFO:	  ====== WebDriver manager ======
+2021-04-16 16:12:29,448:	   INFO:	  Current google-chrome version is 90.0.4430
+2021-04-16 16:12:29,448:	   INFO:	  Get LATEST driver version for 90.0.4430
+2021-04-16 16:12:29,762:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+2021-04-16 16:12:31,552:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-04-16 16:12:31,554:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-16 16:12:41,171:	   INFO:	  ====== WebDriver manager ======
+2021-04-16 16:12:41,231:	   INFO:	  Current google-chrome version is 90.0.4430
+2021-04-16 16:12:41,231:	   INFO:	  Get LATEST driver version for 90.0.4430
+2021-04-16 16:12:41,564:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+2021-04-16 16:12:43,351:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-04-16 16:12:43,353:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-16 16:14:59,383:	   INFO:	  ====== WebDriver manager ======
+2021-04-16 16:14:59,445:	   INFO:	  Current google-chrome version is 90.0.4430
+2021-04-16 16:14:59,445:	   INFO:	  Get LATEST driver version for 90.0.4430
+2021-04-16 16:14:59,760:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+2021-04-16 16:15:01,565:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-04-16 16:15:01,566:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-16 16:15:04,980:	   ERROR:	  Login Page: Something went wrong cleaning userName text field: object of type 'WebElement' has no len()
+2021-04-16 16:15:05,106:	   INFO:	  Login Page: Clicked successfully.
+2021-04-16 16:15:05,106:	   INFO:	  Login Page: se hizo clic en login
+2021-04-16 16:15:05,106:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-16 16:15:10,109:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test passed
+2021-04-16 16:15:10,115:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test data was saved
+2021-04-16 16:19:47,931:	   INFO:	  ====== WebDriver manager ======
+2021-04-16 16:19:47,994:	   INFO:	  Current google-chrome version is 90.0.4430
+2021-04-16 16:19:47,995:	   INFO:	  Get LATEST driver version for 90.0.4430
+2021-04-16 16:19:48,398:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+2021-04-16 16:19:50,140:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-04-16 16:19:50,142:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-16 16:19:53,639:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test passed
+2021-04-16 16:19:53,645:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test data was saved
+2021-04-16 16:22:58,563:	   INFO:	  ====== WebDriver manager ======
+2021-04-16 16:22:58,625:	   INFO:	  Current google-chrome version is 90.0.4430
+2021-04-16 16:22:58,625:	   INFO:	  Get LATEST driver version for 90.0.4430
+2021-04-16 16:22:58,987:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+2021-04-16 16:23:00,900:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-04-16 16:23:00,902:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-16 16:25:42,468:	   INFO:	  ====== WebDriver manager ======
+2021-04-16 16:25:42,534:	   INFO:	  Current google-chrome version is 90.0.4430
+2021-04-16 16:25:42,535:	   INFO:	  Get LATEST driver version for 90.0.4430
+2021-04-16 16:25:42,937:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+2021-04-16 16:25:44,817:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-04-16 16:25:44,820:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-16 16:25:47,980:	   ERROR:	  Login Page: Something went wrong cleaning userName text field: object of type 'WebElement' has no len()
+2021-04-16 16:25:48,132:	   INFO:	  Login Page: Clicked successfully.
+2021-04-16 16:25:48,133:	   INFO:	  Login Page: se hizo clic en login
+2021-04-16 16:25:48,133:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-16 16:25:53,135:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test passed
+2021-04-16 16:25:53,145:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test data was saved
+2021-04-16 16:46:41,908:	   INFO:	  ====== WebDriver manager ======
+2021-04-16 16:46:41,976:	   INFO:	  Current google-chrome version is 90.0.4430
+2021-04-16 16:46:41,976:	   INFO:	  Get LATEST driver version for 90.0.4430
+2021-04-16 16:46:42,400:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+2021-04-16 16:46:44,573:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-04-16 16:46:44,575:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-16 16:46:48,136:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-04-16 16:46:48,422:	   INFO:	  Login Page: It was written in the userName text field.
+2021-04-16 16:46:48,577:	   INFO:	  Login Page: Clicked successfully.
+2021-04-16 16:46:48,577:	   INFO:	  Login Page: se hizo clic en login
+2021-04-16 16:46:48,577:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-16 16:46:53,585:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test passed
+2021-04-16 16:46:53,595:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test data was saved
+2021-04-16 16:47:32,448:	   INFO:	  ====== WebDriver manager ======
+2021-04-16 16:47:32,508:	   INFO:	  Current google-chrome version is 90.0.4430
+2021-04-16 16:47:32,508:	   INFO:	  Get LATEST driver version for 90.0.4430
+2021-04-16 16:47:32,839:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+2021-04-16 16:47:34,618:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-04-16 16:47:34,619:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-16 16:47:38,413:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-04-16 16:47:38,618:	   INFO:	  Login Page: It was written in the userName text field.
+2021-04-16 16:47:38,750:	   INFO:	  Login Page: Clicked successfully.
+2021-04-16 16:47:38,750:	   INFO:	  Login Page: se hizo clic en login
+2021-04-16 16:47:38,751:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-16 16:47:43,760:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test passed
+2021-04-16 16:47:43,768:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test data was saved
+2021-04-16 16:49:33,953:	   INFO:	  ====== WebDriver manager ======
+2021-04-16 16:49:34,023:	   INFO:	  Current google-chrome version is 90.0.4430
+2021-04-16 16:49:34,024:	   INFO:	  Get LATEST driver version for 90.0.4430
+2021-04-16 16:49:34,330:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+2021-04-16 16:49:36,216:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-04-16 16:49:36,218:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-16 16:49:40,120:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-04-16 16:49:40,287:	   INFO:	  Login Page: It was written in the userName text field.
+2021-04-16 16:49:40,406:	   INFO:	  Login Page: Clicked successfully.
+2021-04-16 16:49:40,407:	   INFO:	  Login Page: se hizo clic en login
+2021-04-16 16:49:40,408:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-16 16:49:45,416:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test passed
+2021-04-16 16:49:45,475:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test data was saved
+2021-04-16 16:50:46,496:	   INFO:	  ====== WebDriver manager ======
+2021-04-16 16:50:46,554:	   INFO:	  Current google-chrome version is 90.0.4430
+2021-04-16 16:50:46,554:	   INFO:	  Get LATEST driver version for 90.0.4430
+2021-04-16 16:50:46,964:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+2021-04-16 16:50:48,836:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-04-16 16:50:48,838:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-16 16:50:52,922:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-04-16 16:50:53,080:	   INFO:	  Login Page: It was written in the userName text field.
+2021-04-16 16:50:53,643:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-04-16 16:50:53,962:	   INFO:	  Login Page: It was written in the password text field.
+2021-04-16 16:50:54,284:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-04-16 16:50:54,438:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-04-16 16:50:54,439:	   INFO:	  Login Page: Los camps de usuario, password y mechant fueron completados
+2021-04-16 16:50:54,574:	   INFO:	  Login Page: Clicked successfully.
+2021-04-16 16:50:54,575:	   INFO:	  Login Page: se hizo clic en login
+2021-04-16 16:50:54,575:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-16 16:50:59,591:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test passed
+2021-04-16 16:50:59,602:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test data was saved
+2021-04-16 16:54:36,725:	   INFO:	  ====== WebDriver manager ======
+2021-04-16 16:54:36,794:	   INFO:	  Current google-chrome version is 90.0.4430
+2021-04-16 16:54:36,795:	   INFO:	  Get LATEST driver version for 90.0.4430
+2021-04-16 16:54:37,122:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+2021-04-16 16:54:39,264:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-04-16 16:54:39,267:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-16 16:54:44,126:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-04-16 16:54:44,291:	   INFO:	  Login Page: It was written in the userName text field.
+2021-04-16 16:54:44,292:	   INFO:	  Login Page: Los camps de usuario, password y mechant fueron completados
+2021-04-16 16:54:44,426:	   INFO:	  Login Page: Clicked successfully.
+2021-04-16 16:54:44,427:	   INFO:	  Login Page: se hizo clic en login
+2021-04-16 16:54:44,427:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-16 16:54:49,439:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test passed
+2021-04-16 16:54:49,452:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test data was saved
+2021-04-16 17:04:29,841:	   INFO:	  ====== WebDriver manager ======
+2021-04-16 17:04:29,908:	   INFO:	  Current google-chrome version is 90.0.4430
+2021-04-16 17:04:29,909:	   INFO:	  Get LATEST driver version for 90.0.4430
+2021-04-16 17:04:30,306:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+2021-04-16 17:04:32,212:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-04-16 17:04:32,214:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-16 17:04:35,919:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-04-16 17:04:36,072:	   INFO:	  Login Page: It was written in the userName text field.
+2021-04-16 17:04:36,072:	   INFO:	  Login Page: Los camps de usuario, password y mechant fueron completados
+2021-04-16 17:04:36,198:	   INFO:	  Login Page: Clicked successfully.
+2021-04-16 17:04:36,198:	   INFO:	  Login Page: se hizo clic en login
+2021-04-16 17:04:36,198:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-16 17:04:41,206:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test passed
+2021-04-16 17:04:41,215:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test data was saved
+2021-04-16 17:06:04,955:	   INFO:	  ====== WebDriver manager ======
+2021-04-16 17:06:05,009:	   INFO:	  Current google-chrome version is 90.0.4430
+2021-04-16 17:06:05,010:	   INFO:	  Get LATEST driver version for 90.0.4430
+2021-04-16 17:06:05,374:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+2021-04-16 17:06:07,141:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-04-16 17:06:07,142:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-16 17:06:10,571:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-04-16 17:06:10,795:	   INFO:	  Login Page: It was written in the userName text field.
+2021-04-16 17:06:10,957:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-04-16 17:06:11,363:	   INFO:	  Login Page: It was written in the password text field.
+2021-04-16 17:06:11,498:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-04-16 17:06:11,654:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-04-16 17:06:11,654:	   INFO:	  Login Page: Los camps de usuario, password y mechant fueron completados
+2021-04-16 17:06:11,792:	   INFO:	  Login Page: Clicked successfully.
+2021-04-16 17:06:11,792:	   INFO:	  Login Page: se hizo clic en login
+2021-04-16 17:06:11,792:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-16 17:06:16,796:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test passed
+2021-04-16 17:06:16,811:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test data was saved
+2021-04-16 17:06:29,505:	   INFO:	  ====== WebDriver manager ======
+2021-04-16 17:06:29,560:	   INFO:	  Current google-chrome version is 90.0.4430
+2021-04-16 17:06:29,560:	   INFO:	  Get LATEST driver version for 90.0.4430
+2021-04-16 17:06:29,885:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+2021-04-16 17:06:31,531:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-04-16 17:06:31,534:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-16 17:06:35,163:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-04-16 17:06:35,310:	   INFO:	  Login Page: It was written in the userName text field.
+2021-04-16 17:06:35,836:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-04-16 17:06:36,156:	   INFO:	  Login Page: It was written in the password text field.
+2021-04-16 17:06:36,481:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-04-16 17:06:36,628:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-04-16 17:06:36,628:	   INFO:	  Login Page: Los camps de usuario, password y mechant fueron completados
+2021-04-16 17:06:36,754:	   INFO:	  Login Page: Clicked successfully.
+2021-04-16 17:06:36,754:	   INFO:	  Login Page: se hizo clic en login
+2021-04-16 17:06:36,754:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-16 17:06:41,763:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test passed
+2021-04-16 17:06:41,772:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test data was saved
+2021-04-16 17:07:18,972:	   INFO:	  ====== WebDriver manager ======
+2021-04-16 17:07:19,023:	   INFO:	  Current google-chrome version is 90.0.4430
+2021-04-16 17:07:19,024:	   INFO:	  Get LATEST driver version for 90.0.4430
+2021-04-16 17:07:19,323:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+2021-04-16 17:07:21,206:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-04-16 17:07:21,207:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-16 17:07:24,586:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-04-16 17:07:24,804:	   INFO:	  Login Page: It was written in the userName text field.
+2021-04-16 17:07:24,989:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-04-16 17:07:25,385:	   INFO:	  Login Page: It was written in the password text field.
+2021-04-16 17:07:25,547:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-04-16 17:07:25,698:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-04-16 17:07:25,698:	   INFO:	  Login Page: Los camps de usuario, password y mechant fueron completados
+2021-04-16 17:07:25,853:	   INFO:	  Login Page: Clicked successfully.
+2021-04-16 17:07:25,854:	   INFO:	  Login Page: se hizo clic en login
+2021-04-16 17:07:25,854:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-16 17:07:30,867:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test passed
+2021-04-16 17:07:30,881:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test data was saved
+2021-04-16 17:07:38,382:	   INFO:	  ====== WebDriver manager ======
+2021-04-16 17:07:38,438:	   INFO:	  Current google-chrome version is 90.0.4430
+2021-04-16 17:07:38,438:	   INFO:	  Get LATEST driver version for 90.0.4430
+2021-04-16 17:07:38,750:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+2021-04-16 17:07:40,461:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-04-16 17:07:40,463:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-16 17:07:44,205:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-04-16 17:07:44,419:	   INFO:	  Login Page: It was written in the userName text field.
+2021-04-16 17:07:44,694:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-04-16 17:07:45,085:	   INFO:	  Login Page: It was written in the password text field.
+2021-04-16 17:07:45,283:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-04-16 17:07:45,443:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-04-16 17:07:45,444:	   INFO:	  Login Page: Los camps de usuario, password y mechant fueron completados
+2021-04-16 17:07:45,577:	   INFO:	  Login Page: Clicked successfully.
+2021-04-16 17:07:45,577:	   INFO:	  Login Page: se hizo clic en login
+2021-04-16 17:07:45,577:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-16 17:07:50,584:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test passed
+2021-04-16 17:07:50,594:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test data was saved
+2021-04-16 17:08:11,300:	   INFO:	  ====== WebDriver manager ======
+2021-04-16 17:08:11,353:	   INFO:	  Current google-chrome version is 90.0.4430
+2021-04-16 17:08:11,353:	   INFO:	  Get LATEST driver version for 90.0.4430
+2021-04-16 17:08:11,661:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+2021-04-16 17:08:13,542:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-04-16 17:08:13,544:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-16 17:08:17,043:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-04-16 17:08:17,244:	   INFO:	  Login Page: It was written in the userName text field.
+2021-04-16 17:08:17,484:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-04-16 17:08:17,882:	   INFO:	  Login Page: It was written in the password text field.
+2021-04-16 17:08:18,077:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-04-16 17:08:18,251:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-04-16 17:08:18,251:	   INFO:	  Login Page: Los camps de usuario, password y mechant fueron completados
+2021-04-16 17:08:18,378:	   INFO:	  Login Page: Clicked successfully.
+2021-04-16 17:08:18,378:	   INFO:	  Login Page: se hizo clic en login
+2021-04-16 17:08:18,378:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-16 17:08:23,382:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test passed
+2021-04-16 17:08:23,397:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test data was saved
+2021-04-16 17:16:44,192:	   INFO:	  ====== WebDriver manager ======
+2021-04-16 17:16:44,258:	   INFO:	  Current google-chrome version is 90.0.4430
+2021-04-16 17:16:44,258:	   INFO:	  Get LATEST driver version for 90.0.4430
+2021-04-16 17:16:44,654:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+2021-04-16 17:16:46,724:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-04-16 17:16:46,725:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-16 17:16:50,248:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-04-16 17:16:50,443:	   INFO:	  Login Page: It was written in the userName text field.
+2021-04-16 17:16:50,686:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-04-16 17:16:51,094:	   INFO:	  Login Page: It was written in the password text field.
+2021-04-16 17:16:51,283:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-04-16 17:16:51,438:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-04-16 17:16:51,438:	   INFO:	  Login Page: Los camps de usuario, password y mechant fueron completados
+2021-04-16 17:16:51,570:	   INFO:	  Login Page: Clicked successfully.
+2021-04-16 17:16:51,571:	   INFO:	  Login Page: se hizo clic en login
+2021-04-16 17:16:51,571:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-16 17:16:56,576:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test passed
+2021-04-16 17:16:56,584:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test data was saved
+2021-04-16 17:21:33,455:	   INFO:	  ====== WebDriver manager ======
+2021-04-16 17:21:33,510:	   INFO:	  Current google-chrome version is 90.0.4430
+2021-04-16 17:21:33,510:	   INFO:	  Get LATEST driver version for 90.0.4430
+2021-04-16 17:21:33,833:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+2021-04-16 17:21:35,772:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-04-16 17:21:35,776:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-16 17:21:39,251:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-04-16 17:21:39,561:	   INFO:	  Login Page: It was written in the userName text field.
+2021-04-16 17:21:39,576:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-04-16 17:21:40,073:	   INFO:	  Login Page: It was written in the password text field.
+2021-04-16 17:21:40,084:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-04-16 17:21:40,295:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-04-16 17:21:40,296:	   INFO:	  Login Page: Los camps de usuario, password y mechant fueron completados
+2021-04-16 17:21:40,449:	   INFO:	  Login Page: Clicked successfully.
+2021-04-16 17:21:40,449:	   INFO:	  Login Page: se hizo clic en login
+2021-04-16 17:21:40,450:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-16 17:21:45,458:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test passed
+2021-04-16 17:21:45,475:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test data was saved
+2021-04-16 17:22:38,699:	   INFO:	  ====== WebDriver manager ======
+2021-04-16 17:22:38,754:	   INFO:	  Current google-chrome version is 90.0.4430
+2021-04-16 17:22:38,754:	   INFO:	  Get LATEST driver version for 90.0.4430
+2021-04-16 17:22:39,159:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+2021-04-16 17:22:40,905:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-04-16 17:22:40,907:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-16 17:22:44,302:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-04-16 17:22:44,523:	   INFO:	  Login Page: It was written in the userName text field.
+2021-04-16 17:22:44,666:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-04-16 17:22:45,056:	   INFO:	  Login Page: It was written in the password text field.
+2021-04-16 17:22:45,161:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-04-16 17:22:45,317:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-04-16 17:22:45,317:	   INFO:	  Login Page: Los camps de usuario, password y mechant fueron completados
+2021-04-16 17:22:45,452:	   INFO:	  Login Page: Clicked successfully.
+2021-04-16 17:22:45,453:	   INFO:	  Login Page: se hizo clic en login
+2021-04-16 17:22:45,453:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-16 17:22:50,457:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test passed
+2021-04-16 17:22:50,467:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test data was saved
+2021-04-16 17:23:00,144:	   INFO:	  ====== WebDriver manager ======
+2021-04-16 17:23:00,197:	   INFO:	  Current google-chrome version is 90.0.4430
+2021-04-16 17:23:00,197:	   INFO:	  Get LATEST driver version for 90.0.4430
+2021-04-16 17:23:00,543:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+2021-04-16 17:23:02,345:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-04-16 17:23:02,349:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-16 17:23:05,995:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-04-16 17:23:06,211:	   INFO:	  Login Page: It was written in the userName text field.
+2021-04-16 17:23:06,480:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-04-16 17:23:06,876:	   INFO:	  Login Page: It was written in the password text field.
+2021-04-16 17:23:07,026:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-04-16 17:23:07,228:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-04-16 17:23:07,229:	   INFO:	  Login Page: Los camps de usuario, password y mechant fueron completados
+2021-04-16 17:23:07,396:	   INFO:	  Login Page: Clicked successfully.
+2021-04-16 17:23:07,396:	   INFO:	  Login Page: se hizo clic en login
+2021-04-16 17:23:07,397:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-16 17:23:12,401:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test passed
+2021-04-16 17:23:12,409:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test data was saved
+2021-04-16 17:23:55,751:	   INFO:	  ====== WebDriver manager ======
+2021-04-16 17:23:55,806:	   INFO:	  Current google-chrome version is 90.0.4430
+2021-04-16 17:23:55,807:	   INFO:	  Get LATEST driver version for 90.0.4430
+2021-04-16 17:23:56,126:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+2021-04-16 17:23:58,001:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-04-16 17:23:58,003:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-16 17:24:01,431:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-04-16 17:24:01,632:	   INFO:	  Login Page: It was written in the userName text field.
+2021-04-16 17:24:01,887:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-04-16 17:24:02,236:	   INFO:	  Login Page: It was written in the password text field.
+2021-04-16 17:24:02,373:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-04-16 17:24:02,531:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-04-16 17:24:02,531:	   INFO:	  Login Page: Los camps de usuario, password y mechant fueron completados
+2021-04-16 17:24:02,697:	   INFO:	  Login Page: Clicked successfully.
+2021-04-16 17:24:02,698:	   INFO:	  Login Page: se hizo clic en login
+2021-04-16 17:24:02,698:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-16 17:24:07,708:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test passed
+2021-04-16 17:24:07,721:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test data was saved

@@ -1,0 +1,81 @@
+2021-04-23 10:44:03,892:	   INFO:	  ====== WebDriver manager ======
+2021-04-23 10:44:04,025:	   INFO:	  Current google-chrome version is 90.0.4430
+2021-04-23 10:44:04,026:	   INFO:	  Get LATEST driver version for 90.0.4430
+2021-04-23 10:44:04,510:	   INFO:	  Get LATEST driver version for 90.0.4430
+2021-04-23 10:44:04,806:	   INFO:	  Trying to download new driver from https://chromedriver.storage.googleapis.com/90.0.4430.24/chromedriver_win32.zip
+2021-04-23 10:44:06,933:	   INFO:	  Driver has been saved in cache [C:\Users\Dev\.wdm\drivers\chromedriver\win32\90.0.4430.24]
+2021-04-23 10:44:10,236:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-04-23 10:44:10,239:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-23 10:44:15,241:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-04-23 10:44:15,784:	   INFO:	  Login Page: It was written in the userName text field.
+2021-04-23 10:44:15,811:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-04-23 10:44:16,789:	   INFO:	  Login Page: It was written in the password text field.
+2021-04-23 10:44:16,809:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-04-23 10:44:17,358:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-04-23 10:44:17,359:	   INFO:	  Login Page: Los camps de usuario, password y mechant fueron completos
+2021-04-23 10:44:17,865:	   INFO:	  Login Page: Clicked successfully.
+2021-04-23 10:44:17,866:	   INFO:	  Login Page: se hizo clic en login
+2021-04-23 10:44:21,046:	   INFO:	  Dashboard Page: Elementos Obtenidos
+2021-04-23 10:44:21,239:	   INFO:	  Dashboard Page: Clicked successfully.
+2021-04-23 10:44:21,241:	   INFO:	  Dashboard Page: Se hace clic correctamente en Administration
+2021-04-23 10:44:21,241:	   INFO:	  Merchant Parameters Actions Page: Menu Administracion se cargo Correctamente.
+2021-04-23 10:44:22,011:	   INFO:	  Administration Page: Clicked successfully.
+2021-04-23 10:44:22,012:	   INFO:	  Administration Page: Se hace clic correctamente en MerchantParameters
+2021-04-23 10:44:22,012:	   INFO:	  Merchant Parameters Actions Page: Submenu Merchant Parameters se cargo Correctamente.
+2021-04-23 10:44:23,280:	   INFO:	  Merchant Parameters Page: Elementos Obtenidos
+2021-04-23 10:44:23,293:	   INFO:	  Merchant Parameters Page: El tab AVS ya esta seleccionado
+2021-04-23 10:44:25,676:	   INFO:	  Merchant Parameters Page: Clicked successfully.
+2021-04-23 10:44:25,676:	   INFO:	  Merchant Parameters Page: Se hace clic correctamente en checkbox (6)
+2021-04-23 10:44:26,113:	   INFO:	  Merchant Parameters Page: Clicked successfully.
+2021-04-23 10:44:26,114:	   INFO:	  Merchant Parameters Page: Se hace clic correctamente en checkbox (7)
+2021-04-23 10:44:26,567:	   INFO:	  Merchant Parameters Page: Clicked successfully.
+2021-04-23 10:44:26,568:	   INFO:	  Merchant Parameters Page: Se hace clic correctamente en checkbox (8)
+2021-04-23 10:44:26,948:	   INFO:	  Merchant Parameters Page: Clicked successfully.
+2021-04-23 10:44:26,948:	   INFO:	  Merchant Parameters Page: Se hace clic correctamente en checkbox (14)
+2021-04-23 10:44:27,392:	   INFO:	  Merchant Parameters Page: Clicked successfully.
+2021-04-23 10:44:27,392:	   INFO:	  Merchant Parameters Page: Se hace clic correctamente en checkbox (16)
+2021-04-23 10:44:27,392:	   INFO:	  Merchant Parameters Page: Se hace clic correctamente en los checkbox tab AVS
+2021-04-23 10:44:27,393:	   INFO:	  Merchant Parameters test page: Update/Modify Merchant Parameters AVS
+2021-04-23 10:44:28,014:	   INFO:	  Merchant Parameters Page: Clicked successfully.
+2021-04-23 10:44:28,014:	   INFO:	  Merchant Parameters Page: Se hace clic correctamente en tab ZIP
+2021-04-23 10:44:30,348:	   INFO:	  Merchant Parameters Page: Clicked successfully.
+2021-04-23 10:44:30,350:	   INFO:	  Merchant Parameters Page: Se hace clic correctamente en checkbox (5)
+2021-04-23 10:44:30,806:	   INFO:	  Merchant Parameters Page: Clicked successfully.
+2021-04-23 10:44:30,807:	   INFO:	  Merchant Parameters Page: Se hace clic correctamente en checkbox (6)
+2021-04-23 10:44:31,228:	   INFO:	  Merchant Parameters Page: Clicked successfully.
+2021-04-23 10:44:31,229:	   INFO:	  Merchant Parameters Page: Se hace clic correctamente en checkbox (7)
+2021-04-23 10:44:31,561:	   INFO:	  Merchant Parameters Page: Clicked successfully.
+2021-04-23 10:44:31,561:	   INFO:	  Merchant Parameters Page: Se hace clic correctamente en checkbox (8)
+2021-04-23 10:44:31,927:	   INFO:	  Merchant Parameters Page: Clicked successfully.
+2021-04-23 10:44:31,927:	   INFO:	  Merchant Parameters Page: Se hace clic correctamente en checkbox (9)
+2021-04-23 10:44:32,285:	   INFO:	  Merchant Parameters Page: Clicked successfully.
+2021-04-23 10:44:32,287:	   INFO:	  Merchant Parameters Page: Se hace clic correctamente en checkbox (10)
+2021-04-23 10:44:32,768:	   INFO:	  Merchant Parameters Page: Clicked successfully.
+2021-04-23 10:44:32,769:	   INFO:	  Merchant Parameters Page: Se hace clic correctamente en checkbox (12)
+2021-04-23 10:44:33,242:	   INFO:	  Merchant Parameters Page: Clicked successfully.
+2021-04-23 10:44:33,243:	   INFO:	  Merchant Parameters Page: Se hace clic correctamente en checkbox (13)
+2021-04-23 10:44:33,643:	   INFO:	  Merchant Parameters Page: Clicked successfully.
+2021-04-23 10:44:33,643:	   INFO:	  Merchant Parameters Page: Se hace clic correctamente en checkbox (17)
+2021-04-23 10:44:33,644:	   INFO:	  Merchant Parameters Page: Se hace clic correctamente en los checkbox tab ZIP
+2021-04-23 10:44:33,644:	   INFO:	  Merchant Parameters test page: Update/Modify Merchant Parameters ZIP
+2021-04-23 10:44:34,078:	   INFO:	  Merchant Parameters Page: Clicked successfully.
+2021-04-23 10:44:34,079:	   INFO:	  Merchant Parameters Page: Se hace clic correctamente en tab CVV
+2021-04-23 10:44:36,293:	   INFO:	  Merchant Parameters Page: Clicked successfully.
+2021-04-23 10:44:36,293:	   INFO:	  Merchant Parameters Page: Se hace clic correctamente en checkbox (2)
+2021-04-23 10:44:36,666:	   INFO:	  Merchant Parameters Page: Clicked successfully.
+2021-04-23 10:44:36,666:	   INFO:	  Merchant Parameters Page: Se hace clic correctamente en checkbox (4)
+2021-04-23 10:44:37,077:	   INFO:	  Merchant Parameters Page: Clicked successfully.
+2021-04-23 10:44:37,077:	   INFO:	  Merchant Parameters Page: Se hace clic correctamente en checkbox (8)
+2021-04-23 10:44:37,428:	   INFO:	  Merchant Parameters Page: Clicked successfully.
+2021-04-23 10:44:37,428:	   INFO:	  Merchant Parameters Page: Se hace clic correctamente en checkbox (9)
+2021-04-23 10:44:37,732:	   INFO:	  Merchant Parameters Page: Clicked successfully.
+2021-04-23 10:44:37,732:	   INFO:	  Merchant Parameters Page: Se hace clic correctamente en checkbox (10)
+2021-04-23 10:44:38,036:	   INFO:	  Merchant Parameters Page: Clicked successfully.
+2021-04-23 10:44:38,036:	   INFO:	  Merchant Parameters Page: Se hace clic correctamente en checkbox (11)
+2021-04-23 10:44:38,036:	   INFO:	  Merchant Parameters Page: Se hace clic correctamente en los checkbox tab CVV
+2021-04-23 10:44:38,037:	   INFO:	  Merchant Parameters test page: Update/Modify Merchant Parameters CVV
+2021-04-23 10:44:38,277:	   INFO:	  Merchant Parameters Page: Clicked successfully.
+2021-04-23 10:44:38,277:	   INFO:	  Merchant Parameters Page: Se hace clic correctamente en Button Save
+2021-04-23 10:44:38,277:	   INFO:	  Merchant Parameters test page: Update/Modify Merchant Parameters SAVE
+2021-04-23 10:44:43,282:	   INFO:	  Merchant Parameters test page: The 'Update/Modify Merchant Parameters' test passed
+2021-04-23 10:44:43,328:	   INFO:	  Merchant Parameters test page: The 'Update/Modify Merchant Parameters' test data was saved

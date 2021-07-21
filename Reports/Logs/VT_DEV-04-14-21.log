@@ -1,0 +1,224 @@
+2021-04-14 14:51:57,034:	   INFO:	  ====== WebDriver manager ======
+2021-04-14 14:51:57,680:	   INFO:	  There is no [win64] edgedriver for browser  in cache
+2021-04-14 14:51:58,028:	   INFO:	  Trying to download new driver from https://msedgedriver.azureedge.net/89.0.774.76/edgedriver_win64.zip
+2021-04-14 14:52:02,853:	   INFO:	  Driver has been saved in cache [C:\Users\Dev\.wdm\drivers\edgedriver\win64\89.0.774.76]
+2021-04-14 14:52:08,538:	   INFO:	  Load Selenium: The edge chromium webdriver loaded and the window was maximized
+2021-04-14 14:52:08,559:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-14 14:52:49,962:	   INFO:	  ====== WebDriver manager ======
+2021-04-14 14:52:50,539:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\edgedriver\win64\89.0.774.76\msedgedriver.exe] found in cache
+2021-04-14 14:52:53,882:	   INFO:	  Load Selenium: The edge chromium webdriver loaded and the window was maximized
+2021-04-14 14:52:53,884:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-14 14:53:01,617:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-04-14 14:53:02,042:	   INFO:	  Login Page: It was written in the userName text field.
+2021-04-14 14:53:02,367:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-04-14 14:53:03,177:	   INFO:	  Login Page: It was written in the password text field.
+2021-04-14 14:53:03,417:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-04-14 14:53:03,808:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-04-14 14:53:03,808:	   INFO:	  Login Page: Los camps de usuario, password y mechant fueron completados
+2021-04-14 14:53:04,054:	   INFO:	  Login Page: Clicked successfully.
+2021-04-14 14:53:04,054:	   INFO:	  Login Page: se hizo clic en login
+2021-04-14 14:53:04,055:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-14 14:53:09,061:	   INFO:	  login test Page: The '' test passed
+2021-04-14 14:53:09,070:	   INFO:	  login test Page: The '' test data was saved
+2021-04-14 14:53:40,102:	   INFO:	  ====== WebDriver manager ======
+2021-04-14 14:53:40,648:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\edgedriver\win64\89.0.774.76\msedgedriver.exe] found in cache
+2021-04-14 14:53:43,983:	   INFO:	  Load Selenium: The edge chromium webdriver loaded and the window was maximized
+2021-04-14 14:53:43,985:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-14 14:53:51,007:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-04-14 14:53:51,474:	   INFO:	  Login Page: It was written in the userName text field.
+2021-04-14 14:53:51,776:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-04-14 14:53:52,540:	   INFO:	  Login Page: It was written in the password text field.
+2021-04-14 14:53:52,792:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-04-14 14:53:53,124:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-04-14 14:53:53,125:	   INFO:	  Login Page: Los camps de usuario, password y mechant fueron completados
+2021-04-14 14:53:53,291:	   INFO:	  Login Page: Clicked successfully.
+2021-04-14 14:53:53,292:	   INFO:	  Login Page: se hizo clic en login
+2021-04-14 14:53:53,292:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-14 14:53:58,303:	   INFO:	  login test Page: The '' test passed
+2021-04-14 14:53:58,311:	   INFO:	  login test Page: The '' test data was saved
+2021-04-14 15:00:07,482:	   INFO:	  ====== WebDriver manager ======
+2021-04-14 15:00:07,976:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\edgedriver\win64\89.0.774.76\msedgedriver.exe] found in cache
+2021-04-14 15:00:11,475:	   INFO:	  Load Selenium: The edge chromium webdriver loaded and the window was maximized
+2021-04-14 15:00:11,476:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-14 15:00:18,823:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-04-14 15:00:19,278:	   INFO:	  Login Page: It was written in the userName text field.
+2021-04-14 15:00:19,496:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-04-14 15:00:20,277:	   INFO:	  Login Page: It was written in the password text field.
+2021-04-14 15:00:20,634:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-04-14 15:00:21,011:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-04-14 15:00:21,012:	   INFO:	  Login Page: Los camps de usuario, password y mechant fueron completados
+2021-04-14 15:00:21,261:	   INFO:	  Login Page: Clicked successfully.
+2021-04-14 15:00:21,262:	   INFO:	  Login Page: se hizo clic en login
+2021-04-14 15:00:21,264:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-14 15:00:26,282:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test passed
+2021-04-14 15:00:26,289:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test data was saved
+2021-04-14 15:05:48,971:	   INFO:	  Generator Report: The pdf report was generated
+2021-04-14 15:05:48,977:	   INFO:	  Generator Json: The data was clear
+2021-04-14 15:06:41,294:	   INFO:	  Generator Json: The data was clear
+2021-04-14 15:12:19,316:	   INFO:	  Generator Json: The data was clear
+2021-04-14 15:12:31,298:	   INFO:	  ====== WebDriver manager ======
+2021-04-14 15:12:32,190:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\edgedriver\win64\89.0.774.76\msedgedriver.exe] found in cache
+2021-04-14 15:12:35,590:	   INFO:	  Load Selenium: The edge chromium webdriver loaded and the window was maximized
+2021-04-14 15:12:35,591:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-14 15:12:42,968:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-04-14 15:12:43,625:	   INFO:	  Login Page: It was written in the userName text field.
+2021-04-14 15:12:43,858:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-04-14 15:12:44,716:	   INFO:	  Login Page: It was written in the password text field.
+2021-04-14 15:12:44,979:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-04-14 15:12:45,337:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-04-14 15:12:45,337:	   INFO:	  Login Page: Los camps de usuario, password y mechant fueron completados
+2021-04-14 15:12:45,571:	   INFO:	  Login Page: Clicked successfully.
+2021-04-14 15:12:45,572:	   INFO:	  Login Page: se hizo clic en login
+2021-04-14 15:12:45,572:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-14 15:12:50,588:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test passed
+2021-04-14 15:12:50,596:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test data was saved
+2021-04-14 15:15:26,356:	   INFO:	  ====== WebDriver manager ======
+2021-04-14 15:15:26,882:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\edgedriver\win64\89.0.774.76\msedgedriver.exe] found in cache
+2021-04-14 15:15:30,255:	   INFO:	  Load Selenium: The edge chromium webdriver loaded and the window was maximized
+2021-04-14 15:15:30,258:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-14 15:15:37,212:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-04-14 15:15:37,657:	   INFO:	  Login Page: It was written in the userName text field.
+2021-04-14 15:15:37,986:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-04-14 15:15:38,709:	   INFO:	  Login Page: It was written in the password text field.
+2021-04-14 15:15:38,933:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-04-14 15:15:39,301:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-04-14 15:15:39,301:	   INFO:	  Login Page: Los camps de usuario, password y mechant fueron completados
+2021-04-14 15:15:39,542:	   INFO:	  Login Page: Clicked successfully.
+2021-04-14 15:15:39,542:	   INFO:	  Login Page: se hizo clic en login
+2021-04-14 15:15:39,542:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-14 15:15:44,548:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test passed
+2021-04-14 15:15:44,556:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test data was saved
+2021-04-14 15:17:09,270:	   INFO:	  ====== WebDriver manager ======
+2021-04-14 15:17:09,784:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\edgedriver\win64\89.0.774.76\msedgedriver.exe] found in cache
+2021-04-14 15:17:12,995:	   INFO:	  Load Selenium: The edge chromium webdriver loaded and the window was maximized
+2021-04-14 15:17:12,997:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-14 15:17:18,832:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-04-14 15:17:19,288:	   INFO:	  Login Page: It was written in the userName text field.
+2021-04-14 15:17:19,603:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-04-14 15:17:20,392:	   INFO:	  Login Page: It was written in the password text field.
+2021-04-14 15:17:20,702:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-04-14 15:17:21,809:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-04-14 15:17:21,809:	   INFO:	  Login Page: Los camps de usuario, password y mechant fueron completados
+2021-04-14 15:17:22,612:	   INFO:	  Login Page: Clicked successfully.
+2021-04-14 15:17:22,612:	   INFO:	  Login Page: se hizo clic en login
+2021-04-14 15:17:22,612:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-14 15:17:27,633:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test passed
+2021-04-14 15:17:27,652:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test data was saved
+2021-04-14 15:19:18,372:	   INFO:	  ====== WebDriver manager ======
+2021-04-14 15:19:18,882:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\edgedriver\win64\89.0.774.76\msedgedriver.exe] found in cache
+2021-04-14 15:19:22,056:	   INFO:	  Load Selenium: The edge chromium webdriver loaded and the window was maximized
+2021-04-14 15:19:22,058:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-14 15:19:27,329:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-04-14 15:19:27,744:	   INFO:	  Login Page: It was written in the userName text field.
+2021-04-14 15:19:28,064:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-04-14 15:19:28,771:	   INFO:	  Login Page: It was written in the password text field.
+2021-04-14 15:19:28,943:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-04-14 15:19:29,183:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-04-14 15:19:29,183:	   INFO:	  Login Page: Los camps de usuario, password y mechant fueron completados
+2021-04-14 15:19:29,544:	   INFO:	  Login Page: Clicked successfully.
+2021-04-14 15:19:29,544:	   INFO:	  Login Page: se hizo clic en login
+2021-04-14 15:19:29,544:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-14 15:19:34,550:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test passed
+2021-04-14 15:19:34,556:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test data was saved
+2021-04-14 15:20:11,757:	   INFO:	  ====== WebDriver manager ======
+2021-04-14 15:20:12,288:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\edgedriver\win64\89.0.774.76\msedgedriver.exe] found in cache
+2021-04-14 15:20:15,492:	   INFO:	  Load Selenium: The edge chromium webdriver loaded and the window was maximized
+2021-04-14 15:20:15,494:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-14 15:23:09,390:	   INFO:	  ====== WebDriver manager ======
+2021-04-14 15:23:09,975:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\edgedriver\win64\89.0.774.76\msedgedriver.exe] found in cache
+2021-04-14 15:23:12,830:	   INFO:	  Load Selenium: The edge chromium webdriver loaded and the window was maximized
+2021-04-14 15:23:12,832:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-14 15:23:22,925:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-04-14 15:23:23,372:	   INFO:	  Login Page: It was written in the userName text field.
+2021-04-14 15:23:23,713:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-04-14 15:23:24,566:	   INFO:	  Login Page: It was written in the password text field.
+2021-04-14 15:23:24,775:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-04-14 15:23:25,044:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-04-14 15:23:25,045:	   INFO:	  Login Page: Los camps de usuario, password y mechant fueron completados
+2021-04-14 15:23:25,192:	   INFO:	  Login Page: Clicked successfully.
+2021-04-14 15:23:25,193:	   INFO:	  Login Page: se hizo clic en login
+2021-04-14 15:23:25,193:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-14 15:23:30,198:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test passed
+2021-04-14 15:23:30,204:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test data was saved
+2021-04-14 15:23:59,325:	   INFO:	  ====== WebDriver manager ======
+2021-04-14 15:24:00,500:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\edgedriver\win64\89.0.774.76\msedgedriver.exe] found in cache
+2021-04-14 15:24:03,552:	   INFO:	  Load Selenium: The edge chromium webdriver loaded and the window was maximized
+2021-04-14 15:24:03,554:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-14 15:24:07,839:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-04-14 15:24:08,204:	   INFO:	  Login Page: It was written in the userName text field.
+2021-04-14 15:24:08,415:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-04-14 15:24:08,950:	   INFO:	  Login Page: It was written in the password text field.
+2021-04-14 15:24:09,137:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-04-14 15:24:09,365:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-04-14 15:24:09,365:	   INFO:	  Login Page: Los camps de usuario, password y mechant fueron completados
+2021-04-14 15:24:09,580:	   INFO:	  Login Page: Clicked successfully.
+2021-04-14 15:24:09,580:	   INFO:	  Login Page: se hizo clic en login
+2021-04-14 15:24:09,580:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-14 15:24:14,589:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test passed
+2021-04-14 15:24:14,626:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test data was saved
+2021-04-14 15:24:49,316:	   INFO:	  ====== WebDriver manager ======
+2021-04-14 15:24:49,881:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\edgedriver\win64\89.0.774.76\msedgedriver.exe] found in cache
+2021-04-14 15:24:52,927:	   INFO:	  Load Selenium: The edge chromium webdriver loaded and the window was maximized
+2021-04-14 15:24:52,930:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-14 15:24:57,907:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-04-14 15:24:58,222:	   INFO:	  Login Page: It was written in the userName text field.
+2021-04-14 15:24:58,417:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-04-14 15:24:58,906:	   INFO:	  Login Page: It was written in the password text field.
+2021-04-14 15:24:59,059:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-04-14 15:24:59,307:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-04-14 15:24:59,309:	   INFO:	  Login Page: Los camps de usuario, password y mechant fueron completados
+2021-04-14 15:24:59,467:	   INFO:	  Login Page: Clicked successfully.
+2021-04-14 15:24:59,468:	   INFO:	  Login Page: se hizo clic en login
+2021-04-14 15:24:59,469:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-14 15:30:44,282:	   INFO:	  ====== WebDriver manager ======
+2021-04-14 15:30:44,834:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\edgedriver\win64\89.0.774.76\msedgedriver.exe] found in cache
+2021-04-14 15:30:48,603:	   INFO:	  Load Selenium: The edge chromium webdriver loaded and the window was maximized
+2021-04-14 15:30:48,605:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-14 15:30:54,411:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-04-14 15:30:54,868:	   INFO:	  Login Page: It was written in the userName text field.
+2021-04-14 15:30:55,220:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-04-14 15:30:56,025:	   INFO:	  Login Page: It was written in the password text field.
+2021-04-14 15:30:56,322:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-04-14 15:30:56,649:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-04-14 15:30:56,651:	   INFO:	  Login Page: Los camps de usuario, password y mechant fueron completados
+2021-04-14 15:30:56,903:	   INFO:	  Login Page: Clicked successfully.
+2021-04-14 15:30:56,904:	   INFO:	  Login Page: se hizo clic en login
+2021-04-14 15:30:56,905:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-14 15:31:01,916:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test passed
+2021-04-14 15:31:01,925:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test data was saved
+2021-04-14 15:33:33,038:	   INFO:	  ====== WebDriver manager ======
+2021-04-14 15:33:33,571:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\edgedriver\win64\89.0.774.76\msedgedriver.exe] found in cache
+2021-04-14 15:33:36,764:	   INFO:	  Load Selenium: The edge chromium webdriver loaded and the window was maximized
+2021-04-14 15:33:36,766:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-14 15:33:41,872:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-04-14 15:33:42,177:	   INFO:	  Login Page: It was written in the userName text field.
+2021-04-14 15:33:42,393:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-04-14 15:33:43,034:	   INFO:	  Login Page: It was written in the password text field.
+2021-04-14 15:33:43,312:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-04-14 15:33:43,597:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-04-14 15:33:43,598:	   INFO:	  Login Page: Los camps de usuario, password y mechant fueron completados
+2021-04-14 15:33:43,810:	   INFO:	  Login Page: Clicked successfully.
+2021-04-14 15:33:43,811:	   INFO:	  Login Page: se hizo clic en login
+2021-04-14 15:33:43,811:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-14 15:33:48,816:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test passed
+2021-04-14 15:33:48,823:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test data was saved
+2021-04-14 15:34:20,965:	   INFO:	  ====== WebDriver manager ======
+2021-04-14 15:34:21,040:	   INFO:	  Current google-chrome version is 89.0.4389
+2021-04-14 15:34:21,040:	   INFO:	  Get LATEST driver version for 89.0.4389
+2021-04-14 15:34:21,523:	   INFO:	  Get LATEST driver version for 89.0.4389
+2021-04-14 15:34:21,869:	   INFO:	  Trying to download new driver from https://chromedriver.storage.googleapis.com/89.0.4389.23/chromedriver_win32.zip
+2021-04-14 15:34:27,339:	   INFO:	  Driver has been saved in cache [C:\Users\Dev\.wdm\drivers\chromedriver\win32\89.0.4389.23]
+2021-04-14 15:34:29,881:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-04-14 15:34:29,883:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-04-14 15:34:35,706:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-04-14 15:34:36,117:	   INFO:	  Login Page: It was written in the userName text field.
+2021-04-14 15:34:36,391:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-04-14 15:34:37,171:	   INFO:	  Login Page: It was written in the password text field.
+2021-04-14 15:34:37,417:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-04-14 15:34:37,732:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-04-14 15:34:37,733:	   INFO:	  Login Page: Los camps de usuario, password y mechant fueron completados
+2021-04-14 15:34:37,917:	   INFO:	  Login Page: Clicked successfully.
+2021-04-14 15:34:37,917:	   INFO:	  Login Page: se hizo clic en login
+2021-04-14 15:34:37,918:	   INFO:	  login test Page: Test username ok password bad MID bad.
+2021-04-14 15:34:42,922:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test passed
+2021-04-14 15:34:42,939:	   INFO:	  login test Page: The 'Test username ok password bad MID bad.' test data was saved

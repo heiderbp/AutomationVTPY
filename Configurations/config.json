@@ -1,0 +1,12 @@
+{
+    "app": {
+        "name": "VT DEV"
+    },
+    "url": {
+        "name": "Staging"
+    },
+    "browser": {
+        "name": "chrome",
+        "headless": true
+    }
+}

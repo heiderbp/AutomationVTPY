@@ -1,0 +1,30 @@
+{
+  "cards": {
+    "visa"        : "4003440008007566",
+    "mastercard"  : "5282414830457553",
+    "amex"        : "371449005002373",
+    "discover"    : "6011000090001201",
+    "debit"       : "5108050090007811",
+    "commercial"  : "5214400080002812",
+    "gift"        : "6010566317594773"
+  },
+  "additional": {
+    "name"        : "Test Cenpos",
+    "month"       : "12",
+    "year"        : "34",
+    "avs"         : "8320",
+    "zip"         : "85284"
+  },
+  "cvv": {
+    "amex"        : "9997",
+    "others"      : "999"
+  },
+  "check": {
+    "aba"       :   "267080177",
+    "account"   :   "1096505734014",
+    "check"     :   "150",
+    "type"      :   "Personal",
+    "id_number" :   "D00047785002",
+    "state"     :   "Florida"
+  }
+}

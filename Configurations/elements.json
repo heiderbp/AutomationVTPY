@@ -1,0 +1,407 @@
+{
+	"Administration": {
+		"accessControlList"	: 	{
+									"TxtIpToAllowed"		:	{
+																	"id"	:	"ipToAllowed",
+																	"css"	:	"",
+																	"xpath"	:	""
+																}
+								},
+		"countriesAcl"		: 	{
+									"chkAllowedCountries"	: 	{
+																	"id"	:	"",
+																	"css"	:	"div#app>div>main>div>div>div>div:nth-of-type(2)>div>div>div>div>div>div>div>div:nth-of-type(2)>div>table>tbody>tr>td>div>div>div>div>div",
+																	"xpath"	:	""
+																}
+								},
+		"InvoiceTemplates"	: 	{
+									"cmbSale"				:	{
+																	"id"	:	"",
+																	"css"	:	"#app>div.v-application--wrap>main>div>div.container.custom-container.container--fluid>div>div.row.align-center.justify-center>div>div>div>div.col-lg-6.col-12>div>div.v-card__text>div>div>table>tbody>tr:nth-child(1)>td:nth-child(2)>div>div>div",
+																	"xpath"	:	""
+																}
+								},
+		"merchant"			: 	{
+									"tabMerchantData"		:	{
+																	"id"	:	"",
+																	"css"	:	"#app>div.v-application--wrap>main>div>div.container.custom-container.container--fluid>div>div.row.align-center.justify-center>div>div>div>div.col-lg-6.col-12>div>div.v-card__text>div>div>table>tbody>tr:nth-child(1)>td:nth-child(2)>div>div>div",
+																	"xpath"	:	""
+																},
+									"tabProcessingData"		:	{
+																	"id"	:	"",
+																	"css"	:	"#app>div>main>div>div.container.custom-container.container--fluid>div>div.row.align-center.justify-center>div>div>div.v-card__text>form>div>div.v-item-group.theme--light.v-slide-group.v-tabs-bar.v-tabs-bar--show-arrows.primary--text>div.v-slide-group__wrapper>div>div:nth-child(3)",
+																	"xpath"	:	""
+																},
+									"tabAdditionalData"		:	{
+																	"id"	:	"",
+																	"css"	:	"#app>div>main>div>div.container.custom-container.container--fluid>div>div.row.align-center.justify-center>div>div>div.v-card__text>form>div>div.v-item-group.theme--light.v-slide-group.v-tabs-bar.v-tabs-bar--show-arrows.primary--text>div.v-slide-group__wrapper>div>div:nth-child(4)",
+																	"xpath"	:	""
+																},
+									"btnMerchantSave"		:	{
+																	"id"	:	"save",
+																	"css"	:	"",
+																	"xpath"	:	""
+																}
+								},
+		"merchantParameters": 	{
+									"tabParametersAvs"		:	{
+																	"id"	:	"",
+																	"css"	:	"#app>div>main>div>div>div>div.row.align-center.justify-center>div>div>div>div:nth-child(1)>div>div>div>div.v-item-group.theme--light.v-slide-group.v-tabs-bar.primary--text>div.v-slide-group__wrapper>div>div:nth-child(2)",
+																	"xpath"	:	""
+																},
+									"tabParametersZip"		:	{
+																	"id"	:	"",
+																	"css"	:	"#app>div>main>div>div>div>div.row.align-center.justify-center>div>div>div>div:nth-child(1)>div>div>div>div.v-item-group.theme--light.v-slide-group.v-tabs-bar.primary--text>div.v-slide-group__wrapper>div>div:nth-child(3)",
+																	"xpath"	:	""
+																},
+									"tabParametersCvv"		:	{
+																	"id"	:	"",
+																	"css"	:	"#app>div>main>div>div>div>div.row.align-center.justify-center>div>div>div>div:nth-child(1)>div>div>div>div.v-item-group.theme--light.v-slide-group.v-tabs-bar.primary--text>div.v-slide-group__wrapper>div>div:nth-child(4)",
+																	"xpath"	:	""
+																},
+									"btnParametersSave"		:	{
+																	"id"	:	"save",
+																	"css"	:	"",
+																	"xpath"	:	""
+																}
+								},
+		"roles"				: 	{
+									"txtSearch"				:	{
+																	"id"	:	"search",
+																	"css"	:	"",
+																	"xpath"	:	""
+																},
+									"txtRowSelect"			:	{
+																	"id"	:	"rowSelect",
+																	"css"	:	"",
+																	"xpath"	:	""
+																},
+									"txtRolName"			:	{
+																	"id"	:	"rolName",
+																	"css"	:	"",
+																	"xpath"	:	""
+																},
+									"cmbRol"				:	{
+																	"id"	:	"",
+																	"css"	:	"div#app>div>main>div>div>div>div:nth-of-type(2)>div>div:nth-of-type(2)>div>div>div:nth-of-type(2)>div",
+																	"xpath"	:	""
+																},
+									"cmbRolSelect"			:	{
+																	"id"	:	"",
+																	"css"	:	"div#list-item-1564-0>div>div",
+																	"xpath"	:	""
+																},
+									"cmbBillingAddress"		:	{
+																	"id"	:	"",
+																	"css"	:	"div#list-item-868-0>div",
+																	"xpath"	:	""
+																},
+									"txtBillingAddressAmountTrigger"	:	{
+																				"id"	:	"",
+																				"css"	:	"input#input-689",
+																				"xpath"	:	""
+																			},
+									"chkBillingAddressSendEmailAlert"	:	{
+																				"id"	:	"",
+																				"css"	:	"input#input-689",
+																				"xpath"	:	""
+																			},
+									"cmbZipCode"			:	{
+																	"id"	:	"",
+																	"css"	:	"div#list-item-868-0>div",
+																	"xpath"	:	""
+																}
+								},
+		"users"				: 	{
+									"txtSearch"				:	{
+																	"id"	:	"search",
+																	"css"	:	"",
+																	"xpath"	:	""
+															},
+									"txtRowSelect"			:	{
+																	"id"	:	"rowSelect",
+																	"css"	:	"",
+																	"xpath"	:	""
+																}
+								}
+	},
+	"Cards": {
+		"auth"				: 	{
+									"cmbMerchant"			:	{
+																	"id"	:	"",
+																	"css"	:	"#app>div>main>div>div.container.custom-container.container--fluid>div>div.row.align-center.justify-center>div>div>div>div.col-lg-5.col-12>div>div.v-card__text.custom>div.cardForm>div>div:nth-child(3)>div.col-lg-8.col-12>div>div>div.v-input__slot",
+																	"xpath"	:	""
+																}
+								},
+		"batchDeposit"		: 	{
+									"btnYes"				:	{
+																	"id"	:	"searchSettle",
+																	"css"	:	"",
+																	"xpath"	:	""
+																},
+									"btnNo"					:	{
+																	"id"	:	"closeQuestion",
+																	"css"	:	"",
+																	"xpath"	:	""
+																}
+								},
+		"credit"			: 	{
+									"cmbMerchant"			:	{
+																	"id"	:	"",
+																	"css"	:	"#app>div>main>div>div.container.custom-container.container--fluid>div>div.row.align-center.justify-center>div>div>div>div.col-lg-5.col-12>div>div.v-card__text.custom>div.cardForm>div>div:nth-child(3)>div.col-lg-8.col-12>div>div>div.v-input__slot",
+																	"xpath"	:	""
+																}
+								},
+		"eBPPInvoice"		: 	{
+									"txtName"				:	{
+																	"id"	:	"nameOnCard",
+																	"css"	:	"",
+																	"xpath"	:	""
+																}
+								},
+		"force"				: 	{
+									"txtReferenceNumber"	:	{
+																	"id"	:	"referenceNumber",
+																	"css"	:	"",
+																	"xpath"	:	""
+																}
+								},
+		"levelII"			: 	{
+									"cmbTemplate"			:	{
+																	"id"	:	"",
+																	"css"	:	"#app>div.v-application--wrap>main>div>div.container.custom-container.container--fluid>div>div.row.align-center.justify-center>div>div:nth-child(1)>div.col-sm-12.col-lg-3.col-12>div>div>div.v-input__slot",
+																	"xpath"	:	""
+																}
+								},
+		"lightRecurring"	: 	{
+									"txtCardNumber"			:	{
+																	"id"	:	"cardNumber",
+																	"css"	:	"",
+																	"xpath"	:	""
+																}
+								},
+		"manageToken"		: 	{
+									"txtLastFourDigits"		:	{
+																	"id"	:	"lastFourDigits",
+																	"css"	:	"",
+																	"xpath"	:	""
+																}
+								},
+		"positiveCard"		: 	{
+									"txtCustomerCode"		:	{
+																	"id"	:	"customerCode",
+																	"css"	:	"",
+																	"xpath"	:	""
+																}
+								},
+		"reAuth"			: 	{
+									"txtReferenceNumber"		:	{
+																		"id"	:	"referenceNumber",
+																		"css"	:	"",
+																		"xpath"	:	""
+																	}
+								},
+		"refund"			: 	{
+									"cmbDataSeries"				:	{
+																		"id"	:	"",
+																		"css"	:	"#customTab > div > div.v-card__text > div:nth-child(1) > div:nth-child(1) > div > div > div.v-input__slot",
+																		"xpath"	:	""
+																	}
+								},
+		"sale"				: 	{
+									"cmbMerchant"				:	{
+																		"id"	:	"",
+																		"css"	:	"#app>div.v-application--wrap>main>div>div.container.custom-container.container--fluid>div>div.row.align-center.justify-center>div>div>div>div.col-lg-5.col-12>div>div.v-card__text.custom>div.cardForm>div>div:nth-child(3)>div.col-lg-8.col-12>div>div>div.v-input__slot",
+																		"xpath"	:	""
+																	}
+								},
+		"useToken"			: 	{
+									"txtLastFourDigits"			:	{
+																		"id"	:	"lastFourDigits",
+																		"css"	:	"",
+																		"xpath"	:	""
+																	}
+								},
+		"voice"				: 	{
+									"txtCustomerCode"			:	{
+																		"id"	:	"customerCode",
+																		"css"	:	"",
+																		"xpath"	:	""
+																	}
+								}
+	},
+	"Check": {
+		"checkConversion"	: 	{
+									"cmbMerchant"				:	{
+																		"id"	:	"",
+																		"css"	:	"#app>div>main>div>div.container.custom-container.container--fluid>div>div.row.align-center.justify-center>div>div:nth-child(1)>div.col-lg-5.col-12>div>div.v-card__text.custom>form>div:nth-child(1)>div.col-lg-7.col-12>div>div>div.v-input__slot",
+																		"xpath"	:	""
+																	}
+								},
+		"guarantee"			: 	{
+									"cmbMerchant"				:	{
+																		"id"	:	"",
+																		"css"	:	"#app > div > main > div > div.container.custom-container.container--fluid > div > div.row.align-center.justify-center > div > div > div > div.col-lg-5.col-12 > div > div.v-card__text.custom > form > div:nth-child(1) > div.col-lg-7.col-12 > div > div > div.v-input__slot",
+																		"xpath"	:	""
+																	}
+								},
+		"manageToken"		: 	{
+									"txtAbaNumber"				:	{
+																	"id"	:	"abaNumber",
+																	"css"	:	"",
+																	"xpath"	:	""
+																}
+								},
+		"sendFile"			: 	{
+									"btnYes"				:	{
+																	"id"	:	"searchSettle",
+																	"css"	:	"",
+																	"xpath"	:	""
+																}
+								},
+		"useToken"			: 	{
+									"txtAbaNumber"				:	{
+																	"id"	:	"abaNumber",
+																	"css"	:	"",
+																	"xpath"	:	""
+																}
+								},
+		"void"				: 	{
+									"cmbDataSeries"				:	{
+																	"id"	:	"",
+																	"css"	:	"#customTab>div>div.v-card__text>div:nth-child(1)>div:nth-child(1)>div>div>div.v-input__slot",
+																	"xpath"	:	""
+																}
+								}
+	},
+	"Gift": {
+		"activate"			: 	{
+									"txtAmount"				:	{
+																	"id"	:	"amount",
+																	"css"	:	"",
+																	"xpath"	:	""
+																}
+								},
+		"inquiry"			: 	{
+									"txtCardNumberInput"				:	{
+																	"id"	:	"cardNumberInput",
+																	"css"	:	"",
+																	"xpath"	:	""
+																}
+								},
+		"reload"			: 	{
+									"txtAmount"				:	{
+																	"id"	:	"amount",
+																	"css"	:	"",
+																	"xpath"	:	""
+																}
+								}
+	},
+	"Reports": {
+		"batchReport"		: 	{
+									"cmbDataSeries"				:	{
+																		"id"	:	"",
+																		"css"	:	"#app>div>main>div>div.container.custom-container.container--fluid>div>div.row.align-center.justify-center>div>div.row.no-gutters>div.col-sm-12.col-lg-7.col-12>div:nth-child(2)>div:nth-child(1)>div>div>div.v-input__slot",
+																		"xpath"	:	""
+																	}
+								},
+		"cashSummary"		: 	{
+									"cmbDataSeries"				:	{
+																		"id"	:	"",
+																		"css"	:	"#app>div>main>div>div.container.custom-container.container--fluid>div>div.row.align-center.justify-center>div>div.row.no-gutters>div>div:nth-child(2)>div:nth-child(1)>div>div>div.v-input__slot",
+																		"xpath"	:	""
+																	}
+								},
+		"checkReport"		: 	{
+									"cmbDataSeries"				:	{
+																		"id"	:	"",
+																		"css"	:	"#app>div>main>div>div.container.custom-container.container--fluid>div>div.row.align-center.justify-center>div>div.row.no-gutters>div>div:nth-child(2)>div:nth-child(1)>div>div>div.v-input__slot",
+																		"xpath"	:	""
+																	}
+								},
+		"clientIDSummary"	: 	{
+									"cmbDataSeries"				:	{
+																		"id"	:	"",
+																		"css"	:	"#app>div>main>div>div.container.custom-container.container--fluid>div>div.row.align-center.justify-center>div>div.row.no-gutters>div.col-sm-12.col-lg-7.col-12>div:nth-child(2)>div:nth-child(1)>div>div>div.v-input__slot",
+																		"xpath"	:	""
+																	}
+								},
+		"departmentSummary"	: 	{
+									"cmbDataSeries"				:	{
+																		"id"	:	"",
+																		"css"	:	"#app>div>main>div>div.container.custom-container.container--fluid>div>div.row.align-center.justify-center>div>div.row.no-gutters>div.col-sm-12.col-lg-7.col-12>div:nth-child(2)>div:nth-child(1)>div>div>div.v-input__slot",
+																		"xpath"	:	""
+																	}
+								},
+		"donationsSummary"	: 	{
+									"cmbDataSeries"				:	{
+																		"id"	:	"",
+																		"css"	:	"#app>div>main>div>div.container.custom-container.container--fluid>div>div.row.align-center.justify-center>div>div.row.no-gutters>div.col-sm-12.col-lg-7.col-12>div:nth-child(2)>div:nth-child(1)>div>div>div.v-input__slot",
+																		"xpath"	:	""
+																	}
+								},
+		"EBPPReconciliation": 	{
+									"cmbDataSeries"				:	{
+																		"id"	:	"",
+																		"css"	:	"#app>div>main>div>div.container.custom-container.container--fluid>div>div.row.align-center.justify-center>div>div.row.no-gutters>div.col-sm-12.col-lg-7.col-12>div:nth-child(2)>div:nth-child(1)>div>div>div.v-input__slot",
+																		"xpath"	:	""
+																	}
+								},
+		"geolocation"		: 	{
+									"cmbDataSeries"				:	{
+																		"id"	:	"",
+																		"css"	:	"#app>div>main>div>div.container.custom-container.container--fluid>div>div.row.align-center.justify-center>div>div.row.no-gutters>div.col-sm-12.col-lg-7.col-12>div:nth-child(2)>div:nth-child(1)>div>div>div.v-input__slot",
+																		"xpath"	:	""
+																	}
+								},
+		"ipSummary"			: 	{
+									"cmbDataSeries"				:	{
+																		"id"	:	"",
+																		"css"	:	"#app>div>main>div>div.container.custom-container.container--fluid>div>div.row.align-center.justify-center>div>div.row.no-gutters>div.col-sm-12.col-lg-7.col-12>div:nth-child(2)>div:nth-child(1)>div>div>div.v-input__slot",
+																		"xpath"	:	""
+																	}
+								},
+		"levelIIIData"		: 	{
+									"cmbDataSeries"				:	{
+																		"id"	:	"",
+																		"css"	:	"#app>div>main>div>div.container.custom-container.container--fluid>div>div.row.align-center.justify-center>div>div.row.no-gutters>div.col-sm-12.col-lg-7.col-12>div:nth-child(2)>div:nth-child(1)>div>div>div.v-input__slot",
+																		"xpath"	:	""
+																	}
+								},
+		"reprint"			: 	{
+									"cmbDataSeries"				:	{
+																		"id"	:	"",
+																		"css"	:	"#app>div>main>div>div.container.custom-container.container--fluid>div>div.row.align-center.justify-center>div>div.row.no-gutters>div.col-sm-12.col-lg-7.col-12>div:nth-child(2)>div:nth-child(1)>div>div>div.v-input__slot",
+																		"xpath"	:	""
+																	}
+								},
+		"supervisor"		: 	{
+									"cmbDataSeries"				:	{
+																		"id"	:	"",
+																		"css"	:	"#app>div>main>div>div.container.custom-container.container--fluid>div>div.row.align-center.justify-center>div>div.row.no-gutters>div.col-sm-12.col-lg-7.col-12>div:nth-child(2)>div:nth-child(1)>div>div>div.v-input__slot",
+																		"xpath"	:	""
+																	}
+								},
+		"tokenSummary"		: 	{
+									"txtFilterBy"				:	{
+																		"id"	:	"",
+																		"css"	:	"#expiredTokens>div.top-table.no-print>div>div:nth-child(1)>div>div>div>div.v-text-field__slot>input[type=text]",
+																		"xpath"	:	""
+																	}
+								},
+		"transactionDistribution": 	{
+									"cmbDataSeries"				:	{
+																		"id"	:	"",
+																		"css"	:	"#app>div>main>div>div.container.custom-container.container--fluid>div>div.row.align-center.justify-center>div>div.row.no-gutters>div.col-sm-12.col-lg-7.col-12>div:nth-child(2)>div:nth-child(1)>div>div>div.v-input__slot",
+																		"xpath"	:	""
+																	}
+								},
+		"transactions"		: 	{
+									"cmbDataSeries"				:	{
+																		"id"	:	"",
+																		"css"	:	"#app>div>main>div>div.container.custom-container.container--fluid>div>div.row.align-center.justify-center>div>div.row.no-gutters>div.col-sm-12.col-lg-7.col-12>div:nth-child(2)>div:nth-child(1)>div>div>div.v-input__slot",
+																		"xpath"	:	""
+																	}
+								}
+	}
+}

@@ -1,0 +1,256 @@
+2021-07-16 07:04:36,070:	   INFO:	  ====== WebDriver manager ======
+2021-07-16 07:04:36,137:	   INFO:	  Current google-chrome version is 91.0.4472
+2021-07-16 07:04:36,137:	   INFO:	  Get LATEST driver version for 91.0.4472
+2021-07-16 07:04:36,582:	   INFO:	  Get LATEST driver version for 91.0.4472
+2021-07-16 07:04:36,859:	   INFO:	  Trying to download new driver from https://chromedriver.storage.googleapis.com/91.0.4472.101/chromedriver_win32.zip
+2021-07-16 07:04:38,575:	   INFO:	  Driver has been saved in cache [C:\Users\Dev\.wdm\drivers\chromedriver\win32\91.0.4472.101]
+2021-07-16 07:04:40,581:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-07-16 07:04:40,583:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-07-16 07:04:59,213:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-07-16 07:04:59,501:	   INFO:	  Login Page: It was written in the userName text field.
+2021-07-16 07:04:59,513:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-07-16 07:04:59,979:	   INFO:	  Login Page: It was written in the password text field.
+2021-07-16 07:04:59,992:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-07-16 07:05:00,183:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-07-16 07:05:00,184:	   INFO:	  Login Page: The user, password and merchant fields were complete
+2021-07-16 07:05:00,316:	   INFO:	  Login Page: Clicked successfully.
+2021-07-16 07:05:00,317:	   INFO:	  Login Page: login was clicked
+2021-07-16 07:05:04,466:	   INFO:	  Dashboard Page: Items Obtained
+2021-07-16 07:05:04,595:	   INFO:	  Dashboard Page: Clicked successfully.
+2021-07-16 07:05:04,595:	   INFO:	  Dashboard Page: Cards is clicked correctly
+2021-07-16 07:05:04,595:	   INFO:	  Force Actions Page: User Menu was loads correctly.
+2021-07-16 07:05:05,668:	   INFO:	  Cards Page: Clicked successfully.
+2021-07-16 07:05:05,668:	   INFO:	  Cards Page: Successfully clicked Force
+2021-07-16 07:05:05,668:	   INFO:	  Force Actions Page: Submenu Force -> ok.
+2021-07-16 07:05:05,916:	   INFO:	  Force Page: Clicked successfully.
+2021-07-16 07:05:05,918:	   INFO:	  Force Page: The textbox Reference Number is clicked correctly
+2021-07-16 07:05:07,919:	   INFO:	  Reference Number page: Click Textbox Reference Number Search
+2021-07-16 07:05:12,929:	   INFO:	  Reference Number page: The 'Click Textbox Reference Number' test passed
+2021-07-16 07:05:12,981:	   INFO:	  Reference Number page: The 'Click Textbox Reference Number' test data was saved
+2021-07-16 09:34:06,762:	   INFO:	  ====== WebDriver manager ======
+2021-07-16 09:34:06,831:	   INFO:	  Current google-chrome version is 91.0.4472
+2021-07-16 09:34:06,831:	   INFO:	  Get LATEST driver version for 91.0.4472
+2021-07-16 09:34:07,218:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\91.0.4472.101\chromedriver.exe] found in cache
+2021-07-16 09:34:09,394:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-07-16 09:34:09,397:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-07-16 09:34:13,270:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-07-16 09:34:13,685:	   INFO:	  Login Page: It was written in the userName text field.
+2021-07-16 09:34:13,702:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-07-16 09:34:14,317:	   INFO:	  Login Page: It was written in the password text field.
+2021-07-16 09:34:14,328:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-07-16 09:34:14,581:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-07-16 09:34:14,581:	   INFO:	  Login Page: The user, password and merchant fields were complete
+2021-07-16 09:34:14,758:	   INFO:	  Login Page: Clicked successfully.
+2021-07-16 09:34:14,758:	   INFO:	  Login Page: login was clicked
+2021-07-16 09:34:17,133:	   INFO:	  Dashboard Page: Items Obtained
+2021-07-16 09:34:17,260:	   INFO:	  Dashboard Page: Clicked successfully.
+2021-07-16 09:34:17,260:	   INFO:	  Dashboard Page: Cards is clicked correctly
+2021-07-16 09:34:17,260:	   INFO:	  Auth Actions Page: User Menu was loads correctly.
+2021-07-16 09:34:19,332:	   INFO:	  Cards Page: Clicked successfully.
+2021-07-16 09:34:19,332:	   INFO:	  Cards Page: Successfully clicked Auth
+2021-07-16 09:34:19,332:	   INFO:	  Auth Actions Page: Submenu Auth -> ok.
+2021-07-16 09:34:19,778:	   INFO:	  Auth Page: Clicked successfully.
+2021-07-16 09:34:19,779:	   INFO:	  Auth Page: The Combo box Merchant is clicked correctly
+2021-07-16 09:34:21,787:	   INFO:	  Auth page: Click Combobox Merchant Search
+2021-07-16 09:34:26,797:	   INFO:	  Auth page: The 'Click Combobox Merchant' test passed
+2021-07-16 09:34:26,820:	   INFO:	  Auth page: The 'Click Combobox Merchant' test data was saved
+2021-07-16 09:36:57,672:	   INFO:	  ====== WebDriver manager ======
+2021-07-16 09:36:57,716:	   INFO:	  Current google-chrome version is 91.0.4472
+2021-07-16 09:36:57,716:	   INFO:	  Get LATEST driver version for 91.0.4472
+2021-07-16 09:36:58,017:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\91.0.4472.101\chromedriver.exe] found in cache
+2021-07-16 09:37:00,493:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-07-16 09:37:00,495:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-07-16 09:37:14,635:	   INFO:	  ====== WebDriver manager ======
+2021-07-16 09:37:14,682:	   INFO:	  Current google-chrome version is 91.0.4472
+2021-07-16 09:37:14,682:	   INFO:	  Get LATEST driver version for 91.0.4472
+2021-07-16 09:37:14,981:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\91.0.4472.101\chromedriver.exe] found in cache
+2021-07-16 09:37:17,264:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-07-16 09:37:17,270:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-07-16 09:37:22,116:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-07-16 09:37:22,522:	   INFO:	  Login Page: It was written in the userName text field.
+2021-07-16 09:37:22,539:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-07-16 09:37:23,131:	   INFO:	  Login Page: It was written in the password text field.
+2021-07-16 09:37:23,143:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-07-16 09:37:23,396:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-07-16 09:37:23,397:	   INFO:	  Login Page: The user, password and merchant fields were complete
+2021-07-16 09:37:23,586:	   INFO:	  Login Page: Clicked successfully.
+2021-07-16 09:37:23,586:	   INFO:	  Login Page: login was clicked
+2021-07-16 09:37:28,899:	   INFO:	  login test Page: The '' test passed
+2021-07-16 09:37:29,038:	   INFO:	  login test Page: The '' test data was saved
+2021-07-16 09:41:38,703:	   INFO:	  ====== WebDriver manager ======
+2021-07-16 09:41:38,752:	   INFO:	  Current google-chrome version is 91.0.4472
+2021-07-16 09:41:38,753:	   INFO:	  Get LATEST driver version for 91.0.4472
+2021-07-16 09:41:39,156:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\91.0.4472.101\chromedriver.exe] found in cache
+2021-07-16 09:41:41,434:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-07-16 09:41:41,436:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-07-16 09:41:44,775:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-07-16 09:41:45,189:	   INFO:	  Login Page: It was written in the userName text field.
+2021-07-16 09:41:45,211:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-07-16 09:41:45,888:	   INFO:	  Login Page: It was written in the password text field.
+2021-07-16 09:41:45,901:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-07-16 09:41:46,170:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-07-16 09:41:46,170:	   INFO:	  Login Page: The user, password and merchant fields were complete
+2021-07-16 09:41:46,378:	   INFO:	  Login Page: Clicked successfully.
+2021-07-16 09:41:46,378:	   INFO:	  Login Page: login was clicked
+2021-07-16 09:41:48,218:	   INFO:	  Dashboard Page: Items Obtained
+2021-07-16 09:41:48,479:	   INFO:	  Dashboard Page: Clicked successfully.
+2021-07-16 09:41:48,479:	   INFO:	  Dashboard Page: Administration is clicked correctly
+2021-07-16 09:41:48,480:	   INFO:	  Merchant Parameters Actions Page: Administration Menu was loads correctly.
+2021-07-16 09:41:49,048:	   INFO:	  Administration Page: Clicked successfully.
+2021-07-16 09:41:49,048:	   INFO:	  Administration Page: Successfully clicked on MerchantParameters
+2021-07-16 09:41:49,049:	   INFO:	  Merchant Parameters Actions Page: Submenu Merchant Parameters is ok.
+2021-07-16 09:41:49,982:	   INFO:	  Merchant Parameters Page: Get Elements is ok
+2021-07-16 09:41:49,994:	   INFO:	  Merchant Parameters Page: The AVS tab is already selected
+2021-07-16 09:41:52,238:	   INFO:	  Merchant Parameters Page: Clicked successfully.
+2021-07-16 09:41:52,238:	   INFO:	  Merchant Parameters Page: Checkbox (3) is clicked correctly
+2021-07-16 09:41:52,640:	   INFO:	  Merchant Parameters Page: Clicked successfully.
+2021-07-16 09:41:52,641:	   INFO:	  Merchant Parameters Page: Checkbox (9) is clicked correctly
+2021-07-16 09:41:53,069:	   INFO:	  Merchant Parameters Page: Clicked successfully.
+2021-07-16 09:41:53,069:	   INFO:	  Merchant Parameters Page: Checkbox (12) is clicked correctly
+2021-07-16 09:41:53,491:	   INFO:	  Merchant Parameters Page: Clicked successfully.
+2021-07-16 09:41:53,491:	   INFO:	  Merchant Parameters Page: Checkbox (15) is clicked correctly
+2021-07-16 09:41:53,918:	   INFO:	  Merchant Parameters Page: Clicked successfully.
+2021-07-16 09:41:53,919:	   INFO:	  Merchant Parameters Page: Checkbox (16) is clicked correctly
+2021-07-16 09:41:53,919:	   INFO:	  Merchant Parameters Page: The checkbox tab AVS is clicked correctly
+2021-07-16 09:41:53,919:	   INFO:	  Merchant Parameters test page: Update/Modify Merchant Parameters AVS
+2021-07-16 09:41:54,668:	   INFO:	  Merchant Parameters Page: Clicked successfully.
+2021-07-16 09:41:54,668:	   INFO:	  Merchant Parameters Page: ZIP tab clicked correctly
+2021-07-16 09:43:18,434:	   INFO:	  ====== WebDriver manager ======
+2021-07-16 09:43:18,478:	   INFO:	  Current google-chrome version is 91.0.4472
+2021-07-16 09:43:18,478:	   INFO:	  Get LATEST driver version for 91.0.4472
+2021-07-16 09:43:18,779:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\91.0.4472.101\chromedriver.exe] found in cache
+2021-07-16 09:43:21,009:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-07-16 09:43:21,012:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-07-16 09:43:25,207:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-07-16 09:43:25,728:	   INFO:	  Login Page: It was written in the userName text field.
+2021-07-16 09:43:25,780:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-07-16 09:43:26,599:	   INFO:	  Login Page: It was written in the password text field.
+2021-07-16 09:43:26,612:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-07-16 09:43:26,876:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-07-16 09:43:26,877:	   INFO:	  Login Page: The user, password and merchant fields were complete
+2021-07-16 09:43:27,091:	   INFO:	  Login Page: Clicked successfully.
+2021-07-16 09:43:27,092:	   INFO:	  Login Page: login was clicked
+2021-07-16 09:43:29,214:	   INFO:	  Dashboard Page: Items Obtained
+2021-07-16 09:43:29,366:	   INFO:	  Dashboard Page: Clicked successfully.
+2021-07-16 09:43:29,366:	   INFO:	  Dashboard Page: Administration is clicked correctly
+2021-07-16 09:43:29,366:	   INFO:	  Merchant Parameters Actions Page: Administration Menu was loads correctly.
+2021-07-16 09:43:30,150:	   INFO:	  Administration Page: Clicked successfully.
+2021-07-16 09:43:30,151:	   INFO:	  Administration Page: Successfully clicked on MerchantParameters
+2021-07-16 09:43:30,151:	   INFO:	  Merchant Parameters Actions Page: Submenu Merchant Parameters is ok.
+2021-07-16 09:43:30,908:	   INFO:	  Merchant Parameters Page: Get Elements is ok
+2021-07-16 09:43:30,921:	   INFO:	  Merchant Parameters Page: The AVS tab is already selected
+2021-07-16 09:45:38,442:	   INFO:	  ====== WebDriver manager ======
+2021-07-16 09:45:38,490:	   INFO:	  Current google-chrome version is 91.0.4472
+2021-07-16 09:45:38,490:	   INFO:	  Get LATEST driver version for 91.0.4472
+2021-07-16 09:45:38,803:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\91.0.4472.101\chromedriver.exe] found in cache
+2021-07-16 09:45:40,694:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-07-16 09:45:40,696:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-07-16 09:46:50,169:	   INFO:	  ====== WebDriver manager ======
+2021-07-16 09:46:50,208:	   INFO:	  Current google-chrome version is 91.0.4472
+2021-07-16 09:46:50,208:	   INFO:	  Get LATEST driver version for 91.0.4472
+2021-07-16 09:46:50,618:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\91.0.4472.101\chromedriver.exe] found in cache
+2021-07-16 09:46:52,371:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-07-16 09:46:52,373:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-07-16 09:46:55,115:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-07-16 09:46:55,413:	   INFO:	  Login Page: It was written in the userName text field.
+2021-07-16 09:46:55,426:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-07-16 09:46:55,971:	   INFO:	  Login Page: It was written in the password text field.
+2021-07-16 09:46:55,984:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-07-16 09:46:56,207:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-07-16 09:46:56,209:	   INFO:	  Login Page: The user, password and merchant fields were complete
+2021-07-16 09:46:56,387:	   INFO:	  Login Page: Clicked successfully.
+2021-07-16 09:46:56,387:	   INFO:	  Login Page: login was clicked
+2021-07-16 09:46:58,097:	   INFO:	  Dashboard Page: Items Obtained
+2021-07-16 09:46:58,204:	   INFO:	  Dashboard Page: Clicked successfully.
+2021-07-16 09:46:58,205:	   INFO:	  Dashboard Page: Administration is clicked correctly
+2021-07-16 09:46:58,205:	   INFO:	  Merchant Parameters Actions Page: Administration Menu was loads correctly.
+2021-07-16 09:46:58,700:	   INFO:	  Administration Page: Clicked successfully.
+2021-07-16 09:46:58,700:	   INFO:	  Administration Page: Successfully clicked on MerchantParameters
+2021-07-16 09:46:58,701:	   INFO:	  Merchant Parameters Actions Page: Submenu Merchant Parameters is ok.
+2021-07-16 09:47:11,571:	   ERROR:	  Merchant Parameters Page: Could not get the parameter avs tab item: Message: chrome not reachable  (Session info: chrome=91.0.4472.124)
+2021-07-16 09:47:18,870:	   INFO:	  ====== WebDriver manager ======
+2021-07-16 09:47:18,918:	   INFO:	  Current google-chrome version is 91.0.4472
+2021-07-16 09:47:18,919:	   INFO:	  Get LATEST driver version for 91.0.4472
+2021-07-16 09:47:19,223:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\91.0.4472.101\chromedriver.exe] found in cache
+2021-07-16 09:47:20,925:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-07-16 09:47:20,927:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-07-16 09:47:23,783:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-07-16 09:47:24,106:	   INFO:	  Login Page: It was written in the userName text field.
+2021-07-16 09:47:24,122:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-07-16 09:47:24,733:	   INFO:	  Login Page: It was written in the password text field.
+2021-07-16 09:47:24,744:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-07-16 09:47:24,944:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-07-16 09:47:24,944:	   INFO:	  Login Page: The user, password and merchant fields were complete
+2021-07-16 09:47:25,098:	   INFO:	  Login Page: Clicked successfully.
+2021-07-16 09:47:25,098:	   INFO:	  Login Page: login was clicked
+2021-07-16 09:47:26,884:	   INFO:	  Dashboard Page: Items Obtained
+2021-07-16 09:47:26,980:	   INFO:	  Dashboard Page: Clicked successfully.
+2021-07-16 09:47:26,980:	   INFO:	  Dashboard Page: Administration is clicked correctly
+2021-07-16 09:47:26,980:	   INFO:	  Merchant Parameters Actions Page: Administration Menu was loads correctly.
+2021-07-16 09:47:27,412:	   INFO:	  Administration Page: Clicked successfully.
+2021-07-16 09:47:27,414:	   INFO:	  Administration Page: Successfully clicked on MerchantParameters
+2021-07-16 09:47:27,414:	   INFO:	  Merchant Parameters Actions Page: Submenu Merchant Parameters is ok.
+2021-07-16 09:47:28,092:	   INFO:	  Merchant Parameters Page: Get Elements is ok
+2021-07-16 09:47:28,109:	   INFO:	  Merchant Parameters Page: The AVS tab is already selected
+2021-07-16 09:47:30,258:	   INFO:	  Merchant Parameters Page: Clicked successfully.
+2021-07-16 09:47:30,258:	   INFO:	  Merchant Parameters Page: Checkbox (1) is clicked correctly
+2021-07-16 09:47:30,454:	   INFO:	  Merchant Parameters Page: Clicked successfully.
+2021-07-16 09:47:30,454:	   INFO:	  Merchant Parameters Page: Checkbox (2) is clicked correctly
+2021-07-16 09:47:30,621:	   INFO:	  Merchant Parameters Page: Clicked successfully.
+2021-07-16 09:47:30,622:	   INFO:	  Merchant Parameters Page: Checkbox (6) is clicked correctly
+2021-07-16 09:47:31,222:	   INFO:	  Merchant Parameters test page: The 'Update/Modify Merchant Parameters' test passed
+2021-07-16 09:47:31,244:	   INFO:	  Merchant Parameters test page: The 'Update/Modify Merchant Parameters' test data was saved
+2021-07-16 10:16:07,194:	   INFO:	  ====== WebDriver manager ======
+2021-07-16 10:16:07,287:	   INFO:	  Current google-chrome version is 91.0.4472
+2021-07-16 10:16:07,288:	   INFO:	  Get LATEST driver version for 91.0.4472
+2021-07-16 10:16:07,677:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\91.0.4472.101\chromedriver.exe] found in cache
+2021-07-16 10:16:10,585:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-07-16 10:16:10,586:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-07-16 10:16:15,032:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-07-16 10:16:15,706:	   INFO:	  Login Page: It was written in the userName text field.
+2021-07-16 10:16:15,721:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-07-16 10:16:16,708:	   INFO:	  Login Page: It was written in the password text field.
+2021-07-16 10:16:16,720:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-07-16 10:16:17,159:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-07-16 10:16:17,160:	   INFO:	  Login Page: The user, password and merchant fields were complete
+2021-07-16 10:16:17,455:	   INFO:	  Login Page: Clicked successfully.
+2021-07-16 10:16:17,455:	   INFO:	  Login Page: login was clicked
+2021-07-16 10:16:19,978:	   INFO:	  Dashboard Page: Items Obtained
+2021-07-16 10:16:20,099:	   INFO:	  Dashboard Page: Clicked successfully.
+2021-07-16 10:16:20,099:	   INFO:	  Dashboard Page: Administration is clicked correctly
+2021-07-16 10:16:20,100:	   INFO:	  Access Control List Actions Page: User Menu was loads correctly.
+2021-07-16 10:16:20,777:	   INFO:	  Administration Page: Clicked successfully.
+2021-07-16 10:16:20,778:	   INFO:	  Administration Page: Successfully clicked on AccessControlList
+2021-07-16 10:16:20,778:	   INFO:	  Access Control List Actions Page: Submenu Users -> ok.
+2021-07-16 10:16:21,724:	   INFO:	  Access Control List Page: Clicked successfully.
+2021-07-16 10:16:21,724:	   INFO:	  Access Control List Page: The IpToAllowed textbox is clicked correctly
+2021-07-16 10:16:23,726:	   INFO:	  Access Control List test page: Click Search textbox Search
+2021-07-16 10:16:28,733:	   INFO:	  Access Control List test page: The 'Click Search textbox' test passed
+2021-07-16 10:16:28,754:	   INFO:	  Access Control List test page: The 'Click Search textbox' test data was saved
+2021-07-16 10:16:43,029:	   INFO:	  ====== WebDriver manager ======
+2021-07-16 10:16:43,103:	   INFO:	  Current google-chrome version is 91.0.4472
+2021-07-16 10:16:43,103:	   INFO:	  Get LATEST driver version for 91.0.4472
+2021-07-16 10:16:43,393:	   INFO:	  Driver [C:\Users\Dev\.wdm\drivers\chromedriver\win32\91.0.4472.101\chromedriver.exe] found in cache
+2021-07-16 10:16:45,506:	   INFO:	  Load Selenium: The chromedriver loaded
+2021-07-16 10:16:45,508:	   INFO:	  Helps: The url has been taken, is: https://webtest.cenpos.net/spa/app/vt
+2021-07-16 10:16:49,719:	   INFO:	  Login Page: It was cleaned in the userName text field.
+2021-07-16 10:16:50,281:	   INFO:	  Login Page: It was written in the userName text field.
+2021-07-16 10:16:50,294:	   INFO:	  Login Page: It was cleaned in the password text field.
+2021-07-16 10:16:51,072:	   INFO:	  Login Page: It was written in the password text field.
+2021-07-16 10:16:51,085:	   INFO:	  Login Page: It was cleaned in the merchant text field.
+2021-07-16 10:16:51,404:	   INFO:	  Login Page: It was written in the merchant text field.
+2021-07-16 10:16:51,404:	   INFO:	  Login Page: The user, password and merchant fields were complete
+2021-07-16 10:16:51,629:	   INFO:	  Login Page: Clicked successfully.
+2021-07-16 10:16:51,629:	   INFO:	  Login Page: login was clicked
+2021-07-16 10:16:53,779:	   INFO:	  Dashboard Page: Items Obtained
+2021-07-16 10:16:53,920:	   INFO:	  Dashboard Page: Clicked successfully.
+2021-07-16 10:16:53,921:	   INFO:	  Dashboard Page: Cards is clicked correctly
+2021-07-16 10:16:53,921:	   INFO:	  Credit Actions Page: User Menu was loads correctly.
+2021-07-16 10:16:56,185:	   INFO:	  Cards Page: Clicked successfully.
+2021-07-16 10:16:56,185:	   INFO:	  Cards Page: Successfully clicked Credit
+2021-07-16 10:16:56,189:	   INFO:	  Credit Actions Page: Submenu Credit -> ok.
+2021-07-16 10:16:56,763:	   INFO:	  Credit Page: Clicked successfully.
+2021-07-16 10:16:56,764:	   INFO:	  Credit Page: The Combo box Merchant is clicked correctly
+2021-07-16 10:16:58,777:	   INFO:	  Credit page: Click Combobox Merchant Search
+2021-07-16 10:17:03,790:	   INFO:	  Credit page: The 'Click Combobox Merchant' test passed
+2021-07-16 10:17:03,824:	   INFO:	  Credit page: The 'Click Combobox Merchant' test data was saved
