@@ -11,4 +11,5 @@ class ClickReportsBatchDataSeries(dashBoardConditions):
         actions = BatchReportActions(self.driver, self.help)
         actions.actionsClickCmbDataSeries()
         self.help.info_log(self.page, self.name_test + " Search")
+        time.sleep(1)
         time.sleep(5)
