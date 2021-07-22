@@ -4,7 +4,7 @@ from PagesObject.Actions.Reports.batchReportActions import BatchReportActions
 
 
 class ClickReportsBatchDataSeries(dashBoardConditions):
-    page = "Auth page"
+    page = "Batch Report page"
 
     def test_ClickDataSeries(self):
         self.name_test = "Click Combobox Data Series"
