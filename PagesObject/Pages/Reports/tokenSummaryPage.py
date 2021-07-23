@@ -11,9 +11,9 @@ class TokenSummaryPage:
         error = list()
         self.error = dict()
         self.wait = WebDriverWait(self.driver, 5)
-
+        elements = self.help.get_element('Reports', 'tokenSummary')
         try:
-            self.txtFilterBy = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "#expiredTokens>div.top-table.no-print>div>div:nth-child(1)>div>div>div>div.v-text-field__slot>input[type=text]")))
+            self.txtFilterBy = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, elements['txtFilterBy']['css'])))
         except Exception as e:
             error_name = "Could not get the Search input text item: {}".format(str(e))
             self.help.error_log(self.page, error_name)

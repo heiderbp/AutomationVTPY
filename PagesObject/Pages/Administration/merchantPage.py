@@ -12,9 +12,9 @@ class MerchantPage:
         error = list()
         self.error = dict()
         self.wait = WebDriverWait(self.driver, 5)
-
+        elements = self.help.get_element('Administration', 'merchant')
         try:
-            self.tabMerchantData = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "#app>div>main>div>div.container.custom-container.container--fluid>div>div.row.align-center.justify-center>div>div>div.v-card__text>form>div>div.v-item-group.theme--light.v-slide-group.v-tabs-bar.v-tabs-bar--show-arrows.primary--text>div.v-slide-group__wrapper>div>div:nth-child(2)")))
+            self.tabMerchantData = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, elements['tabMerchantData']['css'])))
         except Exception as e:
             error_name = "Could not get the Merchant Data tab item: {}".format(str(e))
             self.help.error_log(self.page, error_name)

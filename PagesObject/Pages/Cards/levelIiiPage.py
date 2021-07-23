@@ -11,9 +11,9 @@ class LevelIiiPage:
         error = list()
         self.error = dict()
         self.wait = WebDriverWait(self.driver, 5)
-
+        elements = self.help.get_element('Cards', 'levelII')
         try:
-            self.cmbTemplate = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "#app>div.v-application--wrap>main>div>div.container.custom-container.container--fluid>div>div.row.align-center.justify-center>div>div:nth-child(1)>div.col-sm-12.col-lg-3.col-12>div>div>div.v-input__slot")))
+            self.cmbTemplate = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, elements['cmbTemplate']['css'])))
         except Exception as e:
             error_name = "Could not get the Search input text item: {}".format(str(e))
             self.help.error_log(self.page, error_name)

@@ -11,9 +11,9 @@ class CreditPage:
         error = list()
         self.error = dict()
         self.wait = WebDriverWait(self.driver, 5)
-
+        elements = self.help.get_element('Cards', 'credit')
         try:
-            self.cmbMerchant = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "#app>div>main>div>div.container.custom-container.container--fluid>div>div.row.align-center.justify-center>div>div>div>div.col-lg-5.col-12>div>div.v-card__text.custom>div.cardForm>div>div:nth-child(3)>div.col-lg-8.col-12>div>div>div.v-input__slot")))
+            self.cmbMerchant = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, elements['cmbMerchant']['css'])))
         except Exception as e:
             error_name = "Could not get the Search input text item: {}".format(str(e))
             self.help.error_log(self.page, error_name)

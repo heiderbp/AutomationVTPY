@@ -11,9 +11,9 @@ class CheckReportPage:
         error = list()
         self.error = dict()
         self.wait = WebDriverWait(self.driver, 5)
-
+        elements = self.help.get_element('Reports', 'checkReport')
         try:
-            self.cmbDataSeries = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "#app>div>main>div>div.container.custom-container.container--fluid>div>div.row.align-center.justify-center>div>div.row.no-gutters>div>div:nth-child(2)>div:nth-child(1)>div>div>div.v-input__slot")))
+            self.cmbDataSeries = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, elements['cmbDataSeries']['css'])))
         except Exception as e:
             error_name = "Could not get the Search input text item: {}".format(str(e))
             self.help.error_log(self.page, error_name)

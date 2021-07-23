@@ -11,9 +11,9 @@ class CountriesACLPage:
         error = list()
         self.error = dict()
         self.wait = WebDriverWait(self.driver, 5)
-
+        elements = self.help.get_element('Administration', 'countriesAcl')
         try:
-            self.chkAllowedCountries = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "div#app>div>main>div>div>div>div:nth-of-type(2)>div>div>div>div>div>div>div>div:nth-of-type(2)>div>table>tbody>tr>td>div>div>div>div>div")))
+            self.chkAllowedCountries = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, elements['chkAllowedCountries']['css'])))
         except Exception as e:
             error_name = "Could not get the Search input text item: {}".format(str(e))
             self.help.error_log(self.page, error_name)

@@ -13,9 +13,9 @@ class MerchantParametersPage:
         error = list()
         self.error = dict()
         self.wait = WebDriverWait(self.driver, 5)
-
+        elements = self.help.get_element('Administration', 'merchantParameters')
         try:
-            self.parametersAvs = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "#app>div>main>div>div>div>div.row.align-center.justify-center>div>div>div>div:nth-child(1)>div>div>div>div.v-item-group.theme--light.v-slide-group.v-tabs-bar.primary--text>div.v-slide-group__wrapper>div>div:nth-child(2)")))
+            self.parametersAvs = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, elements['parametersAvs']['css'])))
         except Exception as e:
             error_name = "Could not get the parameter avs tab item: {}".format(str(e))
             self.help.error_log(self.page, error_name)

@@ -11,9 +11,9 @@ class ActivatePage:
         error = list()
         self.error = dict()
         self.wait = WebDriverWait(self.driver, 5)
-
+        elements = self.help.get_element('Gift', 'activate')
         try:
-            self.txtAmount = self.wait.until(ec.visibility_of_element_located((By.ID, "amount")))
+            self.txtAmount = self.wait.until(ec.visibility_of_element_located((By.ID, elements['txtAmount']['css'])))
         except Exception as e:
             error_name = "Could not get the Search input text item: {}".format(str(e))
             self.help.error_log(self.page, error_name)

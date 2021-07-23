@@ -266,14 +266,14 @@ class Helps(Logs):
 
         return url
 
-    def get_element(self):
+    def get_element(self, module, page):
         element = str()
 
         try:
             routes = self.open_file('Configurations/routes.json')
             elements = self.open_file(routes['json_files']['json_elements'])
-            element = elements['Administration']['accessControlList']['TxtIpToAllowed']['id']
-            self.info_log(self.page, "The element has been taken, is: " + element + " json file")
+            element = elements[module][page]
+            self.info_log(self.page, "The element has been taken, for " + module + " - " + page + " json file")
         except Exception as e:
             self.error_log(self.page, "Something failed with the generation of the element: " + str(e))
 
