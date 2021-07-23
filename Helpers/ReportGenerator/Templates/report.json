@@ -2118,5 +2118,17 @@
         "Browser": "chrome",
         "Result": "Passed",
         "Reason": ""
+    },
+    {
+        "Application": "VT DEV",
+        "Mid": "30000720",
+        "Environment": "Staging",
+        "Id": "click_combobox_merchant__",
+        "Tests": "Click Combobox Merchant",
+        "Transaction": "",
+        "CardType": "",
+        "Browser": "chrome",
+        "Result": "Passed",
+        "Reason": ""
     }
 ]
