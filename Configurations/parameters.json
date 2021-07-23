@@ -2,6 +2,7 @@
 	"url": "https://webtest.cenpos.net/spa/app/vt",
 	"users": {
 		"standard"			: 	"hbedoya1",
+		"invalid"			: 	"hbedoya9",
 		"blocked"			: 	"ablocked",
 		"special"			: 	"aspecial_",
 		"w_sale"			: 	"asale",
@@ -16,10 +17,12 @@
 	},
 	"passwords": {
 		"standard"			:	"Cenpos@52",
+		"invalid"			: 	"Cenpos@52x",
 		"others"			: 	"Cenpos*2"
 	},
 	"mid": {
 		"standard"			: 	"30000720",
+		"invalid"			: 	"30900720",
 		"check"				: 	"12725718"
 	},
 	"tokens": {
