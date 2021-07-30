@@ -7,6 +7,6 @@
     },
     "browser": {
         "name": "chrome",
-        "headless": true
+        "headless": false
     }
 }

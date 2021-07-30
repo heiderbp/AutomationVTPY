@@ -13,47 +13,34 @@ class LoginActions:
         self.error = list()
         self.page = "Login Actions Page"
 
-    def actionsLogin(self, user, password, mid):
-        form = LoginPage(self.driver,self.help)
+    def actionsLogin(self, userType):
 
-        fill = form.fillFrom(user,password, mid)
+        mid = self.help.get_parameters()["mid"][userType]
+        user = self.help.get_parameters()["users"][userType]
+        password = self.help.get_parameters()["passwords"][userType]
+
+        login = LoginPage(self.driver, self.help)
+        fill = login.fillFrom(user, password, mid)
+
         if(len(fill)!=0):
             self.error.append(fill)
 
-        clic = form.clicksubmitLogin()
+        clic = login.clicksubmitLogin()
+
         if (len(clic) != 0):
             self.error.append(clic)
 
     def actionsLogout(self):
         form1 = DashboardP(self.driver, self.help)
-        form1.clickbtnAdministration()
-        self.help.info_log(self.page,"Administration Menu was loads correctly.")
-        # time.sleep(3)
-        # form1.clickbtnCards()
-        # self.help.info_log(self.page, "Menu Cards se cargo Correctamente.")
-        # time.sleep(3)
-        # form1.clickbtnCheck()
-        # time.sleep(3)
-        # form1.clickbtnGift()
-        # time.sleep(3)
-        # form1.clickbtnReports()
-        # time.sleep(3)
-        # form1.clickbtnAdministration()
-        time.sleep(3)
-        form2 = administrationPage(self.driver)
-        # form2.clickSubmenuRoles()
-        # time.sleep(1)
-        # form2.clickSubmenuUser()
-        # time.sleep(1)
-        # form2.clickSubmenuMerchant()
-        # time.sleep(1)
-        # form2.clickSubmenuInvoiceTemplates()
-        time.sleep(1)
-        form2.clickSubmenu("MerchantParameters")
-        time.sleep(1)
-        # form2.clickSubmenuAccessControlList()
-        # time.sleep(1)
-        # form2.clickSubmenuCountriesAcl()
+#        form1.clickbtnAdministration()
+ #       self.help.info_log(self.page,"Administration Menu was loads correctly.")
+  #      time.sleep(3)
+   #     form2 = administrationPage(self.driver)
+
+   #     time.sleep(1)
+   #     form2.clickSubmenu("MerchantParameters")
+   #     time.sleep(1)
+
         frmClicProfile = form1.clickbtnProfile()
         if (len(frmClicProfile) != 0):
             self.error.append(frmClicProfile)

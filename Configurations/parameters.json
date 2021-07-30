@@ -1,29 +1,35 @@
 {
 	"url": "https://webtest.cenpos.net/spa/app/vt",
 	"users": {
-		"standard"			: 	"hbedoya1",
-		"invalid"			: 	"hbedoya9",
-		"blocked"			: 	"ablocked",
-		"special"			: 	"aspecial_",
-		"w_sale"			: 	"asale",
-		"w_auth"			: 	"aauth",
-		"w_cash"			: 	"acash",
-		"w_refund"			: 	"arefund",
-		"w_credit"			: 	"acredit",
-		"w_force"			: 	"aforce",
-		"w_voice"			: 	"avoice",
-		"w_ebpp"			: 	"aebpp",
-		"w_report"			: 	"areport"
+		"standard"				: 	"hbedoya1",
+		"invalid"				: 	"hbedoya9",
+		"blocked"				: 	"ablocked",
+		"special"				: 	"aspecial_",
+		"usrSpecialChar"		: 	"@ndresT3st",
+		"usrChangeExpiredPwd"	:	"PedroP",
+		"w_sale"				: 	"asale",
+		"w_auth"				: 	"aauth",
+		"w_cash"				: 	"acash",
+		"w_refund"				: 	"arefund",
+		"w_credit"				: 	"acredit",
+		"w_force"				: 	"aforce",
+		"w_voice"				: 	"avoice",
+		"w_ebpp"				: 	"aebpp",
+		"w_report"				: 	"areport"
 	},
 	"passwords": {
-		"standard"			:	"Cenpos@52",
-		"invalid"			: 	"Cenpos@52x",
-		"others"			: 	"Cenpos*2"
+		"standard"				:	"Cenpos@53",
+		"usrSpecialChar"		: 	"Cenpos@4",
+		"usrChangeExpiredPwd"	:	"BMZZBJVL",
+		"invalid"				: 	"Cenpos@52x",
+		"others"				: 	"Cenpos*2"
 	},
 	"mid": {
-		"standard"			: 	"30000720",
-		"invalid"			: 	"30900720",
-		"check"				: 	"12725718"
+		"standard"				: 	"30000720",
+		"usrSpecialChar"		: 	"30000720",
+		"invalid"				: 	"30900720",
+		"usrChangeExpiredPwd"	:	"30900720",
+		"check"					: 	"12725718"
 	},
 	"tokens": {
 		"visa"				: 	"FJRHB39Z",

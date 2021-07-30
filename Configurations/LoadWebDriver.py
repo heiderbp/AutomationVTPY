@@ -42,6 +42,7 @@ class LoadWebDriver:
                 firefox_options.headless = True
             self.driver = webdriver.Firefox(executable_path=GeckoDriverManager().install(), options=firefox_options,
                                             service_log_path=os.devnull)
+            self.driver.set_window_size(1920, 1080)
             self.driver.maximize_window()
             self.help.info_log(self.page, "The geckodriver loaded")
         except Exception as e:
@@ -52,9 +53,16 @@ class LoadWebDriver:
         try:
             chrome_options = webdriver.ChromeOptions()
             chrome_options.add_argument("--start-maximized")
-            if self.headless == 'True':
+
+            if self.headless:
                 chrome_options.add_argument("--headless")
+
             self.driver = webdriver.Chrome(ChromeDriverManager().install(), options=chrome_options)
+            print(self.driver.get_window_size())
+            self.driver.set_window_size(1920, 1080)
+            print(self.driver.get_window_size())
+            self.driver.maximize_window()
+            print(self.driver.get_window_size())
             self.help.info_log(self.page, "The chromedriver loaded")
         except Exception as e:
             self.help.error_log(self.page, "The chromedriver failed: " + str(e))
@@ -79,6 +87,9 @@ class LoadWebDriver:
                 options.add_argument("--start-maximized")
                 options.set_capability("platform", "LINUX")
                 self.driver = Edge(executable_path="Webdrivers/msedgedriver", options=options)
+
+            self.driver.set_window_size(1920, 1080)
+            self.driver.maximize_window()
 
             self.help.info_log(self.page, "The edge chromium webdriver loaded and the window was maximized")
         except Exception as e:

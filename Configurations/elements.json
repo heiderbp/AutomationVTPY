@@ -2,16 +2,12 @@
 	"Administration": {
 		"accessControlList"	: 	{
 									"TxtIpToAllowed"		:	{
-																	"id"	:	"ipToAllowed",
-																	"css"	:	"",
-																	"xpath"	:	""
+																	"id"	:	"ipToAllowed"
 																}
 								},
 		"countriesAcl"		: 	{
 									"chkAllowedCountries"	: 	{
-																	"id"	:	"",
-																	"css"	:	"div#app>div>main>div>div>div>div:nth-of-type(2)>div>div>div>div>div>div>div>div:nth-of-type(2)>div>table>tbody>tr>td>div>div>div>div>div",
-																	"xpath"	:	""
+																	"css"	:	"div#app>div>main>div>div>div>div:nth-of-type(2)>div>div>div>div>div>div>div>div:nth-of-type(2)>div>table>tbody>tr>td>div>div>div>div>div"
 																}
 								},
 		"InvoiceTemplates"	: 	{

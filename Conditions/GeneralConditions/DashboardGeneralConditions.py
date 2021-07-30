@@ -11,18 +11,18 @@ class dashboardGC(unittest.TestCase):
     name_test = str()
     page = str()
     error = str()
-    mid = help.get_parameters()["mid"]["standard"]
-    user = help.get_parameters()["users"]["standard"]
-    password = help.get_parameters()["passwords"]["standard"]
+   # mid = help.get_parameters()["mid"]["standard"]
+   # user = help.get_parameters()["users"]["standard"]
+   # password = help.get_parameters()["passwords"]["standard"]
 
     @classmethod
     def setUpClass(cls) -> None:
         cls.sel = LoadWebDriver(cls.help)
         cls.driver = cls.sel.driver
         cls.driver.get(cls.help.get_url())
-        login = LoginPage(cls.driver, cls.help)
-        login.fillFrom(cls.user, cls.password, cls.mid)
-        login.clicksubmitLogin()
+       # login = LoginPage(cls.driver, cls.help)
+       # login.fillFrom(cls.user, cls.password, cls.mid)
+       # login.clicksubmitLogin()
 
     @classmethod
     def tearDownClass(cls) -> None:
