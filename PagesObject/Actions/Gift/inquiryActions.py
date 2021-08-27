@@ -1,7 +1,7 @@
 import time
 
 from PagesObject.Pages.giftPage import giftPage
-from PagesObject.Pages.deshboardPage import DashboardP
+from PagesObject.Pages.menuPage import DashboardP
 from PagesObject.Pages.Gift.inquiryPage import InquiryPage
 
 

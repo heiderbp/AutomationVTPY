@@ -1,5 +1,5 @@
 import time
-from Conditions.dashboardConditions import dashBoardConditions
+from Conditions.menuConditions import dashBoardConditions
 from PagesObject.Actions.loginActions import LoginActions
 from PagesObject.Actions.Administration.rolesActions import rolesActions
 

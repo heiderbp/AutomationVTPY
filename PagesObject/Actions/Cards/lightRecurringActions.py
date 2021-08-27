@@ -1,7 +1,7 @@
 import time
 
 from PagesObject.Pages.cardPage import cardPage
-from PagesObject.Pages.deshboardPage import DashboardP
+from PagesObject.Pages.menuPage import DashboardP
 from PagesObject.Pages.Cards.lightRecurringPage import LightRecurringPage
 
 

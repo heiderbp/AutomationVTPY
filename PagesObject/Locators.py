@@ -176,7 +176,7 @@ class Locators:
 
     # Links
     menu = "#app>div>nav>div.v-navigation-drawer__content>div>div:nth-child(MENU)"
-    subMenu = "#app>div>nav>div.v-navigation-drawer__content>div>div:nth-child(MENU)>div>div.v-list-group__items>a:nth-child(SUBMENU)"
+    subMenu =  "#app>div>nav>div.v-navigation-drawer__content>div>div:nth-child(MENU)>div>div.v-list-group__items>a:nth-child(SUBMENU)"
     subMenuLinks = "a[href='#/TRANS']"
 
     # Frame

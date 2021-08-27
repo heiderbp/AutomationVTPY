@@ -1,7 +1,7 @@
 import time
 
 from PagesObject.Pages.reportsPage import reportsPage
-from PagesObject.Pages.deshboardPage import DashboardP
+from PagesObject.Pages.menuPage import DashboardP
 from PagesObject.Pages.Reports.transactionDistributionPage import TransactionDistributionPage
 
 

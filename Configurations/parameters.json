@@ -1,12 +1,16 @@
 {
-	"url": "https://webtest.cenpos.net/spa/app/vt",
+	"url": "https://www4.cenpos.net/spa-test/app/vt",
+	"url_email": "https://www.mailinator.com/",
 	"users": {
-		"standard"				: 	"hbedoya1",
+		"standard"				: 	"heider",
+		"basic"					: 	"george",
 		"invalid"				: 	"hbedoya9",
-		"blocked"				: 	"ablocked",
+		"blocked"				: 	"andreab",
 		"special"				: 	"aspecial_",
-		"usrSpecialChar"		: 	"@ndresT3st",
-		"usrChangeExpiredPwd"	:	"PedroP",
+		"specialChar"			: 	"@ndresT3st",
+		"changeExpiredPwd"		:	"PedroP",
+		"invalidMerchant"		: 	"heider",
+		"california"			: 	"heider",
 		"w_sale"				: 	"asale",
 		"w_auth"				: 	"aauth",
 		"w_cash"				: 	"acash",
@@ -18,17 +22,25 @@
 		"w_report"				: 	"areport"
 	},
 	"passwords": {
-		"standard"				:	"Cenpos@53",
-		"usrSpecialChar"		: 	"Cenpos@4",
-		"usrChangeExpiredPwd"	:	"BMZZBJVL",
+		"standard"				:	"Elavon@2020",
+		"basic"					: 	"Cenpos@40",
 		"invalid"				: 	"Cenpos@52x",
+		"blocked"				: 	"Cenpos@2",
+		"specialChar"			: 	"Cenpos@4",
+		"changeExpiredPwd"		:	"BMZZBJVL",
+		"invalidMerchant"		: 	"Cenpos@53",
+		"california"			: 	"Elavon@2021",
 		"others"				: 	"Cenpos*2"
 	},
 	"mid": {
-		"standard"				: 	"30000720",
-		"usrSpecialChar"		: 	"30000720",
-		"invalid"				: 	"30900720",
-		"usrChangeExpiredPwd"	:	"30900720",
+		"standard"				: 	"400000614",
+		"basic"					: 	"400000614",
+		"invalid"				: 	"400000614",
+		"blocked"				: 	"400000614",
+		"specialChar"			: 	"400000614",
+		"changeExpiredPwd"		:	"400000614",
+		"invalidMerchant"		: 	"30000999",
+		"california"			:	"12720999",
 		"check"					: 	"12725718"
 	},
 	"tokens": {
@@ -47,8 +59,14 @@
 		"others"			: 	11.10
 	},
 	"email": {
-		"standard"			: 	"azapata@initiums.com",
-		"invalid"			: 	"a"
+		"standard"			: 	"heiderbp@mailinator.com",
+		"basic"				: 	"georger@mailinator.com",
+		"invalid"			: 	"a",
+		"blocked"			: 	"andreab@mailinator.com",
+		"specialChar"		: 	"pedrop@mailinator.com",
+		"changeExpiredPwd"	:	"pedrop@mailinator.com",
+		"invalidMerchant"	: 	"heiderbp@mailinator.com",
+		"california"		:	"heiderbp@mailinator.com"
 	},
 	"types": [
 		"Sale", "Refund", "Authorization", "Credit", "Force", "Voice Auth", "EBPP"

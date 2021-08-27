@@ -1,7 +1,7 @@
 import time
 
 from PagesObject.Pages.administrationPage import administrationPage
-from PagesObject.Pages.deshboardPage import DashboardP
+from PagesObject.Pages.menuPage import MenuP
 from PagesObject.Pages.Administration.merchantParametersPage import MerchantParametersPage
 
 
@@ -12,7 +12,7 @@ class merchantParametersActions:
         self.error = list()
         self.page = "Merchant Parameters Actions Page"
 
-        self.menu = DashboardP(self.driver, self.help)
+        self.menu = MenuP(self.driver, self.help)
         self.errormenu = self.menu.clickbtnAdministration()
         if len(self.errormenu) != 0:
             self.error.append(self.errormenu)

@@ -8,6 +8,7 @@ from chance import chance
 from jinja2 import Environment, FileSystemLoader
 from selenium.webdriver.common.keys import Keys
 
+
 import Helpers.ReportGenerator.GenerateJsonReport
 from Helpers.LogGenerator.GenerateLog import Logs
 from Helpers.ScreenshotGenerator.GenerateScreenshots import Screenshots
@@ -111,12 +112,28 @@ class Helps(Logs):
 
         return error
 
+    def get_text(self, page, element) -> dict:
+        error = list()
+
+        try:
+            text = element.text
+            self.info_log(page, "The data was taken.")
+        except Exception as e:
+            error_name = "Something failed to get the value: {}".format(str(e))
+            self.error_log(page, error_name)
+            error.append(error_name)
+
+        return text
+
+
     def get_value(self, page, element) -> dict:
         error = list()
         value = dict()
 
         value["error"] = list()
         value["value"] = str()
+
+
 
         try:
             value["value"] = element.get_attribute("value")
@@ -265,6 +282,19 @@ class Helps(Logs):
             self.error_log(self.page, "Something failed with the generation of the url: " + str(e))
 
         return url
+
+    def get_url_email(self):
+        url_email = str()
+
+        try:
+            routes = self.open_file('Configurations/routes.json')
+            parameters = self.open_file(routes['json_files']['json_parameters'])
+            url_email = parameters['url_email']
+            self.info_log(self.page, "The email url has been taken, is: " + url_email)
+        except Exception as e:
+            self.error_log(self.page, "Something failed with the generation of the url email: " + str(e))
+
+        return url_email
 
     def get_element(self, module, page):
         element = str()

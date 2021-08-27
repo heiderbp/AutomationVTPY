@@ -1,7 +1,7 @@
 import time
 
 from PagesObject.Pages.administrationPage import administrationPage
-from PagesObject.Pages.deshboardPage import DashboardP
+from PagesObject.Pages.menuPage import DashboardP
 from PagesObject.Pages.Administration.countriesAclPage import CountriesACLPage
 
 

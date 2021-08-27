@@ -2,7 +2,7 @@ import time
 
 import Helpers.Helps
 from PagesObject.Pages.administrationPage import administrationPage
-from PagesObject.Pages.deshboardPage import DashboardP
+from PagesObject.Pages.menuPage import MenuP
 from PagesObject.Pages.loginPage import LoginPage
 
 
@@ -12,42 +12,57 @@ class LoginActions:
         self.help = helps
         self.error = list()
         self.page = "Login Actions Page"
+        self.login = LoginPage(self.driver, self.help)
+
+
+    def actionsResetPassword(self,userType):
+        errorClickResetPwd = self.login.clickResetPassword(userType)
+        if len(errorClickResetPwd) != 0:
+            self.error.append(errorClickResetPwd)
+
 
     def actionsLogin(self, userType):
-
         mid = self.help.get_parameters()["mid"][userType]
         user = self.help.get_parameters()["users"][userType]
         password = self.help.get_parameters()["passwords"][userType]
-
-        login = LoginPage(self.driver, self.help)
-        fill = login.fillFrom(user, password, mid)
+        fill = self.login.fillFrom(user, password, mid)
 
         if(len(fill)!=0):
             self.error.append(fill)
 
-        clic = login.clicksubmitLogin()
+        click = self.login.clicksubmitLogin()
+
+        if (len(click) != 0):
+            self.error.append(click)
+
+    def actionsLoginNewPasswordCancel(self, userType, pw):
+        mid = self.help.get_parameters()["mid"][userType]
+        user = self.help.get_parameters()["users"][userType]
+        password = pw
+        fill = self.login.fillFrom(user, password, mid)
+
+        if (len(fill) != 0):
+            self.error.append(fill)
+
+        clic = self.login.clicksubmitLoginNewPasswordCancel()
 
         if (len(clic) != 0):
             self.error.append(clic)
 
-    def actionsLogout(self):
-        form1 = DashboardP(self.driver, self.help)
-#        form1.clickbtnAdministration()
- #       self.help.info_log(self.page,"Administration Menu was loads correctly.")
-  #      time.sleep(3)
-   #     form2 = administrationPage(self.driver)
+    def actionsLoginNewPassword(self, userType, pw, new_pw, repeat_new_pw):
+        mid = self.help.get_parameters()["mid"][userType]
+        user = self.help.get_parameters()["users"][userType]
+        password = pw
+        fill = self.login.fillFrom(user, password, mid)
 
-   #     time.sleep(1)
-   #     form2.clickSubmenu("MerchantParameters")
-   #     time.sleep(1)
+        if (len(fill) != 0):
+            self.error.append(fill)
 
-        frmClicProfile = form1.clickbtnProfile()
-        if (len(frmClicProfile) != 0):
-            self.error.append(frmClicProfile)
+        clic = self.login.clicksubmitLoginNewPassword(new_pw,repeat_new_pw)
 
-        frmClicLogout = form1.clickbtnLogout()
-        if (len(frmClicLogout) != 0):
-            self.error.append(frmClicLogout)
+        if (len(clic) != 0):
+            self.error.append(clic)
+
 
 
 

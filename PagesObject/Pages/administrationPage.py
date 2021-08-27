@@ -25,7 +25,7 @@ class administrationPage:
 
         try:
             self.submenuUser = self.wait.until(ec.visibility_of_element_located(
-                (By.CSS_SELECTOR, Locators.subMenu.replace("SUBMENU", "2").replace("MENU", "2"))))
+                (By.CSS_SELECTOR, "#app>div>nav>div.v-navigation-drawer__content>div>div:nth-child(2)>div>div.v-list-group__items>a:nth-child(2)")))
         except Exception as e:
             error_name = "Could not get the Administration menu item User: {}".format(str(e))
             self.help.error_log(self.page, error_name)
@@ -74,7 +74,7 @@ class administrationPage:
     def clickSubmenu(self, name):
         error = list()
         fill = dict()
-        method = "Desboard Boton" + name
+        method = "Submenu Boton" + name
 
         if name == "Roles":
             submenu = self.submenuRoles

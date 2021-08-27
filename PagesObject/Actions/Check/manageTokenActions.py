@@ -1,7 +1,7 @@
 import time
 
 from PagesObject.Pages.checkPage import checkPage
-from PagesObject.Pages.deshboardPage import DashboardP
+from PagesObject.Pages.menuPage import DashboardP
 from PagesObject.Pages.Check.manageTokenPage import ManageTokenPage
 
 
