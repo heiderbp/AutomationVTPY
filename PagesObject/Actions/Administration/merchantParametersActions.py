@@ -12,18 +12,6 @@ class merchantParametersActions:
         self.error = list()
         self.page = "Merchant Parameters Actions Page"
 
-        self.menu = MenuP(self.driver, self.help)
-        self.errormenu = self.menu.clickbtnAdministration()
-        if len(self.errormenu) != 0:
-            self.error.append(self.errormenu)
-        self.help.info_log(self.page, "Administration Menu was loads correctly.")
-
-        self.submenu = administrationPage(self.driver, self.help)
-        self.errorsubmenu = self.submenu.clickSubmenu("MerchantParameters")
-        if len(self.errorsubmenu) != 0:
-            self.error.append(self.errorsubmenu)
-        self.help.info_log(self.page, "Submenu Merchant Parameters is ok.")
-
         self.form = MerchantParametersPage(self.driver, self.help)
 
     def actionsModifyMerchantParametersAvs(self):

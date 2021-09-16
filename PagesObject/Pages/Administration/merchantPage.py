@@ -49,6 +49,77 @@ class MerchantPage:
         fill = dict()
         method = "Merchant tab Merchant Data"
 
+        try:
+            self.txtName = self.wait.until(ec.visibility_of_element_located((By.ID, "name")))
+        except Exception as e:
+            error_name = "Could not get the Name Text Box item: {}".format(str(e))
+            self.help.error_log(self.page, error_name)
+            error.append(error_name)
+
+        try:
+            self.txtContactFirstName = self.wait.until(ec.visibility_of_element_located((By.ID, "contactFirstName")))
+        except Exception as e:
+            error_name = "Could not get the contact First Name Text Box item: {}".format(str(e))
+            self.help.error_log(self.page, error_name)
+            error.append(error_name)
+
+        try:
+            self.txtContactLastName = self.wait.until(ec.visibility_of_element_located((By.ID, "contactLastName")))
+        except Exception as e:
+            error_name = "Could not get the contact Last Name Text Box item: {}".format(str(e))
+            self.help.error_log(self.page, error_name)
+            error.append(error_name)
+
+        try:
+            self.txtContactEmail = self.wait.until(ec.visibility_of_element_located((By.ID, "contactEmail")))
+        except Exception as e:
+            error_name = "Could not get the contact Email Text Box item: {}".format(str(e))
+            self.help.error_log(self.page, error_name)
+            error.append(error_name)
+
+        try:
+            self.txtAddress1 = self.wait.until(ec.visibility_of_element_located((By.ID, "address1")))
+        except Exception as e:
+            error_name = "Could not get the address1 Text Box item: {}".format(str(e))
+            self.help.error_log(self.page, error_name)
+            error.append(error_name)
+
+        try:
+            self.txtAddress2 = self.wait.until(ec.visibility_of_element_located((By.ID, "address2")))
+        except Exception as e:
+            error_name = "Could not get the address2 Text Box item: {}".format(str(e))
+            self.help.error_log(self.page, error_name)
+            error.append(error_name)
+
+        try:
+            self.txtCity = self.wait.until(ec.visibility_of_element_located((By.ID, "city")))
+        except Exception as e:
+            error_name = "Could not get the City Text Box item: {}".format(str(e))
+            self.help.error_log(self.page, error_name)
+            error.append(error_name)
+
+        try:
+            self.txtZip = self.wait.until(ec.visibility_of_element_located((By.ID, "zip")))
+        except Exception as e:
+            error_name = "Could not get the Zip Text Box item: {}".format(str(e))
+            self.help.error_log(self.page, error_name)
+            error.append(error_name)
+
+        try:
+            self.txtDefaultTax = self.wait.until(ec.visibility_of_element_located((By.ID, "defaultTax")))
+        except Exception as e:
+            error_name = "Could not get the default Tax Text Box item: {}".format(str(e))
+            self.help.error_log(self.page, error_name)
+            error.append(error_name)
+
+        try:
+            self.txtSessionTimeout = self.wait.until(ec.visibility_of_element_located((By.ID, "sessionTimeout")))
+        except Exception as e:
+            error_name = "Could not get the session timeout Text Box item: {}".format(str(e))
+            self.help.error_log(self.page, error_name)
+            error.append(error_name)
+
+
         if self.tabMerchantData.get_attribute("aria-selected") == "false":
             error += self.help.click_button(self.page, self.tabMerchantData)
 
@@ -77,6 +148,7 @@ class MerchantPage:
      #       self.help.info_log(self.page, "The Processing Data tab is already selected")
 
         return fill
+
 
     def clickTabAdditionalData(self):
         error = list()

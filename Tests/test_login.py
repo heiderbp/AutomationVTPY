@@ -1,4 +1,5 @@
 import time
+from ddt import data, ddt
 # from ExternalPages.emailConditions import EmailConditions
 # from Conditions.GeneralConditions.LoginGeneralConditions import loginGC
 # from ExternalPages.getPasswordFromEmailActions import EmailActions4
@@ -7,13 +8,15 @@ from PagesObject.Actions.loginActions import LoginActions
 from PagesObject.Actions.menuActions import MenuActions
 from PagesObject.Actions.Administration.rolesActions import rolesActions
 from PagesObject.Actions.Administration.merchantParametersActions import merchantParametersActions
+from PagesObject.Actions.Administration.merchantActions import merchantActions
 from PagesObject.Actions.Administration.usersActions import usersActions
+from PagesObject.Actions.Cards.saleActions import saleActions
 from ExternalPages.getPasswordFromEmailActions import EmailActions
 from Tests.test_login_2 import getPasswordMailinator
 
 # from ExternalPages.test_getPasswordFromEmail import TestGetPasswordFromEmail
 
-
+@ddt
 class Test0001(LoginConditions):
     page = "login test Page"
 
@@ -96,7 +99,7 @@ class Test0001(LoginConditions):
         time.sleep(2)
 
     def test_0023(self):
-        self.name_test = "Successfully create a new user role."
+        self.name_test = "Successfully create a new user."
         actionLogin = LoginActions(self.driver, self.help)
         actionLogin.actionsLogin('standard')
 
@@ -113,7 +116,7 @@ class Test0001(LoginConditions):
             actionRoles.actionsNewRol('optMenutest')
             
         time.sleep(5)
-'''
+
     def test_0018(self):
         self.name_test = "Successfully update/modify an already existing user role."
         actionLogin = LoginActions(self.driver, self.help)
@@ -132,7 +135,6 @@ class Test0001(LoginConditions):
 
         time.sleep(5)
 
-    '''
 
     def test_0021(self):
         self.name_test = "Permanently delete an already existing user role."
@@ -266,12 +268,91 @@ class Test0001(LoginConditions):
         actionLogin = LoginActions(self.driver, self.help)
         actionLogin.actionsLogin('standard')
         time.sleep(2)
+     
+    def test_0033(self):
+        self.name_test = "Successfully update/modify current merchant settings."
+        actionLogin = LoginActions(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+        
+        actionSubmenu = MenuActions(self.driver, self.help)
+        actionSubmenu.actionsMenu("Administration", "Merchant")
+
+        actions = merchantActions(self.driver, self.help)
+        actions.actionsModifyMerchantData()
+
+
+    @data("visa")
+    def test_0055(self, value):
+        self.name_test = "Successfully process a manual entry transaction when CVV is set to Required in the user role settings."
+        actionLogin = LoginActions(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuActions(self.driver, self.help)
+        actionSubmenu.actionsMenu("Administration", "Roles")
+
+        actionRoles = rolesActions(self.driver, self.help)
+        result = actionRoles.actionsSearchRol("optMenutest")
+
+        if not result:
+            actionRoles.actionsNewRol('optMenutest')
+        else:
+            actionRoles.actionsEditRol_CVVSet("Required")
+
+        actionSubmenu = MenuActions(self.driver, self.help)
+        actionSubmenu.actionsMenu("Cards", "Sale")
+
+        actionSale = saleActions(self.driver, self.help, card=value)
+        actionSale.fillform()
+
+        time.sleep(5)
+    '''
+
+    @data("visa")
+    def test_0068(self, value):
+        self.name_test = "	Successfully process a declined transaction.."
+        actionLogin = LoginActions(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuActions(self.driver, self.help)
+        actionSubmenu.actionsMenu("Cards", "Sale")
+
+        actionSale = saleActions(self.driver, self.help, card=value)
+        actionSale.fillformdecline()
+
+        time.sleep(5)
+
+    '''
+    @data("visa")
+    def test_0055B(self, value):
+        self.name_test = "Successfully process a manual entry transaction when CVV is set to Must Pass Over in the user role settings."
+        actionLogin = LoginActions(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuActions(self.driver, self.help)
+        actionSubmenu.actionsMenu("Administration", "Roles")
+
+        actionRoles = rolesActions(self.driver, self.help)
+        result = actionRoles.actionsSearchRol("optMenutest")
+
+        if not result:
+            actionRoles.actionsNewRol('optMenutest')
+        else:
+            actionRoles.actionsEditRol_CVVSet("Must Pass Over")
+
+        actionSubmenu = MenuActions(self.driver, self.help)
+        actionSubmenu.actionsMenu("Cards", "Sale")
+
+        actionSale = saleActions(self.driver, self.help, card=value)
+        actionSale.fillform()
+
+        time.sleep(5)
+
     
     def test_0034(self):
         self.name_test = "Successfully update/modify current merchant parameters settings."
         actionLogin = LoginActions(self.driver, self.help)
         actionLogin.actionsLogin('standard')
-
+        
         actionSubmenu = MenuActions(self.driver, self.help)
         actionSubmenu.actionsMenu("Administration", "MerchantParameters")
 
@@ -285,6 +366,57 @@ class Test0001(LoginConditions):
         self.help.info_log(self.page, self.name_test + " CVV")
         actions.saveform()
         self.help.info_log(self.page, self.name_test + " SAVE")
+        time.sleep(5)
+        
+    @data("visa","commercial")
+    def test_0053(self, value):
+        self.name_test = "Successfully process a transaction."
+        actionLogin = LoginActions(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuActions(self.driver, self.help)
+        actionSubmenu.actionsMenu("Cards", "Sale")
+
+        actionSale = saleActions(self.driver, self.help, card=value)
+        actionSale.fillform()
 
         time.sleep(5)
+
+
+    def test_0026(self):
+        self.name_test = "Successfully update/modify an already existing user."
+        actionLogin = LoginActions(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuActions(self.driver, self.help)
+        actionSubmenu.actionsMenu("Administration", "Users")
+
+        actionUsers = usersActions(self.driver, self.help)
+        result = actionUsers.actionsSearchUsers("optMenutest")
+
+        if result:
+            actionUsers.actionsUpdateUser()
+        else:
+            print("User not exist")
+        time.sleep(2)
+
+
+    def test_0027(self):
+        self.name_test = "Permanently delete an already existing user."
+        actionLogin = LoginActions(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuActions(self.driver, self.help)
+        actionSubmenu.actionsMenu("Administration", "Users")
+
+        actionUsers = usersActions(self.driver, self.help)
+        result = actionUsers.actionsSearchUsers("optMenutest")
+
+        if result:
+            actionUsers.actionsDeleteUser()
+        else:
+            print("User not exist")
+        time.sleep(2)
+
+    
     '''

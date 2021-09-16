@@ -8,7 +8,6 @@ from chance import chance
 from jinja2 import Environment, FileSystemLoader
 from selenium.webdriver.common.keys import Keys
 
-
 import Helpers.ReportGenerator.GenerateJsonReport
 from Helpers.LogGenerator.GenerateLog import Logs
 from Helpers.ScreenshotGenerator.GenerateScreenshots import Screenshots
@@ -112,9 +111,9 @@ class Helps(Logs):
 
         return error
 
-    def get_text(self, page, element) -> dict:
+    def get_text(self, page, element):
         error = list()
-
+        text = str()
         try:
             text = element.text
             self.info_log(page, "The data was taken.")
@@ -132,8 +131,6 @@ class Helps(Logs):
 
         value["error"] = list()
         value["value"] = str()
-
-
 
         try:
             value["value"] = element.get_attribute("value")
@@ -201,7 +198,7 @@ class Helps(Logs):
 
     @staticmethod
     def get_amount():
-        amount = random.randint(1, 200)
+        amount = random.randint(1, 99)
         decimal = random.randint(1, 99)
 
         if amount <= 9:
@@ -217,7 +214,7 @@ class Helps(Logs):
 
         data["amount"] = self.get_amount()
         data["month"] = expired[0]
-        data["year"] = expired[1]
+        data["year"] = expired[1][2:4]
         data["name"] = str(chance.name())
         data["invoice"] = str(self.invoice_generate())
         data["email"] = str(chance.email())

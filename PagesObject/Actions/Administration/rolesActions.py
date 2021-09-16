@@ -91,4 +91,18 @@ class rolesActions:
         if len(errorClicSave) != 0:
             self.error.append(errorClicSave)
 
+    def actionsEditRol_CVVSet(self, option):
+
+        error = self.form.clickEditRol()
+        if len(error) != 0:
+            self.error.append(error)
+
+        error = self.form.cmbCvvSelected(option)
+        if len(error) != 0:
+            self.error.append(error)
+
+        errorClicSave = self.form.clicksave()
+        if len(errorClicSave) != 0:
+            self.error.append(errorClicSave)
+
 

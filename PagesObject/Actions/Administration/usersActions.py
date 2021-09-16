@@ -68,3 +68,33 @@ class usersActions:
         if len(errorClicSave) != 0:
             self.error.append(errorClicSave)
 
+    def actionsDeleteUser(self):
+        self.form = UsersPage(self.driver, self.help)
+
+        error = self.form.clickRowDelete()
+        if len(error) != 0:
+            self.error.append(error)
+
+        error = self.form.clickConfirmDeleteUser()
+        if len(error) != 0:
+            self.error.append(error)
+
+
+    def actionsUpdateUser(self):
+        self.form = UsersPage(self.driver, self.help)
+
+        error = self.form.clickRowUpdate()
+        if len(error) != 0:
+            self.error.append(error)
+
+        time.sleep(1)
+
+        error = self.form.fillEditFieldsForm()
+        if len(error) != 0:
+            self.error.append(error)
+
+        errorClicSave = self.form.clicksave()
+
+        if len(errorClicSave) != 0:
+            self.error.append(errorClicSave)
+

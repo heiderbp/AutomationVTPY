@@ -1,7 +1,7 @@
 import time
 
 from PagesObject.Pages.administrationPage import administrationPage
-from PagesObject.Pages.menuPage import DashboardP
+from PagesObject.Pages.menuPage import MenuP
 from PagesObject.Pages.Administration.merchantPage import MerchantPage
 
 
@@ -12,7 +12,7 @@ class merchantActions:
         self.error = list()
         self.page = "Merchant Actions Page"
 
-        self.menu = DashboardP(self.driver, self.help)
+        self.menu = MenuP(self.driver, self.help)
         self.errormenu = self.menu.clickbtnAdministration()
         if len(self.errormenu) != 0:
             self.error.append(self.errormenu)
@@ -27,10 +27,17 @@ class merchantActions:
         self.form = MerchantPage(self.driver, self.help)
 
     def actionsModifyMerchantData(self):
+
         errorclickTabProcessingData = self.form.clickTabProcessingData()
+
         if len(errorclickTabProcessingData) != 0:
             self.error.append(errorclickTabProcessingData)
+
+
+
         time.sleep(2)
+
+
 
        # errorClicTabMerchantData = self.form.clickTabMerchantData()
        ## if len(errorClicTabMerchantData) != 0:

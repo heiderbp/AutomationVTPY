@@ -242,6 +242,50 @@ class RolesPage:
 
         return fill
 
+    def cmbCvvSelected(self, option):
+        error = list()
+        fill = dict()
+        method = "Edit Role"
+
+        try:
+            self.cmbCvv = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR,"#app>div.v-application--wrap>main>div>div>div>div.row.align-center.justify-center>div>div.v-card.v-sheet.theme--light>div.v-tabs.theme--light>div.v-window.v-item-group.theme--light.v-tabs-items>div>div>div>div>div:nth-child(1)>div:nth-child(2)>div:nth-child(3)>div>div>div:nth-child(2)>div>div>div.v-input__slot")))
+        except Exception as e:
+            error_name = "Could not get the Cvv ComoBox item: {}".format(str(e))
+            self.help.error_log(self.page, error_name)
+            error.append(error_name)
+
+        error += self.help.click_button(self.page, self.cmbCvv)
+
+        if len(error) == 0:
+            self.help.info_log(self.page, "The cvv combo box is clicked correctly")
+        else:
+            fill = self.help.make_error_list(self.driver, method, error)
+
+
+        try:
+            if option == "Required":
+                self.cmbCvvOption = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR,"#app>div.v-menu__content.theme--light.menuable__content__active>div>div:nth-child(3)")))
+            else:
+                self.cmbCvvOption = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR,"#app>div.v-menu__content.theme--light.menuable__content__active>div>div:nth-child(4)")))
+
+        except Exception as e:
+            error_name = "Could not get the Cvv " + option + " ComoBox item: {}".format(str(e))
+            self.help.error_log(self.page, error_name)
+            error.append(error_name)
+
+
+
+        error += self.help.click_button(self.page, self.cmbCvvOption)
+
+        if len(error) == 0:
+            self.help.info_log(self.page, "The cvv Option " + option + " from combo box is clicked correctly")
+        else:
+            fill = self.help.make_error_list(self.driver, method, error)
+
+
+        return fill
+
+
     def clicksave(self):
         error = list()
         fill = dict()
