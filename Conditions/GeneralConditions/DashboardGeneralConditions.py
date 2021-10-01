@@ -2,7 +2,6 @@ import unittest
 
 from Configurations.LoadWebDriver import LoadWebDriver
 from Helpers.Helps import Helps
-from PagesObject.Pages.loginPage import LoginPage
 
 
 class dashboardGC(unittest.TestCase):
