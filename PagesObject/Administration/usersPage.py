@@ -1,3 +1,5 @@
+import time
+
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as ec
@@ -9,6 +11,7 @@ class UsersPage:
         self.driver = driver
         self.help = helps
         self.page = "Users Page"
+        self.num = 0
 
         self.error = list()
         #self.error = dict()
@@ -58,6 +61,20 @@ class UsersPage:
             self.btnUpdateUser = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "#tableUsers>div.v-data-table__wrapper>table>tbody>tr>td:nth-child(8)>div>button:nth-child(1)")))
         except Exception as e:
             error_name = "Could not get the Update User Button: {}".format(str(e))
+            self.help.error_log(self.page, error_name)
+            self.error.append(error_name)
+
+        try:
+            self.btnUnlockUser = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "#tableUsers>div>table>tbody>tr>td.text-xs-center.no-print>div>button:nth-child(6)")))
+        except Exception as e:
+            error_name = "Could not get the Unlock User Button: {}".format(str(e))
+            self.help.error_log(self.page, error_name)
+            self.error.append(error_name)
+
+        try:
+            self.btnChangePasswordUser = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "#tableUsers>div>table>tbody>tr>td.text-xs-center.no-print>div>button:nth-child(8)>span>i")))
+        except Exception as e:
+            error_name = "Could not get the Change Password User Button: {}".format(str(e))
             self.help.error_log(self.page, error_name)
             self.error.append(error_name)
 
@@ -129,8 +146,31 @@ class UsersPage:
 
         error += self.help.click_button(self.page, self.alertMessage)
 
+
         if len(error) == 0:
-            self.help.info_log(self.page, "The search textbox is clicked correctly")
+            self.help.info_log(self.page, "The Confirm Delete User is clicked correctly")
+        else:
+            fill = self.help.make_error_list(self.driver, method, error)
+
+        return fill
+
+    def clickConfirmDeleteUserNot(self):
+        error = list()
+        fill = dict()
+        method = "Confirm Delete User"
+
+        try:
+            self.confirmDeleteUserNot = self.wait.until(
+                ec.visibility_of_element_located((By.ID, "closeConfirmDeleteUser")))
+        except Exception as e:
+            error_name = "Could not get alert message text: {}".format(str(e))
+            self.help.error_log(self.page, error_name)
+            error.append(error_name)
+
+        error += self.help.click_button(self.page, self.confirmDeleteUserNot)
+
+        if len(error) == 0:
+            self.help.info_log(self.page, "The close Confirm Delete User is clicked correctly")
         else:
             fill = self.help.make_error_list(self.driver, method, error)
 
@@ -151,6 +191,71 @@ class UsersPage:
 
         return fill
 
+    def clickUserGroupAdmin(self):
+        error = list()
+        fill = dict()
+        method = "Click User Group Admin"
+
+        try:
+            self.btnUserGroupAdmin = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "#tableUsers>div>table>tbody>tr>td:nth-child(8)>div>button:nth-child(10)")))
+        except Exception as e:
+            error_name = "Could not get the Update User Button: {}".format(str(e))
+            self.help.error_log(self.page, error_name)
+            self.error.append(error_name)
+
+        error += self.help.click_button(self.page, self.btnUserGroupAdmin)
+
+        if len(error) == 0:
+            self.help.info_log(self.page, "The Button Update is clicked correctly")
+
+        else:
+            fill = self.help.make_error_list(self.driver, method, error)
+
+        return fill
+
+    def clickListItemsFirstElement(self):
+        error = list()
+        fill = dict()
+        method = "Click List Items First Element"
+
+        try:
+            self.listItemsFirstElement = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "#app>div.v-dialog__content.v-dialog__content--active>div>div>div.v-card__text>div>div>div>div>table>tbody>tr>td:nth-child(2)>div>div>div>div")))
+        except Exception as e:
+            error_name = "Could not get the Update User Button: {}".format(str(e))
+            self.help.error_log(self.page, error_name)
+            self.error.append(error_name)
+
+        error += self.help.click_button(self.page, self.listItemsFirstElement)
+
+        if len(error) == 0:
+            self.help.info_log(self.page, "The List Items First Element is clicked correctly")
+
+        else:
+            fill = self.help.make_error_list(self.driver, method, error)
+
+        return fill
+
+    def clickCopyUserGroup(self):
+        error = list()
+        fill = dict()
+        method = "Click Copy User Group"
+
+        try:
+            self.btnCopyUserGroup = self.wait.until(ec.visibility_of_element_located((By.ID, "copyUserGroup")))
+        except Exception as e:
+            error_name = "Could not get the Copy User Group Button: {}".format(str(e))
+            self.help.error_log(self.page, error_name)
+            self.error.append(error_name)
+
+        error += self.help.click_button(self.page, self.btnCopyUserGroup)
+
+        if len(error) == 0:
+            self.help.info_log(self.page, "The Button Copy User Group is clicked correctly")
+        else:
+            fill = self.help.make_error_list(self.driver, method, error)
+
+        return fill
+
     def clickRowUpdate(self):
         error = list()
         fill = dict()
@@ -166,10 +271,74 @@ class UsersPage:
 
         return fill
 
-    def loadForm(self):
+    def fillFormChangePassword(self, password, ConfirmPassword):
         error = list()
         fill = dict()
 
+        try:
+            self.txtNewPassword = self.wait.until(ec.visibility_of_element_located((By.ID, "newPassword")))
+        except Exception as e:
+            error_name = "Could not get the name input text item: {}".format(str(e))
+            self.help.error_log(self.page, error_name)
+            error.append(error_name)
+
+        try:
+            self.txtCPRepeatPassword = self.wait.until(ec.visibility_of_element_located((By.ID, "repeatPassword")))
+        except Exception as e:
+            error_name = "Could not get the name input text item: {}".format(str(e))
+            self.help.error_log(self.page, error_name)
+            error.append(error_name)
+
+        try:
+            self.btnSubmit = self.wait.until(ec.visibility_of_element_located((By.ID, "submit")))
+        except Exception as e:
+            error_name = "Could not get the name input text item: {}".format(str(e))
+            self.help.error_log(self.page, error_name)
+            error.append(error_name)
+
+        self.txtNewPassword.send_keys(password)
+        self.txtCPRepeatPassword.send_keys(ConfirmPassword)
+
+        error += self.help.click_button(self.page, self.btnSubmit)
+
+        if len(error) == 0:
+            self.help.info_log(self.page, "Get Elements is ok")
+
+        return fill
+
+    def clickChangePasswordUser(self):
+        error = list()
+        fill = dict()
+        method = "Change Password User"
+
+        error += self.help.click_button(self.page, self.btnChangePasswordUser)
+
+        if len(error) == 0:
+            self.help.info_log(self.page, "The Button Change Password User is clicked correctly")
+
+        else:
+            fill = self.help.make_error_list(self.driver, method, error)
+
+        return fill
+
+    def clickRowUnlock(self):
+        error = list()
+        fill = dict()
+        method = "Unlock User"
+
+        error += self.help.click_button(self.page, self.btnUnlockUser)
+
+        if len(error) == 0:
+            self.help.info_log(self.page, "The Button Unlock is clicked correctly")
+
+        else:
+            fill = self.help.make_error_list(self.driver, method, error)
+
+        return fill
+
+    def loadForm(self):
+        error = list()
+        fill = dict()
 
         try:
             self.txtName = self.wait.until(ec.visibility_of_element_located((By.ID, "name")))
@@ -330,6 +499,40 @@ class UsersPage:
 
         return result
 
+    def actionsSearchUsersById(self, text):
+        txtResultUser = self.getTxtResultUser()
+        error = self.writeUserSearch(text)
+        method = "Page Users actionsSearchUsersById"
+
+        try:
+            self.txtResultUserAll = self.wait.until(ec.visibility_of_all_elements_located((By.CSS_SELECTOR,
+                                                                                           "#tableUsers>div.v-data-table__wrapper>table>tbody>tr")))  # "#tableUsers>div>table>tbody>tr>td")))
+        except Exception as e:
+            error_name = "Could not get the ResultUser text item: {}".format(str(e))
+            self.help.error_log(self.page, error_name)
+            self.error.append(error_name)
+
+        print(len(self.txtResultUserAll))
+
+        for a in range(1, len(self.txtResultUserAll)):
+            UserId = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR,"#tableUsers>div.v-data-table__wrapper>table>tbody>tr:nth-child(" + str(a) + ")>td:nth-child(2)")))
+            if UserId.text == text:
+                self.num=a
+                break
+
+        if self.num != 0:
+            btnChangePasswordUserById = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "#tableUsers>div.v-data-table__wrapper>table>tbody>tr:nth-child(" + str(a) + ")>td:nth-child(8)>div>button:nth-child(8)")))
+            self.help.click_button(self.page, btnChangePasswordUserById)
+
+        if txtResultUser == "No matching records found":
+            result = False
+        else:
+            result = True
+        if len(error) != 0:
+            self.error.append(error)
+
+        return result
+
     def actionsNewUser(self, text):
         self.clickRowSelect()
         self.fillform(text)
@@ -339,18 +542,32 @@ class UsersPage:
         self.clickRowDelete()
         self.clickConfirmDeleteUser()
 
+    def actionsDeleteUserNot(self):
+        self.clickRowDelete()
+        self.clickConfirmDeleteUserNot()
+
     def actionsUpdateUser(self):
+        self.clickRowUpdate()
+        self.fillEditFieldsForm()
+        self.clicksave()
 
-        error = self.clickRowUpdate()
-        if len(error) != 0:
-            self.error.append(error)
+    def actionUserGroupAdmin(self):
+        self.clickUserGroupAdmin()
+        self.clickListItemsFirstElement()
+        self.clickCopyUserGroup()
 
-        error = self.fillEditFieldsForm()
-        if len(error) != 0:
-            self.error.append(error)
+    def actionsUnlockUser(self):
+        self.clickRowUnlock()
 
-        error = self.clicksave()
+    def actionsChangePasswordUser(self):
+        self.clickChangePasswordUser()
+        self.fillFormChangePassword("Cenpos@2", "Cenpos@2")
 
-        if len(error) != 0:
-            self.error.append(error)
+    def actionsChangePasswordUserDistinct(self):
+        self.clickChangePasswordUser()
+        self.fillFormChangePassword("Cenpos@2", "Cenpos@3")
+
+
+
+
 

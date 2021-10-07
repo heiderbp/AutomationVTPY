@@ -1,5 +1,5 @@
 import time
-from ddt import ddt
+from ddt import ddt, data
 
 from Conditions.loginConditions import LoginConditions
 from PagesObject.loginPage import LoginPage
@@ -13,6 +13,9 @@ from PagesObject.Cards.salePage import SalePage
 from PagesObject.Cards.manageTokenPage import ManageTokenPage
 from PagesObject.Cards.useTokenPage import UseTokenPage
 from PagesObject.Administration.merchantParametersPage import MerchantParametersPage
+from PagesObject.Administration.accessControlListPage import AccessControlListPage
+from PagesObject.Administration.countriesAclPage import CountriesACLPage
+from PagesObject.Administration.invoiceTemplatesPage import InvoiceTemplatesPage
 
 @ddt
 class Test0001(LoginConditions):
@@ -44,11 +47,12 @@ class Test0001(LoginConditions):
         actionLogin = LoginPage(self.driver, self.help)
         actionLogin.actionsLogin('blocked')
 
+    
     def test_0006(self):
         self.name_test = "Attempt to log in to the application providing an invalid Merchant ID."
         actionLogin = LoginPage(self.driver, self.help)
         actionLogin.actionsLogin('invalidMerchant')
-    
+
     def test_0007(self):
         self.name_test = "Reset password successfully."
         actionLogin = LoginPage(self.driver, self.help)
@@ -65,94 +69,6 @@ class Test0001(LoginConditions):
         actionLogin = LoginPage(self.driver, self.help)
         actionLogin.actionsLoginNewPassword('standard',password,'Cenpos@45','Cenpos@45')
 
-
-    def test_0017(self):
-        self.name_test = "Validate that the application is honoring the user role permissions by only displaying menu options for the ones the user has the corresponding privilege."
-        actionLogin = LoginPage(self.driver, self.help)
-        actionLogin.actionsLogin('standard')
-
-        actionSubmenu = MenuP(self.driver, self.help)
-        actionSubmenu.actionsMenu("Administration", "Roles")
-
-        actionRoles = RolesPage(self.driver, self.help)
-        result = actionRoles.actionsSearchRol("optMenutest")
-
-        if not result:
-            actionRoles.actionsNewRol('optMenutest')
-        else:
-            actionRoles.actionsDeleteRol()
-            actionRoles.actionsNewRol('optMenutest')
-
-    def test_0023(self):
-        self.name_test = "Successfully create a new user."
-        actionLogin = LoginPage(self.driver, self.help)
-        actionLogin.actionsLogin('standard')
-
-        actionSubmenu = MenuP(self.driver, self.help)
-        actionSubmenu.actionsMenu("Administration", "Roles")
-
-        actionRoles = RolesPage(self.driver, self.help)
-        result = actionRoles.actionsSearchRol("optMenutest")
-
-        if not result:
-            actionRoles.actionsNewRol('optMenutest')
-        else:
-            actionRoles.actionsDeleteRol()
-            actionRoles.actionsNewRol('optMenutest')
-
-    def test_0018(self):
-        self.name_test = "Successfully update/modify an already existing user role."
-        actionLogin = LoginPage(self.driver, self.help)
-        actionLogin.actionsLogin('standard')
-
-        actionSubmenu = MenuP(self.driver, self.help)
-        actionSubmenu.actionsMenu("Administration", "Roles")
-
-        actionRoles = RolesPage(self.driver, self.help)
-        result = actionRoles.actionsSearchRol("optMenutest")
-
-        if not result:
-            actionRoles.actionsNewRol('optMenutest')
-        else:
-            actionRoles.actionsEditRol()
-
-        time.sleep(5)
-'''
-
-    def test_0021(self):
-        self.name_test = "Permanently delete an already existing user role."
-        actionLogin = LoginPage(self.driver, self.help)
-        actionLogin.actionsLogin('standard')
-
-        actionSubmenu = MenuP(self.driver, self.help)
-        actionSubmenu.actionsMenu("Administration", "Roles")
-
-        actionRoles = RolesPage(self.driver, self.help)
-        result = actionRoles.actionsSearchRol("optMenutest")
-
-        if not result:
-            actionRoles.actionsNewRol('optMenutest')
-            actionRoles.actionsDeleteRol()
-        else:
-            actionRoles.actionsDeleteRol()
-
-'''
-    def test_0023(self):
-        self.name_test = "Successfully create a new user."
-        actionLogin = LoginPage(self.driver, self.help)
-        actionLogin.actionsLogin('standard')
-
-        actionSubmenu = MenuP(self.driver, self.help)
-        actionSubmenu.actionsMenu("Administration", "Users")
-
-        actionUsers = UsersPage(self.driver, self.help)
-        result = actionUsers.actionsSearchUsers("optMenutest")
-
-        if not result:
-            actionUsers.actionsNewUser('optMenutest')
-
-        time.sleep(5)
-
     def test_0008(self):
         self.name_test = "Cancel the password change prompt after receiving the temporary password."
         actionLogin = LoginPage(self.driver, self.help)
@@ -167,7 +83,7 @@ class Test0001(LoginConditions):
 
         actionLogin = LoginPage(self.driver, self.help)
         actionLogin.actionsLoginNewPasswordCancel('standard',password)
-
+    '''
     def test_0009(self):
         self.name_test = "Attempt to reset the password when trying to set a new password that does not meet the history requirements."
         actionLogin = LoginPage(self.driver, self.help)
@@ -183,7 +99,7 @@ class Test0001(LoginConditions):
         actionLogin = LoginPage(self.driver, self.help)
         actionLogin.actionsLoginNewPassword('standard',password, self.help.get_parameters()["passwords"]['standard'], self.help.get_parameters()["passwords"]['standard'])
         time.sleep(4)
-
+    '''
     def test_0010(self): 
         self.name_test = "Attempt to reset the password by entering different values into the 'New Password' and 'Confirm Password' fields."
 
@@ -199,10 +115,9 @@ class Test0001(LoginConditions):
         time.sleep(3)
         actionLogin = LoginPage(self.driver, self.help)
         actionLogin.actionsLoginNewPassword('standard',password,'Cenpos@45','Cenpos@46')
-        time.sleep(4)
-    
+        time.sleep(4)    
 
-    def test_0007(self):
+    def test_0011(self):
         self.name_test = "Successfully log out of the application."
         actionLogin = LoginPage(self.driver, self.help)
         actionLogin.actionsLogin('standard')
@@ -213,7 +128,10 @@ class Test0001(LoginConditions):
         self.name_test = "Successfully change password from the top user menu in the application."
         actionLogin = LoginPage(self.driver, self.help)
         actionLogin.actionsLogin('standard')
-        HeaderP.actionsChangePasswordFromTopUser(self,'Cenpos@2022','Cenpos@2022')
+
+        action = HeaderP(self.driver, self.help)
+        action.actionsChangePasswordFromTopUser('Cenpos@2022', 'Cenpos@2022')
+        time.sleep(4)
 
     def test_0013(self):
         self.name_test = "Attempt to change password from the top user menu in the application when trying to set a new password that does not meet the history requirements."
@@ -233,15 +151,275 @@ class Test0001(LoginConditions):
         self.name_test = "Successfully switch to and from linked merchant accounts."
         actionLogin = LoginPage(self.driver, self.help)
         actionLogin.actionsLogin('standard')
-        HeaderP.actionsSwitchMerchant(self)
-        time.sleep(5)
 
+        actionHeader = HeaderP(self.driver, self.help)
+        actionHeader.actionsSwitchMerchant()
+
+        time.sleep(5)
+    
     def test_0016(self):
         self.name_test = "Special characters validation."
         actionLogin = LoginPage(self.driver, self.help)
         actionLogin.actionsLogin('standard')
         time.sleep(2)
-     
+        
+    def test_0017(self):
+        self.name_test = "Validate that the application is honoring the user role permissions by only displaying menu options for the ones the user has the corresponding privilege."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Administration", "Roles")
+
+        actionRoles = RolesPage(self.driver, self.help)
+        result = actionRoles.actionsSearchRol("optMenutest")
+
+        if not result:
+            actionRoles.actionsNewRol('optMenutest')
+        else:
+            actionRoles.actionsDeleteRol()
+            actionRoles.actionsNewRol('optMenutest')
+
+    def test_0018(self):
+        self.name_test = "Successfully create a new user role."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Administration", "Roles")
+
+        actionRoles = RolesPage(self.driver, self.help)
+        result = actionRoles.actionsSearchRol("optMenutest")
+
+        if not result:
+            actionRoles.actionsNewRol('optMenutest')
+        else:
+            actionRoles.actionsDeleteRol()
+            actionRoles.actionsNewRol('optMenutest')
+
+    def test_0019(self):
+        self.name_test = "Attempt to create a new user role while leaving the 'Role name' field empty."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Administration", "Roles")
+
+        actionRoles = RolesPage(self.driver, self.help)
+        result = actionRoles.actionsSearchRol("optMenutest")
+
+        if not result:
+            actionRoles.actionsNewRol('')
+        else:
+            actionRoles.actionsDeleteRol()
+            actionRoles.actionsNewRol('')
+
+    def test_0020(self):
+        self.name_test = "Successfully update/modify an already existing user role."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Administration", "Roles")
+
+        actionRoles = RolesPage(self.driver, self.help)
+        result = actionRoles.actionsSearchRol("optMenutest")
+
+        if not result:
+            actionRoles.actionsNewRol('optMenutest')
+        else:
+            actionRoles.actionsEditRol()
+
+        time.sleep(5)
+
+    def test_0021(self):
+        self.name_test = "Permanently delete an already existing user role."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Administration", "Roles")
+
+        actionRoles = RolesPage(self.driver, self.help)
+        result = actionRoles.actionsSearchRol("optMenutest")
+
+        if not result:
+            actionRoles.actionsNewRol('optMenutest')
+            actionRoles.actionsDeleteRol()
+        else:
+            actionRoles.actionsDeleteRol()
+
+    def test_0022(self):
+        self.name_test = "Select the 'No' option when asked to permanently delete an existing user role."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Administration", "Roles")
+
+        actionRoles = RolesPage(self.driver, self.help)
+        result = actionRoles.actionsSearchRol("optMenutest")
+
+        if not result:
+            actionRoles.actionsNewRol('optMenutest')
+            actionRoles.actionsDeleteRolNot()
+        else:
+            actionRoles.actionsDeleteRolNot()
+
+    def test_0023(self):
+        self.name_test = "Successfully create a new user."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Administration", "Users")
+
+        actionUsers = UsersPage(self.driver, self.help)
+        result = actionUsers.actionsSearchUsers("optMenutest")
+
+        if not result:
+            actionUsers.actionsNewUser('optMenutest')        
+
+    def test_0024(self):
+        self.name_test = "Attempt to create a new user while leaving one or more required fields empty."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Administration", "Users")
+
+        actionUsers = UsersPage(self.driver, self.help)
+        result = actionUsers.actionsSearchUsers("optMenutest")
+
+        if not result:
+            actionUsers.actionsNewUser('')
+
+    def test_0025(self):
+        self.name_test = "Successfully copy an existing user across a multimerchant linked group."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Administration", "Users")
+
+        actionUsers = UsersPage(self.driver, self.help)
+        result = actionUsers.actionsSearchUsers("optMenutest")
+
+        if not result:
+            actionUsers.actionsNewUser('optMenutest')
+        else:
+            actionUsers.actionUserGroupAdmin()
+
+    def test_0026(self):
+        self.name_test = "Successfully update/modify an already existing user."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Administration", "Users")
+
+        actionUsers = UsersPage(self.driver, self.help)
+        result = actionUsers.actionsSearchUsers("optMenutest")
+
+        if result:
+            actionUsers.actionsUpdateUser()
+        else:
+            print("User not exist")
+
+    def test_0027(self):
+        self.name_test = "Permanently delete an already existing user."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Administration", "Users")
+
+        actionUsers = UsersPage(self.driver, self.help)
+        result = actionUsers.actionsSearchUsers("optMenutest")
+
+        if result:
+            actionUsers.actionsDeleteUser()
+        else:
+            print("User not exist")
+
+    def test_0028(self):
+        self.name_test = "Select the 'No' option when asked to permanently delete an existing user."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Administration", "Users")
+
+        actionUsers = UsersPage(self.driver, self.help)
+        result = actionUsers.actionsSearchUsers("optMenutest")
+
+        if result:
+            actionUsers.actionsDeleteUserNot()
+        else:
+            print("User not exist")
+
+    def test_0029(self):
+        self.name_test = "Successfully unlock an already existing user."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Administration", "Users")
+
+        actionUsers = UsersPage(self.driver, self.help)
+        result = actionUsers.actionsSearchUsers("optMenutest")
+
+        if result:
+            actionUsers.clickRowUnlock()
+        else:
+            print("User not exist")
+
+    def test_0030(self):
+        self.name_test = "Successfully change password for an already existing user."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Administration", "Users")
+
+        actionUsers = UsersPage(self.driver, self.help)
+        result = actionUsers.actionsSearchUsers("optMenutest")
+
+        if result:
+            actionUsers.actionsChangePasswordUser()
+        else:
+            print("User not exist")
+  
+    def test_0031(self):
+        self.name_test = "Successfully change password for the current user (by selecting it from the user list)."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin("standard")
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Administration", "Users")
+
+        actionUsers = UsersPage(self.driver, self.help)
+        actionUsers.actionsSearchUsersById(self.help.get_parameters()["users"]["standard"])
+        actionUsers.fillFormChangePassword("Elavon@2020", "Elavon@2020")
+
+        time.sleep(10)
+
+    def test_0032(self):
+        self.name_test = "Attempt to change password for an already existing user when the 'New password' and 'Confirm password' fields do not match."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Administration", "Users")
+
+        actionUsers = UsersPage(self.driver, self.help)
+        result = actionUsers.actionsSearchUsers("optMenutest")
+
+        if result:
+            actionUsers.actionsChangePasswordUserDistinct()
+        else:
+            print("User not exist")
+
     def test_0033(self):
         self.name_test = "Successfully update/modify current merchant settings."
         actionLogin = LoginPage(self.driver, self.help)
@@ -252,6 +430,243 @@ class Test0001(LoginConditions):
 
         actions = MerchantPage(self.driver, self.help)
         actions.actionsModifyMerchantData()
+
+    def test_0034(self):
+        self.name_test = "Successfully update/modify current merchant parameters settings."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+        
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Administration", "MerchantParameters")
+
+        actions = MerchantParametersPage(self.driver, self.help)
+
+        actions.actionsModifyMerchantParametersAvs()
+        self.help.info_log(self.page, self.name_test + " AVS")
+        actions.actionsModifyMerchantParametersZip()
+        self.help.info_log(self.page, self.name_test + " ZIP")
+        actions.actionsModifyMerchantParametersCvv()
+        self.help.info_log(self.page, self.name_test + " CVV")
+        actions.saveform()
+        self.help.info_log(self.page, self.name_test + " SAVE")
+        time.sleep(5)
+        
+    def test_0035(self):
+        self.name_test = "Successfully add a new IP address to the 'Allowed IP' section."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Administration", "AccessControlList")
+
+        actions = AccessControlListPage(self.driver, self.help)
+        actions.actionAddNewAllowedIp()
+        
+    def test_0036(self):
+        self.name_test = "Successfully add a new IP address to the 'Allowed IP' section for an specific environment."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Administration", "AccessControlList")
+
+        actions = AccessControlListPage(self.driver, self.help)
+        actions.actionAddNewAllowedIpByEnvironment()
+        
+    def test_0037(self):
+        self.name_test = "Successfully add a new range of IP addresses to the 'Allowed IP' section."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Administration", "AccessControlList")
+
+        actions = AccessControlListPage(self.driver, self.help)
+        actions.actionAddNewRangeAllowedIp()        
+
+    def test_0038(self):
+        self.name_test = "Successfully add a new range of IP addresses to the 'Allowed IP' section for an specific environment."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Administration", "AccessControlList")
+
+        actions = AccessControlListPage(self.driver, self.help)
+        actions.actionAddNewRangeAllowedIpByEnvironment()
+        
+    def test_0039(self):
+        self.name_test = "Permanently delete an IP address from the 'Allowed IP' section."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Administration", "AccessControlList")
+
+        actions = AccessControlListPage(self.driver, self.help)
+        actions.actionDeleteAllowedIp()        
+
+
+    def test_0040(self):
+        self.name_test = "Successfully add a new IP address to the 'Deny IP' section."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Administration", "AccessControlList")
+
+        actions = AccessControlListPage(self.driver, self.help)
+        actions.actionAddNewDenyIp()
+
+        time.sleep(5)
+
+    def test_0041(self):
+        self.name_test = "Successfully add a new IP address to the 'Deny IP' section for an specific environment."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Administration", "AccessControlList")
+
+        actions = AccessControlListPage(self.driver, self.help)
+        actions.actionAddNewDenyIpByEnvironment()        
+        time.sleep(5)
+
+    def test_0042(self):
+        self.name_test = "Successfully add a new range of IP addresses to the 'Deny IP' section."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Administration", "AccessControlList")
+
+        actions = AccessControlListPage(self.driver, self.help)
+        actions.actionAddNewRangeDenyIp()
+
+        time.sleep(5)
+
+
+    def test_0043(self):
+        self.name_test = "Successfully add a new range of IP addresses to the 'Deny IP' section for an specific environment."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Administration", "AccessControlList")
+
+        actions = AccessControlListPage(self.driver, self.help)
+        actions.actionAddNewRangeDenyIpByEnvironment()
+
+        time.sleep(5)
+
+    def test_0044(self):
+        self.name_test = "Permanently delete an IP address from the 'Deny IP' section."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Administration", "AccessControlList")
+
+        actions = AccessControlListPage(self.driver, self.help)
+        actions.actionDeleteDenyIp()
+
+        time.sleep(5)
+
+    #################
+    def test_0045(self):
+        self.name_test = "Attempt to add an invalid IP address to the 'Allowed IP' section."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Administration", "AccessControlList")
+
+        actions = AccessControlListPage(self.driver, self.help)
+        actions.actionAddNewInvalidAllowedIp()
+
+
+    def test_0046(self):
+        self.name_test = "Attempt to add an invalid range of IP addresses to the 'Allowed IP' section."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Administration", "AccessControlList")
+
+        actions = AccessControlListPage(self.driver, self.help)
+        actions.actionAddNewInvalidRangeAllowedIp()
+
+        time.sleep(5)
+
+    def test_0047(self):
+        self.name_test = "Attempt to add an invalid IP address to the 'Denied IP' section."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Administration", "AccessControlList")
+
+        actions = AccessControlListPage(self.driver, self.help)
+        actions.actionAddNewInvalidDenyIp()
+        time.sleep(5)
+
+    def test_0048(self):
+        self.name_test = "Attempt to add an invalid range of IP addresses to the 'Denied IP' section."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Administration", "AccessControlList")
+
+        actions = AccessControlListPage(self.driver, self.help)
+        actions.actionAddNewInvalidRangeDenyIp()
+
+        time.sleep(5)        
+
+
+    def test_0049(self):
+        self.name_test = "Successfully add a country to the 'Denied Country' section."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Administration", "CountriesAcl")
+
+        actions = CountriesACLPage(self.driver, self.help)
+        actions.actionDeniedCountry()
+
+    def test_0050(self):
+        self.name_test = "Successfully remove a country from the 'Denied Country' section."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Administration", "CountriesAcl")
+        
+        actions = CountriesACLPage(self.driver, self.help)
+        actions.actionRemoveDeniedCountry()
+    
+    def test_0051(self):
+        self.name_test = "Successfully set a custom invoice template for the desired transaction types."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Administration", "InvoiceTemplates")
+
+        action = InvoiceTemplatesPage(self.driver, self.help)
+        action.actionTemplateTransactionSetCustom()
+
+    def test_0052(self):
+        self.name_test = "Successfully set the default invoice template for a transaction type with a custom template set."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Administration", "InvoiceTemplates")
+
+        action = InvoiceTemplatesPage(self.driver, self.help)
+        action.actionTemplateTransactionSetDefault()
 
     @data("visa")
     def test_0055(self, value):
@@ -314,7 +729,7 @@ class Test0001(LoginConditions):
 
         time.sleep(5)
 
-    @data("visa")
+    @data("visa", "mastercard")
     def test_0079(self, value):
         self.name_test = "Attempt to process a transactions that does not meet one or more of the AVS, ZIP and CVV merchant parameters."
         actionLogin = LoginPage(self.driver, self.help)
@@ -350,7 +765,7 @@ class Test0001(LoginConditions):
         actionSale = SalePage(self.driver, self.help, card=value)
         actionSale.fillform()
         time.sleep(15)
-    
+
     @data("visa")
     def test_0073(self, value):
         self.name_test = "Successfully process a transaction providing an email with a custom (and valid) top level domain."
@@ -428,27 +843,6 @@ class Test0001(LoginConditions):
         actionSale.fillform()
 
         time.sleep(5)
-
-    
-    def test_0034(self):
-        self.name_test = "Successfully update/modify current merchant parameters settings."
-        actionLogin = LoginPage(self.driver, self.help)
-        actionLogin.actionsLogin('standard')
-        
-        actionSubmenu = MenuP(self.driver, self.help)
-        actionSubmenu.actionsMenu("Administration", "MerchantParameters")
-
-        actions = MerchantParametersPage(self.driver, self.help)
-
-        actions.actionsModifyMerchantParametersAvs()
-        self.help.info_log(self.page, self.name_test + " AVS")
-        actions.actionsModifyMerchantParametersZip()
-        self.help.info_log(self.page, self.name_test + " ZIP")
-        actions.actionsModifyMerchantParametersCvv()
-        self.help.info_log(self.page, self.name_test + " CVV")
-        actions.saveform()
-        self.help.info_log(self.page, self.name_test + " SAVE")
-        time.sleep(5)
         
     @data("visa","commercial")
     def test_0053(self, value):
@@ -463,39 +857,4 @@ class Test0001(LoginConditions):
         actionSale.fillform()
 
         time.sleep(5)
-
-
-    def test_0026(self):
-        self.name_test = "Successfully update/modify an already existing user."
-        actionLogin = LoginPage(self.driver, self.help)
-        actionLogin.actionsLogin('standard')
-
-        actionSubmenu = MenuP(self.driver, self.help)
-        actionSubmenu.actionsMenu("Administration", "Users")
-
-        actionUsers = UsersPage(self.driver, self.help)
-        result = actionUsers.actionsSearchUsers("optMenutest")
-
-        if result:
-            actionUsers.actionsUpdateUser()
-        else:
-            print("User not exist")
-        time.sleep(2)
-
-
-    def test_0027(self):
-        self.name_test = "Permanently delete an already existing user."
-        actionLogin = LoginPage(self.driver, self.help)
-        actionLogin.actionsLogin('standard')
-
-        actionSubmenu = MenuP(self.driver, self.help)
-        actionSubmenu.actionsMenu("Administration", "Users")
-
-        actionUsers = UsersPage(self.driver, self.help)
-        result = actionUsers.actionsSearchUsers("optMenutest")
-
-        if result:
-            actionUsers.actionsDeleteUser()
-        else:
-            print("User not exist")
 '''

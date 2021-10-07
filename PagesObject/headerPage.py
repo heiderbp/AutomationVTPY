@@ -18,6 +18,8 @@ class HeaderP:
 
         self.btnProfile = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, '#app>div.v-application--wrap>header>div>button.v-btn.v-btn--flat.v-btn--icon.v-btn--round.theme--light.v-size--large')))
 
+        #self.multiMerchantElement = None
+
     def clickbtnProfile(self):
         error = list()
         fill = dict()
@@ -27,16 +29,14 @@ class HeaderP:
         if len(error) == 0:
             self.help.info_log(self.page, "Profile is clicked correctly")
             try:
-                self.profileResetPassword = self.driver.find_element(By.CSS_SELECTOR,
-                                                                     "body>div>div.v-menu__content.theme--light.v-menu__content--fixed.menuable__content__active>div>div:nth-child(1)")
+                self.profileResetPassword = self.driver.find_element(By.CSS_SELECTOR, "body>div>div.v-menu__content.theme--light.v-menu__content--fixed.menuable__content__active>div>div:nth-child(2)")
             except Exception as e:
                 error_name = "Could not get the Reset Password item from options Profile: {}".format(str(e))
                 self.help.error_log(self.page, error_name)
                 error.append(error_name)
 
             try:
-                self.profileMultiMerchant = self.driver.find_element(By.CSS_SELECTOR,
-                                                                     "#app>div.v-menu__content.theme--light.v-menu__content--fixed.menuable__content__active>div>div:nth-child(2)")
+                self.profileMultiMerchant = self.driver.find_element(By.CSS_SELECTOR, "#app>div.v-menu__content.theme--light.v-menu__content--fixed.menuable__content__active>div>div:nth-child(3)")
             except Exception as e:
                 error_name = "Could not get the Multi Merchant item from options Profile: {}".format(str(e))
                 self.help.error_log(self.page, error_name)
@@ -163,8 +163,7 @@ class HeaderP:
         method = "Header Multi Merchant Item"
 
         try:
-            self.multiMerchantElement = self.driver.find_element(By.CSS_SELECTOR,
-                                                                 "#app>div.v-dialog__content.v-dialog__content--active>div>div>div.v-card__text>div>div>div>div.v-data-table__wrapper>table>tbody>tr")
+            multiMerchantElement = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "#app>div.v-dialog__content.v-dialog__content--active>div>div>div.v-card__text>div>div>div>div.v-data-table__wrapper>table>tbody>tr:nth-child(1)")))
         except Exception as e:
             error_name = "Could not get the Multi Merchant Item from list: {}".format(str(e))
             self.help.error_log(self.page, error_name)
@@ -172,7 +171,7 @@ class HeaderP:
 
         action = ActionChains(self.driver)
 
-        action.double_click(self.multiMerchantElement).perform()
+        action.double_click(multiMerchantElement).perform()
 
         return fill
 

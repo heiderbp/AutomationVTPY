@@ -17,7 +17,6 @@ class RolesPage:
         self.page = "Roles Page"
 
         self.error = list()
-        #self.error = dict()
         self.wait = WebDriverWait(self.driver, 2)
 
         elements = self.help.get_element('Administration', 'roles')
@@ -83,106 +82,43 @@ class RolesPage:
         return result
 
     def actionsNewRol(self, text):
-
-        error = self.clickRowSelect()
-        if len(error) != 0:
-            self.error.append(error)
-
-        error = self.writeRoleName(text)
-        if len(error) != 0:
-            self.error.append(error)
-
-        error = self.fillform()
-        if len(error) != 0:
-            self.error.append(error)
-
-        errorClicSave = self.clicksave()
-        if len(errorClicSave) != 0:
-            self.error.append(errorClicSave)
+        self.clickRowSelect()
+        self.writeRoleName(text)
+        self.fillform()
+        self.clicksave()
 
     def actionsDeleteRol(self):
+        self.clickDeleteRol()
 
-        error = self.clickDeleteRol()
-        if len(error) != 0:
-            self.error.append(error)
+    def actionsDeleteRolNot(self):
+        self.clickDeleteRolNot()
 
     def actionsEditRol(self):
-
-        error = self.clickEditRol()
-        if len(error) != 0:
-            self.error.append(error)
-
-        error = self.click_random_check_debit_credit_card()
-        if len(error) != 0:
-            self.error.append(error)
-
-        errorClicSave = self.clicksave()
-        if len(errorClicSave) != 0:
-            self.error.append(errorClicSave)
+        self.clickEditRol()
+        self.click_random_check_debit_credit_card()
+        self.clicksave()
 
     def actionsEditRol_CVVSet(self, option):
-
-        error = self.clickEditRol()
-        if len(error) != 0:
-            self.error.append(error)
-
-        error = self.cmbCvvSelected(option)
-        if len(error) != 0:
-            self.error.append(error)
-
-        errorClicSave = self.clicksave()
-        if len(errorClicSave) != 0:
-            self.error.append(errorClicSave)
+        self.clickEditRol()
+        self.cmbCvvSelected(option)
+        self.clicksave()
 
     def actionsEditRol_AVSSet(self, option):
-
-        error = self.clickEditRol()
-        if len(error) != 0:
-            self.error.append(error)
-
-        error = self.cmbAvsSelected(option)
-        if len(error) != 0:
-            self.error.append(error)
-
-        errorClicSave = self.clicksave()
-        if len(errorClicSave) != 0:
-            self.error.append(errorClicSave)
+        self.clickEditRol()
+        self.cmbAvsSelected(option)
+        self.clicksave()
 
     def actionsEditRol_ZIPSet(self, option):
-
-        error = self.clickEditRol()
-        if len(error) != 0:
-            self.error.append(error)
-
-        error = self.cmbZipSelected(option)
-        if len(error) != 0:
-            self.error.append(error)
-
-        errorClicSave = self.clicksave()
-        if len(errorClicSave) != 0:
-            self.error.append(errorClicSave)
+        self.clickEditRol()
+        self.cmbZipSelected(option)
+        self.clicksave()
 
     def actionsEditRol_CVV_AVS_ZIP_Set(self, option):
-
-        error = self.clickEditRol()
-        if len(error) != 0:
-            self.error.append(error)
-
-        error = self.cmbCvvSelected(option)
-        if len(error) != 0:
-            self.error.append(error)
-
-        error = self.cmbAvsSelected(option)
-        if len(error) != 0:
-            self.error.append(error)
-
-        error = self.cmbZipSelected(option)
-        if len(error) != 0:
-            self.error.append(error)
-
-        errorClicSave = self.clicksave()
-        if len(errorClicSave) != 0:
-            self.error.append(errorClicSave)
+        self.clickEditRol()
+        self.cmbCvvSelected(option)
+        self.cmbAvsSelected(option)
+        self.cmbZipSelected(option)
+        self.clicksave()
 
     ###################
     ###################
@@ -230,14 +166,12 @@ class RolesPage:
             num = random.randrange(1, 3)
             print("chek" + str(a) + " Si/no:" + str(num))
             if num == 1:
-                #checksDebitAndCreditCards = self.wait.until(ec.presence_of_element_located((By.CSS_SELECTOR, "#app>div.v-application--wrap>main>div>div.container.custom-container.container--fluid>div>div.row.align-center.justify-center>div>div.v-card.v-sheet.theme--light>div.v-tabs.theme--light>div.v-window.v-item-group.theme--light.v-tabs-items>div>div>div>div>div:nth-child(2)>div>div.v-window.v-item-group.theme--light.v-tabs-items>div>div.v-window-item.v-window-item--active>div>div>div:nth-child(" + str(a) + ")>div>div>div.v-input__slot>div>input[type=checkbox]")))
                 checksDebitAndCreditCards = self.wait.until(ec.presence_of_element_located((By.CSS_SELECTOR, "#app>div.v-application--wrap>main>div>div.container.custom-container.container--fluid>div>div.row.align-center.justify-center>div>div.v-card.v-sheet.theme--light>div.v-tabs.theme--light>div.v-window.v-item-group.theme--light.v-tabs-items>div>div>div>div>div:nth-child(2)>div>div.v-window.v-item-group.theme--light.v-tabs-items>div>div.v-window-item.v-window-item--active>div>div>div:nth-child(" + str(a) + ")>div>div>div.v-input__slot>div")))
                 error += self.help.click_button(self.page, checksDebitAndCreditCards)
                 if len(error) == 0:
                     self.help.info_log(self.page, "Checkbox (" + str(a) + ") is clicked correctly")
                 else:
                     fill = self.help.make_error_list(self.driver, method, error)
-
 
         if len(error) == 0:
             self.help.info_log(self.page, "The checkbox Tab Debit and Credit Card is clicked correctly")
@@ -246,14 +180,13 @@ class RolesPage:
 
         return fill
 
-
     def clickDeleteRol(self):
         error = list()
         fill = dict()
         method = "Delete Role"
 
         try:
-            self.btnDelete = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR,"#tableRoles>div>table>tbody>tr:nth-child(1)>td.text-xs-center.no-print>div>button:nth-child(4)>span>i")))
+            self.btnDelete = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "#tableRoles>div>table>tbody>tr:nth-child(1)>td.text-xs-center.no-print>div>button:nth-child(4)>span>i")))
         except Exception as e:
             error_name = "Could not get the Row Delete Button item: {}".format(str(e))
             self.help.error_log(self.page, error_name)
@@ -303,7 +236,40 @@ class RolesPage:
 
         return fill
 
+    def clickDeleteRolNot(self):
+        error = list()
+        fill = dict()
+        method = "Delete Role Confirm Not"
 
+        try:
+            self.btnDelete = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "#tableRoles>div>table>tbody>tr:nth-child(1)>td.text-xs-center.no-print>div>button:nth-child(4)>span>i")))
+        except Exception as e:
+            error_name = "Could not get the Row Delete Button item: {}".format(str(e))
+            self.help.error_log(self.page, error_name)
+            error.append(error_name)
+
+        error += self.help.click_button(self.page, self.btnDelete)
+
+        if len(error) == 0:
+            self.help.info_log(self.page, "The button delete is clicked correctly")
+        else:
+            fill = self.help.make_error_list(self.driver, method, error)
+
+        try:
+            self.btnConfirmCancelDelete = self.wait.until(ec.visibility_of_element_located((By.ID, "showConfirmDeleteRole")))
+        except Exception as e:
+            error_name = "Could not get the Confirm Delete Button item: {}".format(str(e))
+            self.help.error_log(self.page, error_name)
+            error.append(error_name)
+
+        error += self.help.click_button(self.page, self.btnConfirmCancelDelete)
+
+        if len(error) == 0:
+            self.help.info_log(self.page, "The button Confirm Cancel Delete is clicked correctly")
+        else:
+            fill = self.help.make_error_list(self.driver, method, error)
+
+        return fill
 
     def clickRowSelect(self):
         error = list()
@@ -358,8 +324,7 @@ class RolesPage:
 
     def getTxtResultRol(self):
         error = list()
-        fill = dict()
-        method = "Role Result"
+
         try:
             self.txtRowItem = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "#tableRoles>div>table>tbody>tr>td.text-xs-center.no-print>div")))
         except Exception as e:
@@ -374,7 +339,6 @@ class RolesPage:
     def fillform(self):
         error = list()
         fill = dict()
-        method = "New Role"
 
         try:
             self.cmbRol = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "div#app>div>main>div>div>div>div:nth-of-type(2)>div>div:nth-of-type(2)>div>div>div:nth-of-type(2)>div")))
@@ -394,7 +358,7 @@ class RolesPage:
         method = "Edit Role"
 
         try:
-            self.cmbCvv = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR,"#app>div.v-application--wrap>main>div>div>div>div.row.align-center.justify-center>div>div.v-card.v-sheet.theme--light>div.v-tabs.theme--light>div.v-window.v-item-group.theme--light.v-tabs-items>div>div>div>div>div:nth-child(1)>div:nth-child(2)>div:nth-child(3)>div>div>div:nth-child(2)>div>div>div.v-input__slot")))
+            self.cmbCvv = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "#app>div.v-application--wrap>main>div>div>div>div.row.align-center.justify-center>div>div.v-card.v-sheet.theme--light>div.v-tabs.theme--light>div.v-window.v-item-group.theme--light.v-tabs-items>div>div>div>div>div:nth-child(1)>div:nth-child(2)>div:nth-child(3)>div>div>div:nth-child(2)>div>div>div.v-input__slot")))
         except Exception as e:
             error_name = "Could not get the Cvv ComoBox item: {}".format(str(e))
             self.help.error_log(self.page, error_name)
@@ -407,12 +371,11 @@ class RolesPage:
         else:
             fill = self.help.make_error_list(self.driver, method, error)
 
-
         try:
             if option == "Required":
-                self.cmbCvvOption = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR,"#app>div.v-menu__content.theme--light.menuable__content__active>div>div:nth-child(3)")))
+                self.cmbCvvOption = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "#app>div.v-menu__content.theme--light.menuable__content__active>div>div:nth-child(3)")))
             else:
-                self.cmbCvvOption = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR,"#app>div.v-menu__content.theme--light.menuable__content__active>div>div:nth-child(4)")))
+                self.cmbCvvOption = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "#app>div.v-menu__content.theme--light.menuable__content__active>div>div:nth-child(4)")))
 
         except Exception as e:
             error_name = "Could not get the Cvv " + option + " ComoBox item: {}".format(str(e))
@@ -434,7 +397,7 @@ class RolesPage:
         method = "Edit Role"
 
         try:
-            self.cmbAvs = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR,"#app>div.v-application--wrap>main>div>div.container.custom-container.container--fluid>div>div.row.align-center.justify-center>div>div.v-card.v-sheet.theme--light>div.v-tabs.theme--light>div.v-window.v-item-group.theme--light.v-tabs-items>div>div>div>div>div:nth-child(1)>div:nth-child(2)>div:nth-child(2)>div>div>div:nth-child(2)>div>div>div.v-input__slot")))
+            self.cmbAvs = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "#app>div.v-application--wrap>main>div>div.container.custom-container.container--fluid>div>div.row.align-center.justify-center>div>div.v-card.v-sheet.theme--light>div.v-tabs.theme--light>div.v-window.v-item-group.theme--light.v-tabs-items>div>div>div>div>div:nth-child(1)>div:nth-child(2)>div:nth-child(2)>div>div>div:nth-child(2)>div>div>div.v-input__slot")))
         except Exception as e:
             error_name = "Could not get the Avs ComoBox item: {}".format(str(e))
             self.help.error_log(self.page, error_name)
@@ -447,12 +410,11 @@ class RolesPage:
         else:
             fill = self.help.make_error_list(self.driver, method, error)
 
-
         try:
             if option == "Required":
-                self.cmbAvsOption = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR,"#app>div.v-menu__content.theme--light.menuable__content__active>div>div:nth-child(3)")))
+                self.cmbAvsOption = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "#app>div.v-menu__content.theme--light.menuable__content__active>div>div:nth-child(3)")))
             else:
-                self.cmbAvsOption = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR,"#app>div.v-menu__content.theme--light.menuable__content__active>div>div:nth-child(4)")))
+                self.cmbAvsOption = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "#app>div.v-menu__content.theme--light.menuable__content__active>div>div:nth-child(4)")))
 
         except Exception as e:
             error_name = "Could not get the Avs " + option + " ComoBox item: {}".format(str(e))
@@ -466,7 +428,6 @@ class RolesPage:
         else:
             fill = self.help.make_error_list(self.driver, method, error)
 
-
         return fill
 
     def cmbZipSelected(self, option):
@@ -475,7 +436,7 @@ class RolesPage:
         method = "Edit Role"
 
         try:
-            self.cmbZip = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR,"#app>div.v-application--wrap>main>div>div>div>div.row.align-center.justify-center>div>div.v-card.v-sheet.theme--light>div.v-tabs.theme--light>div.v-window.v-item-group.theme--light.v-tabs-items>div>div>div>div>div:nth-child(1)>div:nth-child(2)>div:nth-child(1)>div>div>div:nth-child(2)>div>div>div.v-input__slot")))
+            self.cmbZip = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "#app>div.v-application--wrap>main>div>div>div>div.row.align-center.justify-center>div>div.v-card.v-sheet.theme--light>div.v-tabs.theme--light>div.v-window.v-item-group.theme--light.v-tabs-items>div>div>div>div>div:nth-child(1)>div:nth-child(2)>div:nth-child(1)>div>div>div:nth-child(2)>div>div>div.v-input__slot")))
         except Exception as e:
             error_name = "Could not get the Cvv ComoBox item: {}".format(str(e))
             self.help.error_log(self.page, error_name)
@@ -488,19 +449,16 @@ class RolesPage:
         else:
             fill = self.help.make_error_list(self.driver, method, error)
 
-
         try:
             if option == "Required":
-                self.cmbZipOption = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR,"#app>div.v-menu__content.theme--light.menuable__content__active>div>div:nth-child(3)")))
+                self.cmbZipOption = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "#app>div.v-menu__content.theme--light.menuable__content__active>div>div:nth-child(3)")))
             else:
-                self.cmbZipOption = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR,"#app>div.v-menu__content.theme--light.menuable__content__active>div>div:nth-child(4)")))
+                self.cmbZipOption = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "#app>div.v-menu__content.theme--light.menuable__content__active>div>div:nth-child(4)")))
 
         except Exception as e:
             error_name = "Could not get the Zip " + option + " ComoBox item: {}".format(str(e))
             self.help.error_log(self.page, error_name)
             error.append(error_name)
-
-
 
         error += self.help.click_button(self.page, self.cmbZipOption)
 
@@ -509,9 +467,7 @@ class RolesPage:
         else:
             fill = self.help.make_error_list(self.driver, method, error)
 
-
         return fill
-
 
     def clicksave(self):
         error = list()
@@ -545,6 +501,5 @@ class RolesPage:
             self.help.info_log(self.page, "The button confirm Create is clicked correctly")
         else:
             fill = self.help.make_error_list(self.driver, method, error)
-
 
         return fill
