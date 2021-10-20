@@ -1115,5 +1115,5 @@ class Test0001(LoginConditions):
         actionManageToken.fillform()
 
         self.driver.refresh()
-        time.sleep(5)
+        time.sleep(20)
 '''
