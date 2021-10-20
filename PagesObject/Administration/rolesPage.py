@@ -120,6 +120,12 @@ class RolesPage:
         self.cmbZipSelected(option)
         self.clicksave()
 
+    def actionsEditRol_DisableKeyEntry_Set(self, option):
+        self.clickEditRol()
+        self.cmbDisableKeyEntrySelected(option)
+        time.sleep(10)
+        self.clicksave()
+
     ###################
     ###################
 
@@ -372,17 +378,21 @@ class RolesPage:
             fill = self.help.make_error_list(self.driver, method, error)
 
         try:
-            if option == "Required":
-                self.cmbCvvOption = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "#app>div.v-menu__content.theme--light.menuable__content__active>div>div:nth-child(3)")))
-            else:
-                self.cmbCvvOption = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "#app>div.v-menu__content.theme--light.menuable__content__active>div>div:nth-child(4)")))
+            if option == "Do not prompt":
+                self.cmbOption = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "#app>div.v-menu__content.theme--light.menuable__content__active>div>div:nth-child(1)")))
+            elif option == "Optional":
+                self.cmbOption = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "#app>div.v-menu__content.theme--light.menuable__content__active>div>div:nth-child(2)")))
+            elif option == "Required":
+                self.cmbOption = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "#app>div.v-menu__content.theme--light.menuable__content__active>div>div:nth-child(3)")))
+            elif option == "Must Pass Over":
+                self.cmbOption = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "#app>div.v-menu__content.theme--light.menuable__content__active>div>div:nth-child(4)")))
 
         except Exception as e:
-            error_name = "Could not get the Cvv " + option + " ComoBox item: {}".format(str(e))
+            error_name = "Could not get the Avs " + option + " ComoBox item: {}".format(str(e))
             self.help.error_log(self.page, error_name)
             error.append(error_name)
 
-        error += self.help.click_button(self.page, self.cmbCvvOption)
+        error += self.help.click_button(self.page, self.cmbOption)
 
         if len(error) == 0:
             self.help.info_log(self.page, "The cvv Option " + option + " from combo box is clicked correctly")
@@ -411,17 +421,21 @@ class RolesPage:
             fill = self.help.make_error_list(self.driver, method, error)
 
         try:
-            if option == "Required":
-                self.cmbAvsOption = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "#app>div.v-menu__content.theme--light.menuable__content__active>div>div:nth-child(3)")))
-            else:
-                self.cmbAvsOption = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "#app>div.v-menu__content.theme--light.menuable__content__active>div>div:nth-child(4)")))
+            if option == "Do not prompt":
+                self.cmbOption = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "#app>div.v-menu__content.theme--light.menuable__content__active>div>div:nth-child(1)")))
+            elif option == "Optional":
+                self.cmbOption = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "#app>div.v-menu__content.theme--light.menuable__content__active>div>div:nth-child(2)")))
+            elif option == "Required":
+                self.cmbOption = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "#app>div.v-menu__content.theme--light.menuable__content__active>div>div:nth-child(3)")))
+            elif option == "Must Pass Over":
+                self.cmbOption = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "#app>div.v-menu__content.theme--light.menuable__content__active>div>div:nth-child(4)")))
 
         except Exception as e:
             error_name = "Could not get the Avs " + option + " ComoBox item: {}".format(str(e))
             self.help.error_log(self.page, error_name)
             error.append(error_name)
 
-        error += self.help.click_button(self.page, self.cmbAvsOption)
+        error += self.help.click_button(self.page, self.cmbOption)
 
         if len(error) == 0:
             self.help.info_log(self.page, "The avs Option " + option + " from combo box is clicked correctly")
@@ -450,17 +464,64 @@ class RolesPage:
             fill = self.help.make_error_list(self.driver, method, error)
 
         try:
-            if option == "Required":
-                self.cmbZipOption = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "#app>div.v-menu__content.theme--light.menuable__content__active>div>div:nth-child(3)")))
-            else:
-                self.cmbZipOption = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "#app>div.v-menu__content.theme--light.menuable__content__active>div>div:nth-child(4)")))
+            if option == "Do not prompt":
+                self.cmbOption = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "#app>div.v-menu__content.theme--light.menuable__content__active>div>div:nth-child(1)")))
+            elif option == "Optional":
+                self.cmbOption = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "#app>div.v-menu__content.theme--light.menuable__content__active>div>div:nth-child(2)")))
+            elif option == "Required":
+                self.cmbOption = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "#app>div.v-menu__content.theme--light.menuable__content__active>div>div:nth-child(3)")))
+            elif option == "Must Pass Over":
+                self.cmbOption = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "#app>div.v-menu__content.theme--light.menuable__content__active>div>div:nth-child(4)")))
 
         except Exception as e:
-            error_name = "Could not get the Zip " + option + " ComoBox item: {}".format(str(e))
+            error_name = "Could not get the Avs " + option + " ComoBox item: {}".format(str(e))
             self.help.error_log(self.page, error_name)
             error.append(error_name)
 
-        error += self.help.click_button(self.page, self.cmbZipOption)
+        error += self.help.click_button(self.page, self.cmbOption)
+
+        if len(error) == 0:
+            self.help.info_log(self.page, "The Zip Option " + option + " from combo box is clicked correctly")
+        else:
+            fill = self.help.make_error_list(self.driver, method, error)
+
+        return fill
+
+    def cmbDisableKeyEntrySelected(self, option):
+        error = list()
+        fill = dict()
+        method = "Edit Role"
+
+        try:
+            self.cmbDisableKeyEntry = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "#app>div.v-application--wrap>main>div>div.container.custom-container.container--fluid>div>div.row.align-center.justify-center>div>div.v-card.v-sheet.theme--light>div.v-tabs.theme--light>div.v-window.v-item-group.theme--light.v-tabs-items>div>div>div>div>div:nth-child(1)>div:nth-child(2)>div:nth-child(4)>div>div>div:nth-child(2)>div>div>div.v-input__slot")))
+        except Exception as e:
+            error_name = "Could not get the Cvv ComoBox item: {}".format(str(e))
+            self.help.error_log(self.page, error_name)
+            error.append(error_name)
+
+        error += self.help.click_button(self.page, self.cmbDisableKeyEntry)
+
+        if len(error) == 0:
+            self.help.info_log(self.page, "The zip combo box is clicked correctly")
+        else:
+            fill = self.help.make_error_list(self.driver, method, error)
+
+        try:
+            if option == "Do not prompt":
+                self.cmbOption = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "#app>div.v-menu__content.theme--light.menuable__content__active>div>div:nth-child(1)")))
+            elif option == "Optional":
+                self.cmbOption = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "#app>div.v-menu__content.theme--light.menuable__content__active>div>div:nth-child(2)")))
+            elif option == "Required":
+                self.cmbOption = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "#app>div.v-menu__content.theme--light.menuable__content__active>div>div:nth-child(3)")))
+            elif option == "Must Pass Over":
+                self.cmbOption = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "#app>div.v-menu__content.theme--light.menuable__content__active>div>div:nth-child(4)")))
+
+        except Exception as e:
+            error_name = "Could not get the Avs " + option + " ComoBox item: {}".format(str(e))
+            self.help.error_log(self.page, error_name)
+            error.append(error_name)
+
+        error += self.help.click_button(self.page, self.cmbOption)
 
         if len(error) == 0:
             self.help.info_log(self.page, "The Zip Option " + option + " from combo box is clicked correctly")

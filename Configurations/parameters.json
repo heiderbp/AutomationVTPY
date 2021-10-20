@@ -11,6 +11,7 @@
 		"changeExpiredPwd"		:	"PedroP",
 		"invalidMerchant"		: 	"heider",
 		"california"			: 	"heider",
+		"optMenutest"			: 	"optMenutest",
 		"w_sale"				: 	"asale",
 		"w_auth"				: 	"aauth",
 		"w_cash"				: 	"acash",
@@ -30,6 +31,7 @@
 		"changeExpiredPwd"		:	"BMZZBJVL",
 		"invalidMerchant"		: 	"Cenpos@53",
 		"california"			: 	"Elavon@2021",
+		"optMenutest"			:	"Cenpos@2",
 		"others"				: 	"Cenpos*2"
 	},
 	"mid": {
@@ -41,6 +43,7 @@
 		"changeExpiredPwd"		:	"400000614",
 		"invalidMerchant"		: 	"30000999",
 		"california"			:	"12720999",
+		"optMenutest"			: 	"400000614",
 		"check"					: 	"12725718"
 	},
 	"tokens": {

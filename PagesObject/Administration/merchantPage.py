@@ -1,3 +1,5 @@
+import time
+
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.support.wait import WebDriverWait
@@ -141,44 +143,70 @@ class MerchantPage:
 
         return fill
 
-    def clickCmbReceiptDelivery(self):
+    def clickCmb(self, cmb):
         error = list()
         fill = dict()
-        method = "Merchant Combo Receipt Delivery"
+        cssObject = str()
+        method = cmb + " Combo"
+
+        if cmb == "Invoice":
+            cssObject = "#app>div.v-application--wrap>main>div>div.container.custom-container.container--fluid>div>div.row.align-center.justify-center>div>div>div.v-card__text>form>div>div.v-window.v-item-group.theme--light.v-tabs-items>div>div.v-window-item.v-window-item--active>div>div:nth-child(1)>div>div:nth-child(1)>div>div>div.v-input__slot"
+        elif cmb == "Receipt Delivery":
+            cssObject = "#app>div.v-application--wrap>main>div>div.container.custom-container.container--fluid>div>div.row.align-center.justify-center>div>div>div.v-card__text>form>div>div.v-window.v-item-group.theme--light.v-tabs-items>div>div.v-window-item.v-window-item--active>div>div:nth-child(1)>div>div:nth-child(2)>div>div>div.v-input__slot"
+        elif cmb == "Fleet Card Data":
+            cssObject = "#app>div.v-application--wrap>main>div>div.container.custom-container.container--fluid>div>div.row.align-center.justify-center>div>div>div.v-card__text>form>div>div.v-window.v-item-group.theme--light.v-tabs-items>div>div.v-window-item.v-window-item--active>div>div:nth-child(1)>div>div:nth-child(8)>div:nth-child(1)>div>div:nth-child(2)>div>div>div.v-input__slot"
+        elif cmb == "Level II Data":
+            cssObject = "#app>div.v-application--wrap>main>div>div.container.custom-container.container--fluid>div>div.row.align-center.justify-center>div>div>div.v-card__text>form>div>div.v-window.v-item-group.theme--light.v-tabs-items>div>div.v-window-item.v-window-item--active>div>div:nth-child(1)>div>div:nth-child(8)>div:nth-child(2)>div>div:nth-child(2)>div>div>div.v-input__slot"
+        elif cmb == "Level III Data":
+            cssObject = "#app>div.v-application--wrap>main>div>div.container.custom-container.container--fluid>div>div.row.align-center.justify-center>div>div>div.v-card__text>form>div>div.v-window.v-item-group.theme--light.v-tabs-items>div>div.v-window-item.v-window-item--active>div>div:nth-child(1)>div>div:nth-child(8)>div:nth-child(3)>div>div:nth-child(2)>div>div>div.v-input__slot"
+        elif cmb == "Customer Code":
+            cssObject = "#app>div.v-application--wrap>main>div>div.container.custom-container.container--fluid>div>div.row.align-center.justify-center>div>div>div.v-card__text>form>div>div.v-window.v-item-group.theme--light.v-tabs-items>div>div.v-window-item.v-window-item--active>div>div:nth-child(3)>div:nth-child(1)>div>div>div.v-input__slot"
 
         try:
-            self.cmbReceiptDelivery = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR,
-                                                                                        "#app>div.v-application--wrap>main>div>div>div>div.row.align-center.justify-center>div>div>div.v-card__text>form>div>div.v-window.v-item-group.theme--light.v-tabs-items>div>div.v-window-item.v-window-item--active>div>div:nth-child(1)>div>div:nth-child(2)>div>div>div.v-input__slot")))
+            self.cmbElement = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, cssObject)))
         except Exception as e:
-            error_name = "Could not get the Name Text Box item: {}".format(str(e))
+            error_name = "Could not get the Customer Code Combo Box: {}".format(str(e))
             self.help.error_log(self.page, error_name)
             error.append(error_name)
 
-        error += self.help.click_button(self.page, self.cmbReceiptDelivery)
+        error += self.help.click_button(self.page, self.cmbElement)
 
         if len(error) == 0:
-            self.help.info_log(self.page, "The ComboBox Receipt Delivery is clicked correctly")
+            self.help.info_log(self.page, "The ComboBox Customer Code is clicked correctly")
         else:
             fill = self.help.make_error_list(self.driver, method, error)
 
         return fill
 
-    def clickItemReceiptDeliveryItemEmail(self):
+    def clickCmbItem(self, value):
         error = list()
         fill = dict()
-        method = "Merchant Item Receipt Delivery Email"
+        method = value + " Item"
+
+        if value == "Do Not Prompt":
+            num = 1
+        elif value == "Optional":
+            num = 2
+        elif value == "Required":
+            num = 3
+        elif value == "No Email":
+            num = 1
+        elif value == "Email":
+            num = 2
+        elif value == "Email + Print":
+            num = 3
 
         try:
-            self.cmbReceiptDeliveryItemEmail = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR,"#app>div.v-menu__content.theme--light.menuable__content__active>div>div:nth-child(2)")))
+            self.cmbItem = self.wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "#app>div.v-menu__content.theme--light.menuable__content__active>div>div:nth-child(" + str(num) + ")")))
         except Exception as e:
-            error_name = "Could not get the Name Text Box item: {}".format(str(e))
+            error_name = "Could not get the " + value + " Item: {}".format(str(e))
             self.help.error_log(self.page, error_name)
             error.append(error_name)
 
-        error += self.help.click_button(self.page, self.cmbReceiptDeliveryItemEmail)
+        error += self.help.click_button(self.page, self.cmbItem)
 
         if len(error) == 0:
-            self.help.info_log(self.page, "The Item Receipt Delivery Email is clicked correctly")
+            self.help.info_log(self.page, "The Item " + value + " is clicked correctly")
         else:
             fill = self.help.make_error_list(self.driver, method, error)
 
@@ -223,13 +251,11 @@ class MerchantPage:
         return fill
 
     def actionsModifyMerchantData(self):
-
         self.clickTabProcessingData()
 
-
-    def actionsModifyMerchantDataSetEmail(self):
-
+    def actionsModifyProcessingDataCmb(self, cmb, value):
         self.clickTabProcessingData()
-        self.clickCmbReceiptDelivery()
-        self.clickItemReceiptDeliveryItemEmail()
+        self.clickCmb(cmb)
+        self.clickCmbItem(value)
         self.clickmerchantsave()
+

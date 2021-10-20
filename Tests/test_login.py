@@ -9,6 +9,7 @@ from PagesObject.Administration.rolesPage import RolesPage
 from PagesObject.Administration.usersPage import UsersPage
 from ExternalPages.getPasswordFromEmailActions import EmailActions
 from PagesObject.Administration.merchantPage import MerchantPage
+from PagesObject.Cards.authPage import AuthPage
 from PagesObject.Cards.salePage import SalePage
 from PagesObject.Cards.manageTokenPage import ManageTokenPage
 from PagesObject.Cards.useTokenPage import UseTokenPage
@@ -83,7 +84,7 @@ class Test0001(LoginConditions):
 
         actionLogin = LoginPage(self.driver, self.help)
         actionLogin.actionsLoginNewPasswordCancel('standard',password)
-    '''
+
     def test_0009(self):
         self.name_test = "Attempt to reset the password when trying to set a new password that does not meet the history requirements."
         actionLogin = LoginPage(self.driver, self.help)
@@ -99,7 +100,7 @@ class Test0001(LoginConditions):
         actionLogin = LoginPage(self.driver, self.help)
         actionLogin.actionsLoginNewPassword('standard',password, self.help.get_parameters()["passwords"]['standard'], self.help.get_parameters()["passwords"]['standard'])
         time.sleep(4)
-    '''
+
     def test_0010(self): 
         self.name_test = "Attempt to reset the password by entering different values into the 'New Password' and 'Confirm Password' fields."
 
@@ -114,8 +115,7 @@ class Test0001(LoginConditions):
         self.driver.refresh()
         time.sleep(3)
         actionLogin = LoginPage(self.driver, self.help)
-        actionLogin.actionsLoginNewPassword('standard',password,'Cenpos@45','Cenpos@46')
-        time.sleep(4)    
+        actionLogin.actionsLoginNewPassword('standard',password,'Cenpos@45','Cenpos@46')  
 
     def test_0011(self):
         self.name_test = "Successfully log out of the application."
@@ -154,14 +154,11 @@ class Test0001(LoginConditions):
 
         actionHeader = HeaderP(self.driver, self.help)
         actionHeader.actionsSwitchMerchant()
-
-        time.sleep(5)
     
     def test_0016(self):
         self.name_test = "Special characters validation."
         actionLogin = LoginPage(self.driver, self.help)
         actionLogin.actionsLogin('standard')
-        time.sleep(2)
         
     def test_0017(self):
         self.name_test = "Validate that the application is honoring the user role permissions by only displaying menu options for the ones the user has the corresponding privilege."
@@ -229,8 +226,6 @@ class Test0001(LoginConditions):
             actionRoles.actionsNewRol('optMenutest')
         else:
             actionRoles.actionsEditRol()
-
-        time.sleep(5)
 
     def test_0021(self):
         self.name_test = "Permanently delete an already existing user role."
@@ -402,8 +397,6 @@ class Test0001(LoginConditions):
         actionUsers.actionsSearchUsersById(self.help.get_parameters()["users"]["standard"])
         actionUsers.fillFormChangePassword("Elavon@2020", "Elavon@2020")
 
-        time.sleep(10)
-
     def test_0032(self):
         self.name_test = "Attempt to change password for an already existing user when the 'New password' and 'Confirm password' fields do not match."
         actionLogin = LoginPage(self.driver, self.help)
@@ -449,7 +442,6 @@ class Test0001(LoginConditions):
         self.help.info_log(self.page, self.name_test + " CVV")
         actions.saveform()
         self.help.info_log(self.page, self.name_test + " SAVE")
-        time.sleep(5)
         
     def test_0035(self):
         self.name_test = "Successfully add a new IP address to the 'Allowed IP' section."
@@ -504,8 +496,7 @@ class Test0001(LoginConditions):
         actionSubmenu.actionsMenu("Administration", "AccessControlList")
 
         actions = AccessControlListPage(self.driver, self.help)
-        actions.actionDeleteAllowedIp()        
-
+        actions.actionDeleteAllowedIp()
 
     def test_0040(self):
         self.name_test = "Successfully add a new IP address to the 'Deny IP' section."
@@ -518,8 +509,6 @@ class Test0001(LoginConditions):
         actions = AccessControlListPage(self.driver, self.help)
         actions.actionAddNewDenyIp()
 
-        time.sleep(5)
-
     def test_0041(self):
         self.name_test = "Successfully add a new IP address to the 'Deny IP' section for an specific environment."
         actionLogin = LoginPage(self.driver, self.help)
@@ -529,8 +518,7 @@ class Test0001(LoginConditions):
         actionSubmenu.actionsMenu("Administration", "AccessControlList")
 
         actions = AccessControlListPage(self.driver, self.help)
-        actions.actionAddNewDenyIpByEnvironment()        
-        time.sleep(5)
+        actions.actionAddNewDenyIpByEnvironment()
 
     def test_0042(self):
         self.name_test = "Successfully add a new range of IP addresses to the 'Deny IP' section."
@@ -543,9 +531,6 @@ class Test0001(LoginConditions):
         actions = AccessControlListPage(self.driver, self.help)
         actions.actionAddNewRangeDenyIp()
 
-        time.sleep(5)
-
-
     def test_0043(self):
         self.name_test = "Successfully add a new range of IP addresses to the 'Deny IP' section for an specific environment."
         actionLogin = LoginPage(self.driver, self.help)
@@ -556,8 +541,6 @@ class Test0001(LoginConditions):
 
         actions = AccessControlListPage(self.driver, self.help)
         actions.actionAddNewRangeDenyIpByEnvironment()
-
-        time.sleep(5)
 
     def test_0044(self):
         self.name_test = "Permanently delete an IP address from the 'Deny IP' section."
@@ -570,9 +553,6 @@ class Test0001(LoginConditions):
         actions = AccessControlListPage(self.driver, self.help)
         actions.actionDeleteDenyIp()
 
-        time.sleep(5)
-
-    #################
     def test_0045(self):
         self.name_test = "Attempt to add an invalid IP address to the 'Allowed IP' section."
         actionLogin = LoginPage(self.driver, self.help)
@@ -583,7 +563,6 @@ class Test0001(LoginConditions):
 
         actions = AccessControlListPage(self.driver, self.help)
         actions.actionAddNewInvalidAllowedIp()
-
 
     def test_0046(self):
         self.name_test = "Attempt to add an invalid range of IP addresses to the 'Allowed IP' section."
@@ -596,8 +575,6 @@ class Test0001(LoginConditions):
         actions = AccessControlListPage(self.driver, self.help)
         actions.actionAddNewInvalidRangeAllowedIp()
 
-        time.sleep(5)
-
     def test_0047(self):
         self.name_test = "Attempt to add an invalid IP address to the 'Denied IP' section."
         actionLogin = LoginPage(self.driver, self.help)
@@ -608,7 +585,6 @@ class Test0001(LoginConditions):
 
         actions = AccessControlListPage(self.driver, self.help)
         actions.actionAddNewInvalidDenyIp()
-        time.sleep(5)
 
     def test_0048(self):
         self.name_test = "Attempt to add an invalid range of IP addresses to the 'Denied IP' section."
@@ -619,10 +595,7 @@ class Test0001(LoginConditions):
         actionSubmenu.actionsMenu("Administration", "AccessControlList")
 
         actions = AccessControlListPage(self.driver, self.help)
-        actions.actionAddNewInvalidRangeDenyIp()
-
-        time.sleep(5)        
-
+        actions.actionAddNewInvalidRangeDenyIp()        
 
     def test_0049(self):
         self.name_test = "Successfully add a country to the 'Denied Country' section."
@@ -667,7 +640,21 @@ class Test0001(LoginConditions):
 
         action = InvoiceTemplatesPage(self.driver, self.help)
         action.actionTemplateTransactionSetDefault()
+    '''
 
+    @data("visa")
+    def test_0053(self, value):
+        self.name_test = "Successfully process a transaction."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Cards", "Sale")
+
+        actionSale = SalePage(self.driver, self.help, card=value)
+        actionSale.fillform()
+
+    '''
     @data("visa")
     def test_0055(self, value):
         self.name_test = "Successfully process a manual entry transaction when CVV is set to Required in the user role settings."
@@ -690,9 +677,83 @@ class Test0001(LoginConditions):
 
         actionSale = SalePage(self.driver, self.help, card=value)
         actionSale.fillform()
+ 
+    @data("visa")
+    def test_0055B(self, value):
+        self.name_test = "Successfully process a manual entry transaction when CVV is set to Must Pass Over in the user role settings."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
 
-        time.sleep(5)
-    
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Administration", "Roles")
+
+        actionRoles = RolesPage(self.driver, self.help)
+        result = actionRoles.actionsSearchRol("optMenutest")
+
+        if not result:
+            actionRoles.actionsNewRol('optMenutest')
+        else:
+            actionRoles.actionsEditRol_CVVSet("Must Pass Over")
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Cards", "Sale")
+
+        actionSale = SalePage(self.driver, self.help, card=value)
+        actionSale.fillform()
+        time.sleep(10)
+
+    @data("visa")
+    def test_0056(self, value):
+        self.name_test = "Successfully process a manual entry transaction on a California based merchant."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('california')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Cards", "Sale")
+
+        actionSale = SalePage(self.driver, self.help, card=value)
+        actionSale.fillform(userType='california')
+
+        time.sleep(10)
+
+    @data("commercial")
+    def test_0066(self, value):
+        self.name_test = "Successfully process a transaction using a commercial card."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Cards", "Sale")
+
+        actionSale = SalePage(self.driver, self.help, card=value)
+        actionSale.fillform()
+        time.sleep(15)
+
+    @data("visa")
+    def test_0067(self, value):
+        self.name_test = "Successfully process a transaction leaving optional fields empty in the application."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Administration", "Merchant")
+
+        actions = MerchantPage(self.driver, self.help)
+        actions.clickTabProcessingData()
+        actions.actionsModifyProcessingDataCmb("Customer Code", "Optional")
+
+        self.driver.refresh()
+
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Cards", "Sale")
+
+        actionSale = SalePage(self.driver, self.help, card=value)
+        actionSale.fillform()
+        time.sleep(15)
+
     @data("visa")
     def test_0068(self, value):
         self.name_test = "	Successfully process a declined transaction.."
@@ -705,29 +766,71 @@ class Test0001(LoginConditions):
         actionSale = SalePage(self.driver, self.help, card=value)
         actionSale.fillformdecline()
 
-        time.sleep(5)        
-
     @data("visa")
-    def test_0082(self, value):
-        self.name_test = "Successfully process a tokenized transaction when CVV is set to Required/Optional/Must Pass Over in the user role settings."
+    def test_0070(self, value):
+        self.name_test = "Attempt to process a manual entry transaction when the DisableKeyEntry parameter is enabled in merchant settings."
         actionLogin = LoginPage(self.driver, self.help)
         actionLogin.actionsLogin('standard')
 
         actionSubmenu = MenuP(self.driver, self.help)
-        actionSubmenu.actionsMenu("Cards", "ManageToken")
+        actionSubmenu.actionsMenu("Administration", "Roles")
 
-        actionManageToken = ManageTokenPage(self.driver, self.help, card=value)
-        actionManageToken.createNewCardToken()
-        actionManageToken.fillform()
+        actionRoles = RolesPage(self.driver, self.help)
+        result = actionRoles.actionsSearchRol("optMenutest")
 
-        self.token = actionManageToken.getToken()
+        time.sleep(10)
 
-        actionSubmenu.actionsMenu("Cards", "UseToken")
+        if not result:
+            actionRoles.actionsNewRol('optMenutest')
+        else:
+            actionRoles.actionsEditRol_DisableKeyEntry_Set("Required")
+        time.sleep(10)
+        self.driver.refresh()
 
-        actionUseToken = UseTokenPage(self.driver, self.help)
-        actionUseToken.actionsUseToken(self.token)
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('optMenutest')
 
-        time.sleep(5)
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Cards", "Sale")
+
+        actionSale = SalePage(self.driver, self.help, card=value)
+        actionSale.fillform()
+
+    @data("visa")
+    def test_0073(self, value):
+        self.name_test = "Successfully process a transaction providing an email with a custom (and valid) top level domain."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Administration", "Merchant")
+
+        actions = MerchantPage(self.driver, self.help)
+        actions.actionsModifyProcessingDataCmb("Receipt Delivery", "Email")
+
+        self.driver.refresh()
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Cards", "Sale")
+
+        actionSale = SalePage(self.driver, self.help, card=value)
+        actionSale.fillform()
+
+    @data("invalid")
+    def test_0075(self, value):
+        self.name_test = "Attempt to process a transaction using an invalid card number."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Cards", "Sale")
+
+        actionSale = SalePage(self.driver, self.help, card=value)
+        actionSale.fillform()
+
+        time.sleep(10)
 
     @data("visa", "mastercard")
     def test_0079(self, value):
@@ -764,21 +867,10 @@ class Test0001(LoginConditions):
 
         actionSale = SalePage(self.driver, self.help, card=value)
         actionSale.fillform()
-        time.sleep(15)
 
     @data("visa")
-    def test_0073(self, value):
-        self.name_test = "Successfully process a transaction providing an email with a custom (and valid) top level domain."
-        actionLogin = LoginPage(self.driver, self.help)
-        actionLogin.actionsLogin('standard')
-
-        actionSubmenu = MenuP(self.driver, self.help)
-        actionSubmenu.actionsMenu("Administration", "Merchant")
-
-        actions = MerchantPage(self.driver, self.help)
-        actions.actionsModifyMerchantDataSetEmail()
-
-        self.driver.refresh()
+    def test_0080(self, value):
+        self.name_test = "Attempt to process a transactions that does not meet one or more of the merchant risk parameters."
         actionLogin = LoginPage(self.driver, self.help)
         actionLogin.actionsLogin('standard')
 
@@ -786,9 +878,28 @@ class Test0001(LoginConditions):
         actionSubmenu.actionsMenu("Cards", "Sale")
 
         actionSale = SalePage(self.driver, self.help, card=value)
-        actionSale.fillform()
-        time.sleep(15)
-    
+        actionSale.fillformdecline()
+
+    @data("visa")
+    def test_0082(self, value):
+        self.name_test = "Successfully process a tokenized transaction when CVV is set to Required/Optional/Must Pass Over in the user role settings."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Cards", "ManageToken")
+
+        actionManageToken = ManageTokenPage(self.driver, self.help, card=value)
+        actionManageToken.createNewCardToken()
+        actionManageToken.fillform()
+
+        self.token = actionManageToken.getToken()
+
+        actionSubmenu.actionsMenu("Cards", "UseToken")
+
+        actionUseToken = UseTokenPage(self.driver, self.help)
+        actionUseToken.actionsUseToken(self.token)
+
     @data("visa")
     def test_0085(self, value):
         self.name_test = "Successfully create a brand new card token."
@@ -802,12 +913,21 @@ class Test0001(LoginConditions):
         actionManageToken.createNewCardToken()
         actionManageToken.fillform()
 
-        time.sleep(5)
+    @data("visa")
+    def test_0069(self, value):
+        self.name_test = "Successfully process a partially approved transaction."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
 
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Cards", "Auth")
 
-     @data("visa")
-    def test_0080(self, value):
-        self.name_test = "Attempt to process a transactions that does not meet one or more of the merchant risk parameters."
+        action = AuthPage(self.driver, self.help, card=value)
+        action.fillform()
+
+    @data("visa")
+    def test_0074(self, value):
+        self.name_test = "Successfully process a transaction."
         actionLogin = LoginPage(self.driver, self.help)
         actionLogin.actionsLogin('standard')
 
@@ -815,16 +935,106 @@ class Test0001(LoginConditions):
         actionSubmenu.actionsMenu("Cards", "Sale")
 
         actionSale = SalePage(self.driver, self.help, card=value)
-        actionSale.fillformdecline()
+        actionSale.fillform(customEmail="myemailinvalid")
+        time.sleep(6)
 
-        time.sleep(5)
-    
     @data("visa")
-    def test_0055B(self, value):
-        self.name_test = "Successfully process a manual entry transaction when CVV is set to Must Pass Over in the user role settings."
+    def test_0081(self, value):
+        self.name_test = "Attempt to process a transaction while one or more required fields are empty."
         actionLogin = LoginPage(self.driver, self.help)
         actionLogin.actionsLogin('standard')
 
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Cards", "Sale")
+
+        actionSale = SalePage(self.driver, self.help, card=value)
+        actionSale.fillform(amount="")
+        time.sleep(6)
+    
+    @data("visa")        
+    def test_0078(self, value):
+        self.name_test = "Attempt to process a transaction that falls within the "Dark Period" timeframe for declined transactions."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Cards", "Sale")
+
+        actionSale = SalePage(self.driver, self.help, card=value)
+        actionSale.fillform()
+        time.sleep(6)
+
+    @data("expired")
+    def test_0053(self, value):
+        self.name_test = "Attempt to process a transaction providing an expired credit card."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Cards", "Sale")
+
+        actionSale = SalePage(self.driver, self.help, card=value)
+        actionSale.fillform()
+        time.sleep(6)
+
+    @data("visa")
+    def test_0087(self, value):
+        self.name_test = "Attempt to create a new card token providing information already used in existing tokens."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Cards", "ManageToken")
+
+        actionManageToken = ManageTokenPage(self.driver, self.help, card=value)
+        actionManageToken.createNewCardToken()
+        actionManageToken.fillform()
+
+        self.driver.refresh()
+
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Cards", "ManageToken")
+
+        actionManageToken = ManageTokenPage(self.driver, self.help, card=value)
+        actionManageToken.createNewCardToken()
+        time.sleep(5)
+        actionManageToken.fillformCloneData()
+
+        time.sleep(6)
+        
+    @data("visa")
+    def test_0083(self, value):
+        self.name_test = "Attempt to process a force transaction for an already forced authorization."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Cards", "Auth")
+
+        action = AuthPage(self.driver, self.help, card=value)
+        action.fillform()
+        
+    @data("visa")
+    def test_0084(self, value):
+        self.name_test = "Successfully process a return for an original transaction with partial refunds previously processed."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Cards", "Auth")
+
+        action = AuthPage(self.driver, self.help, card=value)
+        action.fillform()
+    
+    @data("visa")
+    def test_0086(self, value):
+        self.name_test = "Successfully create a brand new card token when CVV is set to Required/Optional/Must Pass Over in the user role settings."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+        
         actionSubmenu = MenuP(self.driver, self.help)
         actionSubmenu.actionsMenu("Administration", "Roles")
 
@@ -834,27 +1044,76 @@ class Test0001(LoginConditions):
         if not result:
             actionRoles.actionsNewRol('optMenutest')
         else:
-            actionRoles.actionsEditRol_CVVSet("Must Pass Over")
-
-        actionSubmenu = MenuP(self.driver, self.help)
-        actionSubmenu.actionsMenu("Cards", "Sale")
-
-        actionSale = SalePage(self.driver, self.help, card=value)
-        actionSale.fillform()
-
-        time.sleep(5)
+            actionRoles.actionsEditRol_CVVSet("Required")
+                
+        self.driver.refresh()
         
-    @data("visa","commercial")
-    def test_0053(self, value):
-        self.name_test = "Successfully process a transaction."
         actionLogin = LoginPage(self.driver, self.help)
         actionLogin.actionsLogin('standard')
 
         actionSubmenu = MenuP(self.driver, self.help)
-        actionSubmenu.actionsMenu("Cards", "Sale")
+        actionSubmenu.actionsMenu("Cards", "ManageToken")
 
-        actionSale = SalePage(self.driver, self.help, card=value)
-        actionSale.fillform()
+        actionManageToken = ManageTokenPage(self.driver, self.help, card=value)
+        actionManageToken.createNewCardToken()
+        actionManageToken.fillform()
 
+        self.driver.refresh()
+        
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+        
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Administration", "Roles")
+
+        actionRoles = RolesPage(self.driver, self.help)
+        result = actionRoles.actionsSearchRol("optMenutest")
+
+        if not result:
+            actionRoles.actionsNewRol('optMenutest')
+        else:
+            actionRoles.actionsEditRol_CVVSet("Required")
+                
+        self.driver.refresh()
+        
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Cards", "ManageToken")
+
+        actionManageToken = ManageTokenPage(self.driver, self.help, card=value)
+        actionManageToken.createNewCardToken()
+        actionManageToken.fillform()
+
+        self.driver.refresh()
+        
+           actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+        
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Administration", "Roles")
+
+        actionRoles = RolesPage(self.driver, self.help)
+        result = actionRoles.actionsSearchRol("optMenutest")
+
+        if not result:
+            actionRoles.actionsNewRol('optMenutest')
+        else:
+            actionRoles.actionsEditRol_CVVSet("Required")
+                
+        self.driver.refresh()
+        
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Cards", "ManageToken")
+
+        actionManageToken = ManageTokenPage(self.driver, self.help, card=value)
+        actionManageToken.createNewCardToken()
+        actionManageToken.fillform()
+
+        self.driver.refresh()
         time.sleep(5)
 '''

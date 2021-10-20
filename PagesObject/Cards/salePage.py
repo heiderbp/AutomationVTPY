@@ -116,11 +116,11 @@ class SalePage:
             return False
         return True
 
-    def fillform(self, cardType, amount=0):
+    def fillform(self, amount=0, userType = 'standard', customEmail = ""):
         error = list()
         fill = dict()
         self.cards = self.help.get_card()
-        self.card = self.cards['cards'][cardType]
+        self.card = self.cards['cards'][self.cardType]
 
         method = "Sale"
 
@@ -131,16 +131,26 @@ class SalePage:
         else:
             self.amount = amount
 
-        self.month = data["month"]
-        self.year = data["year"]
+        if self.cardType == "expired":
+            self.month = "04"
+            self.year = "18"
+        else:
+            self.month = data["month"]
+            self.year = data["year"]
+
         self.nameOnCard = data["name"]
         self.invoice = data["invoice"]
-        self.email = data["email"]
+
+        if customEmail == "":
+            self.email = data["email"]
+        else:
+            self.email = customEmail
+
         self.address = self.cards["additional"]["avs"]
         self.zip = self.cards["additional"]["zip"]
 
-        if cardType.lower() == "amex":
-            self.cvv = self.cards['cvv'][cardType]
+        if self.cardType.lower() == "amex":
+            self.cvv = self.cards['cvv'][self.cardType]
         else:
             self.cvv = self.cards['cvv']['others']
 
@@ -159,19 +169,8 @@ class SalePage:
             self.help.error_log(self.page, error_name)
             error.append(error_name)
 
-        try:
-            self.txtAddress = self.wait.until(ec.visibility_of_element_located((By.ID, "address")))
-        except Exception as e:
-            error_name = "Could not get the address input text: {}".format(str(e))
-            self.help.error_log(self.page, error_name)
-            error.append(error_name)
+        error += self.help.write_field_text(self.page, "cvv", self.txtCvv, self.cvv)
 
-        try:
-            self.txtZipCode = self.wait.until(ec.visibility_of_element_located((By.ID, "zipCode")))
-        except Exception as e:
-            error_name = "Could not get the zipCode input text: {}".format(str(e))
-            self.help.error_log(self.page, error_name)
-            error.append(error_name)
 
         try:
             self.txtEmail = self.wait.until(ec.visibility_of_element_located((By.ID, "email")))
@@ -181,10 +180,25 @@ class SalePage:
             error.append(error_name)
 
         error += self.help.write_field_text(self.page, "email", self.txtEmail, self.email)
-        error += self.help.write_field_text(self.page, "cvv", self.txtCvv, self.cvv)
-        error += self.help.write_field_text(self.page, "address", self.txtAddress, self.address)
-        error += self.help.write_field_text(self.page, "zipCode", self.txtZipCode, self.zip)
-        # print(self.btnSbmt.get_attribute("disabled"))
+
+        if userType != "california":
+            try:
+                self.txtZipCode = self.wait.until(ec.visibility_of_element_located((By.ID, "zipCode")))
+            except Exception as e:
+                error_name = "Could not get the zipCode input text: {}".format(str(e))
+                self.help.error_log(self.page, error_name)
+                error.append(error_name)
+
+            try:
+                self.txtAddress = self.wait.until(ec.visibility_of_element_located((By.ID, "address")))
+            except Exception as e:
+                error_name = "Could not get the address input text: {}".format(str(e))
+                self.help.error_log(self.page, error_name)
+                error.append(error_name)
+
+            error += self.help.write_field_text(self.page, "address", self.txtAddress, self.address)
+            error += self.help.write_field_text(self.page, "zipCode", self.txtZipCode, self.zip)
+
 
         if self.btnSbmt.get_attribute("disabled"):
             self.help.info_log(self.page, "The Button Submit is disabled")
