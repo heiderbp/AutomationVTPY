@@ -50,13 +50,11 @@ class LoginPage:
             self.help.error_log(self.page, error_name)
             error.append(error_name)
 
-
-
     def fillFrom(self, username, password, merchant):
         error = list()
         fill = dict()
         method = "Login Form"
-
+        self.mid = merchant
         error += self.help.write_field_text(self.page, "userName",  self.username, username)
         error += self.help.write_field_text(self.page, "password", self.password, password)
         error += self.help.write_field_text(self.page, "merchant", self.merchant, merchant)

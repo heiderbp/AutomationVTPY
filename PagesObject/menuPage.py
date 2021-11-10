@@ -127,7 +127,7 @@ class MenuP:
     def clickbtnReports(self):
         error = list()
         fill = dict()
-        method = "Desboard Button Reports"
+        method = "Button Reports"
 
         error += self.help.click_button(self.page, self.menuReports)
         if len(error) == 0:

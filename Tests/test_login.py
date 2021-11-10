@@ -1,7 +1,6 @@
-import time
-from ddt import ddt, data
+from ddt import ddt
 
-from Conditions.loginConditions import LoginConditions
+from Conditions.Conditions import Conditions
 from PagesObject.loginPage import LoginPage
 from PagesObject.menuPage import MenuP
 from PagesObject.headerPage import HeaderP
@@ -19,15 +18,15 @@ from PagesObject.Administration.countriesAclPage import CountriesACLPage
 from PagesObject.Administration.invoiceTemplatesPage import InvoiceTemplatesPage
 
 @ddt
-class Test0001(LoginConditions):
+class Test(Conditions):
     page = "login test Page"
 
-    '''
+
     def test_0001(self):
-        self.name_test = "Log in to the application successfully"
+        self.name_test = "Log in to the application successfully"        
         actionLogin = LoginPage(self.driver, self.help)
         actionLogin.actionsLogin('standard')
-
+    '''
     def test_0002(self):
         self.name_test = "Log in to the application successfully providing a username containing valid special characters."
         actionLogin = LoginPage(self.driver, self.help)
@@ -47,7 +46,6 @@ class Test0001(LoginConditions):
         self.name_test = "Attempt to log in to the application when the user is blocked."
         actionLogin = LoginPage(self.driver, self.help)
         actionLogin.actionsLogin('blocked')
-
     
     def test_0006(self):
         self.name_test = "Attempt to log in to the application providing an invalid Merchant ID."
@@ -640,7 +638,7 @@ class Test0001(LoginConditions):
 
         action = InvoiceTemplatesPage(self.driver, self.help)
         action.actionTemplateTransactionSetDefault()
-    '''
+
 
     @data("visa")
     def test_0053(self, value):
@@ -654,7 +652,7 @@ class Test0001(LoginConditions):
         actionSale = SalePage(self.driver, self.help, card=value)
         actionSale.fillform()
 
-    '''
+
     @data("visa")
     def test_0055(self, value):
         self.name_test = "Successfully process a manual entry transaction when CVV is set to Required in the user role settings."
@@ -895,10 +893,18 @@ class Test0001(LoginConditions):
 
         self.token = actionManageToken.getToken()
 
+        self.driver.refresh()
+
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
         actionSubmenu.actionsMenu("Cards", "UseToken")
 
         actionUseToken = UseTokenPage(self.driver, self.help)
         actionUseToken.actionsUseToken(self.token)
+
+        time.sleep(20)
 
     @data("visa")
     def test_0085(self, value):
@@ -1088,7 +1094,7 @@ class Test0001(LoginConditions):
 
         self.driver.refresh()
         
-           actionLogin = LoginPage(self.driver, self.help)
+        actionLogin = LoginPage(self.driver, self.help)
         actionLogin.actionsLogin('standard')
         
         actionSubmenu = MenuP(self.driver, self.help)
@@ -1116,4 +1122,214 @@ class Test0001(LoginConditions):
 
         self.driver.refresh()
         time.sleep(5)
-'''
+
+    @data("visa")
+    def test_R0001(self, value):
+        self.name_test = "Successfully query transaction data from the reporting tools."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Cards", "Sale")
+
+        actionSale = SalePage(self.driver, self.help, card=value)
+        actionSale.fillform()
+        time.sleep(5)
+        id_tr = actionSale.getElementsTicket()
+        time.sleep(5)
+
+        self.driver.refresh()
+
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Reports", "Reprint")
+
+        actionReprintPage = ReprintPage(self.driver, self.help)
+        actionReprintPage.writeTxtSearch(id_tr)
+        actionReprintPage.clickBtnSubmit()
+
+        time.sleep(5)
+
+    def test_R0002(self):
+        self.name_test = "Validate that the reports options are only displayed when the corresponding permissions are enabled."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin("hbTestReprint")
+
+        time.sleep(20)
+
+    @data("visa")
+    def test_R0003(self, value):
+        self.name_test = "Successfully display the receipt for a previously processed transaction."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Cards", "Sale")
+
+        actionSale = SalePage(self.driver, self.help, card=value)
+        actionSale.fillform()
+        time.sleep(5)
+
+        dictTicket = actionSale.fillElementsTicket()
+        print(dictTicket)
+
+        id_tr = dictTicket.get("ReferenceNo:")
+
+        actionSale.clickButtonDone()
+
+        self.driver.refresh()
+
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Reports", "Reprint")
+
+        actionReprintPage = ReprintPage(self.driver, self.help)
+        actionReprintPage.writeTxtSearch(id_tr)
+        actionReprintPage.clickBtnSubmit()
+        time.sleep(5)
+        actionReprintPage.clickBtnDisplayReceipt()
+
+        time.sleep(7)
+
+
+    @data("visa")
+    def test_R0004(self, value):
+        self.name_test = "Successfully print the receipt for a previously processed transaction."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Cards", "Sale")
+
+        actionSale = SalePage(self.driver, self.help, card=value)
+        actionSale.fillform()
+        time.sleep(5)
+        id_tr = actionSale.getElementsTicket()
+
+        self.driver.refresh()
+
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Reports", "Reprint")
+
+        actionReprintPage = ReprintPage(self.driver, self.help)
+        actionReprintPage.writeTxtSearch(id_tr)
+        actionReprintPage.clickBtnSubmit()
+        time.sleep(5)
+        actionReprintPage.clickBtnDisplayReceipt()
+        time.sleep(25)
+    
+    @data("visa")
+    def test_R0005(self, value):
+        self.name_test = "Successfully resend the receipt for a previously processed transaction."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Cards", "Sale")
+
+        actionSale = SalePage(self.driver, self.help, card=value)
+        actionSale.fillform()
+        time.sleep(5)
+        id_tr = actionSale.fillElementsTicket()
+
+        self.driver.refresh()
+
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Reports", "Reprint")
+
+        actionReprintPage = ReprintPage(self.driver, self.help)
+        actionReprintPage.writeTxtSearch(id_tr['ReferenceNo:'])
+        actionReprintPage.clickBtnSubmit()
+        time.sleep(5)
+        actionReprintPage.clickBtnDisplayReceipt()
+        actionReprintPage.clickBtnOpenSendEmail()
+        actionReprintPage.writeEmailTo("heiderbp@hotmail.com")
+        time.sleep(25)
+    
+    @data("visa")
+    def test_R0006(self, value):
+        self.name_test = "Successfully display/print/resend the receipt for a previously processed tokenized transaction."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Cards", "ManageToken")
+
+        actionManageToken = ManageTokenPage(self.driver, self.help, card=value)
+        actionManageToken.createNewCardToken()
+        actionManageToken.fillform()
+
+        self.token = actionManageToken.getToken()
+
+        self.driver.refresh()
+
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Cards", "UseToken")
+
+        actionUseToken = UseTokenPage(self.driver, self.help)
+        actionUseToken.actionsUseToken(self.token)
+
+        actionSale = SalePage(self.driver, self.help, card=value)
+        id_tr = actionSale.getElementsTicket()
+
+        self.driver.refresh()
+
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Reports", "Reprint")
+
+        actionReprintPage = ReprintPage(self.driver, self.help)
+        actionReprintPage.writeTxtSearch(id_tr)
+        actionReprintPage.clickBtnSubmit()
+        time.sleep(5)
+        actionReprintPage.clickBtnDisplayReceipt()
+        actionReprintPage.clickBtnOpenSendEmail()
+        actionReprintPage.writeEmailTo("heiderbp@hotmail.com")
+        time.sleep(25)
+
+    @data("Corp")
+    def test_R0010(self, value):
+        self.name_test = "Successfully display/print/resend the receipt for a previously processed transaction with Tax Voucher."
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Cards", "Sale")
+
+        actionSale = SalePage(self.driver, self.help, card=value)
+        actionSale.fillform()
+        time.sleep(5)
+        id_tr = actionSale.getElementsTicket()
+
+        self.driver.refresh()
+
+        actionLogin = LoginPage(self.driver, self.help)
+        actionLogin.actionsLogin('standard')
+
+        actionSubmenu = MenuP(self.driver, self.help)
+        actionSubmenu.actionsMenu("Reports", "Reprint")
+
+        actionReprintPage = ReprintPage(self.driver, self.help)
+        actionReprintPage.writeTxtSearch(id_tr)
+        actionReprintPage.clickBtnSubmit()
+        time.sleep(5)
+        actionReprintPage.clickBtnDisplayReceipt()
+        actionReprintPage.clickBtnOpenSendEmail()
+        actionReprintPage.writeEmailTo("heiderbp@hotmail.com")
+        time.sleep(25)        
+    '''

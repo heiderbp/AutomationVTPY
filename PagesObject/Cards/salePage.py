@@ -13,6 +13,7 @@ class SalePage:
         self.page = "Sale Page"
         self.cardType = card
 
+
         error = list()
         self.error = dict()
         self.wait = WebDriverWait(self.driver, 5)
@@ -115,6 +116,88 @@ class SalePage:
         except NoSuchElementException:
             return False
         return True
+
+    def fillElementsTicket(self):
+        fill = dict()
+        error = list()
+
+        try:
+            self.elementsTicket = self.driver.find_elements_by_css_selector("#invoice-area>div>div:nth-child(2)>div:nth-child(2)>div>div")
+        except Exception as e:
+            error_name = "Could not get table html: {}".format(str(e))
+            self.help.error_log(self.page, error_name)
+            error.append(error_name)
+
+        for a in range(2, len(self.elementsTicket)-1):
+            countElementsDiv = self.driver.find_elements_by_css_selector("#invoice-area>div>div:nth-child(2)>div:nth-child(2)>div>div:nth-child(" + str(a) + ")>div")
+            if len(countElementsDiv) > 0:
+                description = self.driver.find_element_by_css_selector("#invoice-area>div>div:nth-child(2)>div:nth-child(2)>div>div:nth-child(" + str(a) + ")>div>span:nth-child(1)").text
+                value = self.driver.find_element_by_css_selector("#invoice-area>div>div:nth-child(2)>div:nth-child(2)>div>div:nth-child(" + str(a) + ")>div>span:nth-child(2)").text
+                fill[description] = value
+
+        try:
+            self.elementsCustomerInfo = self.driver.find_elements_by_css_selector("#invoice-area>div>div:nth-child(2)>div:nth-child(1)>div")
+        except Exception as e:
+            error_name = "Could not get table html: {}".format(str(e))
+            self.help.error_log(self.page, error_name)
+            error.append(error_name)
+
+        for a in range(1, len(self.elementsCustomerInfo)):
+            countElementsDiv = self.driver.find_elements_by_css_selector("#invoice-area>div>div:nth-child(2)>div:nth-child(1)>div>div:nth-child(" + str(a) + ")>div>span")
+            print(len(countElementsDiv))
+            if len(countElementsDiv) > 0:
+                description = self.driver.find_element_by_css_selector("#invoice-area>div>div:nth-child(2)>div:nth-child(1)>div>div:nth-child(" + str(a) + ")>div>span:nth-child(1)").text
+                value = self.driver.find_element_by_css_selector("#invoice-area>div>div:nth-child(2)>div:nth-child(1)>div>div:nth-child(" + str(a) + ")>div>span:nth-child(2)").text
+                fill[description] = value
+
+        #fill['Name on Card:'] = self.driver.find_elements_by_css_selector("#invoice-area>div>div:nth-child(2)>div:nth-child(1)>div.layout.column.pa-2.text-sm-left>div").text
+        #print(len(self.elementsCustomerInfo))
+
+        return fill
+
+    def getElementTicket(self, parameter):
+        error = list()
+        fill = dict()
+        method = "Sale"
+
+        try:
+            self.elementsTicket = self.driver.find_elements_by_css_selector("#invoice-area>div>div:nth-child(2)>div:nth-child(2)>div>div")
+        except Exception as e:
+            error_name = "Could not get the Combo box cmbMerchant: {}".format(str(e))
+            self.help.error_log(self.page, error_name)
+            error.append(error_name)
+
+        print(len(self.elementsTicket))
+
+        for a in range(2, len(self.elementsTicket)):
+            countElementsDiv = self.driver.find_elements_by_css_selector("#invoice-area>div>div:nth-child(2)>div:nth-child(2)>div>div:nth-child(" + str(a) + ")>div")
+            if len(countElementsDiv) > 0:
+                title = self.driver.find_element_by_css_selector("#invoice-area>div>div:nth-child(2)>div:nth-child(2)>div>div:nth-child(" + str(a) + ")>div>span:nth-child(1)").text
+                if title == parameter:
+                    idTransaccion = self.driver.find_element_by_css_selector("#invoice-area>div>div:nth-child(2)>div:nth-child(2)>div>div:nth-child(" + str(a) + ")>div>span:nth-child(2)").text
+
+        return idTransaccion
+
+    def clickButtonDone(self):
+        error = list()
+        method = "Sale"
+        fill = dict()
+
+        try:
+            self.btnDone = self.wait.until(ec.visibility_of_element_located((By.ID, "done")))
+        except Exception as e:
+            error_name = "Could not get the Done Button: {}".format(str(e))
+            self.help.error_log(self.page, error_name)
+            error.append(error_name)
+
+        error += self.help.click_button(self.page, self.btnDone)
+        if len(error) == 0:
+            self.help.info_log(self.page, "Button Submit is clicked correctly")
+        else:
+            fill = self.help.make_error_list(self.driver, method, error)
+
+        return fill
+
 
     def fillform(self, amount=0, userType = 'standard', customEmail = ""):
         error = list()
